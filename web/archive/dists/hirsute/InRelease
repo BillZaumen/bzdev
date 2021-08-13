@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: billzaumen.github.io
+Label: apt repository
+Codename: hirsute
+Date: Fri, 13 Aug 2021 17:46:02 UTC
+Architectures: i386 amd64
+Components: contrib
+Description: BZDev packages
+MD5Sum:
+ b1042f1bde7865cd82df00fc1cb473a4 1658 contrib/binary-i386/Packages
+ 74b1996fef247548f6b6728fa8036c08 924 contrib/binary-i386/Packages.gz
+ 33f4cac96c112e70251faea01723d266 117 contrib/binary-i386/Release
+ b1042f1bde7865cd82df00fc1cb473a4 1658 contrib/binary-amd64/Packages
+ 74b1996fef247548f6b6728fa8036c08 924 contrib/binary-amd64/Packages.gz
+ 46bf4ca61c6d0ce1a2a0b4e599637a2d 118 contrib/binary-amd64/Release
+SHA1:
+ 58fd3feadd5a791646bbbc0af0b04d60f07f2641 1658 contrib/binary-i386/Packages
+ e02edb744ddbc8d271ab7bfe85c5b0e7d4591274 924 contrib/binary-i386/Packages.gz
+ e2ba451d7628b4cebbaa2054dee140de31f7c27f 117 contrib/binary-i386/Release
+ 58fd3feadd5a791646bbbc0af0b04d60f07f2641 1658 contrib/binary-amd64/Packages
+ e02edb744ddbc8d271ab7bfe85c5b0e7d4591274 924 contrib/binary-amd64/Packages.gz
+ 940536ad95d9dc48d55995e060f887a6c0a2ef3b 118 contrib/binary-amd64/Release
+SHA256:
+ e06338521164d3ab186a17185d82c119b387ebdc126033cd84c95b27a2ac8eb9 1658 contrib/binary-i386/Packages
+ e02763e8a377ee26171fab17fb46ed2af875cab2bd568b9e0e8f4884a5c0d8d5 924 contrib/binary-i386/Packages.gz
+ d6b33abfeec297d36efcbf28ae1330cd83466d56869e5aee060493dbf4095f51 117 contrib/binary-i386/Release
+ e06338521164d3ab186a17185d82c119b387ebdc126033cd84c95b27a2ac8eb9 1658 contrib/binary-amd64/Packages
+ e02763e8a377ee26171fab17fb46ed2af875cab2bd568b9e0e8f4884a5c0d8d5 924 contrib/binary-amd64/Packages.gz
+ dfd8416de6d645c6c9a7f41d77b354732cbf4377cbc1b595ab925da1cd0accb9 118 contrib/binary-amd64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEkXmfiT+OgIpjzRIOMLX1GvHXGUAFAmEWr9oACgkQMLX1GvHX
+GUCD1Q//cgxdMZtMhXPjGXsoPbmOnsIIAsbpXm+W+YzDNy1BQJh6JdlWnYOtg68L
+2YnqNOiGzj7GBb2uG6+M+UEwgKgrklzxgNo3HYBf/Fm3WtFGkv7MciZKC+sVvyBH
+SVq26xm8H302p/USkV40shjdYQYk0OAwp5SI2nMegfquWgYKRxyaC0kKxblHvWNx
+JB4xkvzzmzheo4b0GuCr0vXBP5NROkTwNjzzMZrmHcuJ7UvyTBl1m8/zS3zQeXDo
+8qVN5o/Yt6Sv9opbeNrwa+3bK1L6YmE7iOf308Ksl2gtVm62zRBUGYlcHLN8H0tw
+f03lemsbV6CekQIf5mwRMd2BgXIhWls+MgqViUiOtX9UE9dCc9vitpzXpcW+QHGx
+FTjAs9qCWUQkBLO8leyLIsdK5ZuCirppP1YhHfe7xR8xmOEjmq4niX4d3sJW6d86
+lf3mFeqTXQkFXcjnIpS2eBtUI/fIffF7nJUJgf2fuAdwtf8WNmGykMy+J5hyav3q
+wjTn+5aGYy/7wUpMGAEAbS10H74VOs470P+JCSmtg2ISOj48Lek22AgvqzgRuBUn
+5OIzjOww70NIJT45G0K2S8UuYM+T67yv4OXdFAwL+DBA0e1JMUq/veNuIM7LMcfr
+/RyHQn6wrCQ6KaDkxs14B7PawO0afdVbIrCqGqQi4H/0enH9fCk=
+=p37E
+-----END PGP SIGNATURE-----
