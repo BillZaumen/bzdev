@@ -29,7 +29,12 @@ This will configure git.  The values it sets are describe in
 and are ultimately used to create a conf/distributions file. The shell
 script `./setup.sh` is interactive and will prompt the user for the
 required fields that conf/distributions  (used by `reprepro`)
-needs.
+needs. The Architectures entry for `https://billzaumen.github.io/bzdev/archive`
+is quite long because Java runs on a wide variety of systems:
+
+```
+i385 amd64 Armel armhf arm64 mipsel mips64el ppc64el s390x
+```
 
 Finally, a file named `debs.list` has to be created. This should
 not be added to git as the file is a list  the Debian

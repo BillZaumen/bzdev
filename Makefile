@@ -10,7 +10,7 @@
 #	git config --local distributions.Origin billzaumen.gethub.io
 #       git config --local distributions.Label "apt repository"
 #       git config --local distributions.Codename hirsute
-#       git config --local distributions.Architectures "i386 amd64"
+#       git config --local distributions.Architectures "i386 amd64 ..."
 #       git config --local distributions.Components contrib
 #       git config --local distributions.Description "BZDev packages"
 #       git config --local distributions.SignWith 91799F893F8E808A63CD120E30B5F51AF1D71940

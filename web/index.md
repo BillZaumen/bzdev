@@ -1,7 +1,10 @@
 # The BZDev Debian Repository
 
 The BZDev Debian repository contains a small number of Debian packages
-and is intended for use until these are available elsewhere.
+and is intended for use until these are available elsewhere. This
+repository is set up to support a large number of architectures:
+i385, amd64, Armel, armhf, arm64, mipsel, mips64el, ppc64el, and  s390x
+because the packages are not system dependent.
 
 ## Setting up `apt` so that it can use HTTPS
 
