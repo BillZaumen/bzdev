@@ -6,7 +6,7 @@ repository is set up to support a large number of architectures:
 i385, amd64, Armel, armhf, arm64, mipsel, mips64el, ppc64el, and  s390x
 because the packages are not system dependent.
 
-## Setting up `apt` so that it can use HTTPS
+## Setting up apt so that it can use HTTPS
 
 GitHub's web servers always use https.  To ensure that `apt` can handle
 this protocol for older versions of apt, run the command
@@ -19,7 +19,7 @@ This is not necessary after apt version 1.5: recent versions of apt
 provide HTTPS support by default (at least that is what the documentation
 claims).
 
-## Configuring `apt` so it can use the BZDev Debian repository.
+## Configuring apt so it can use the BZDev Debian repository.
 
 There are three steps:
 
