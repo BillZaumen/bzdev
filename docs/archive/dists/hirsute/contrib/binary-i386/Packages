@@ -1,0 +1,39 @@
+Package: cvrdecode
+Version: 1.0
+Architecture: all
+Depends: default-jdk, libbzdev-java (>= 1.3.7), libzxing-core-java (>= 3.4.1), libzxing-java (>= 3.4.1), libzxing-javase-java (>=3.4.1)
+Maintainer: Bill Zaumen <bill.zaumen+software@gmail.com>
+Priority: optional
+Section: contrib/utils
+Filename: pool/contrib/c/cvrdecode/cvrdecode_1.0_all.deb
+Size: 103112
+SHA256: 2f74e0e1f7a33d47a7708a9108f85d648472b5ed97987adf5050b40223aa0f09
+SHA1: 10fbfc1aa5e3752ad3d165c8da8149e0d4f8a394
+MD5sum: 3e5adfd08938f3f455aa98924a5ac7fb
+Description: Utility that processes QR codes and  shc URIs
+ provided by the California Department of Public Health as
+ proof of COVID-19 vaccination. These digital vaccination
+ records are signed using elliptic-curve public-key
+ encryption and the signatures are verified. The output is
+ a CSV (Comma-Separated Values) file containing a sorted
+ list, each row of which contains a family name, given
+ names, a birthdate, the last vaccination date, and boolean
+ values indicating that the owner of the record has been
+ fully vaccinated and that the signature was valid.
+
+Package: libbzdev-java
+Version: 1.3.7
+Architecture: all
+Recommends: libbzdev-util, libbzdev-misc
+Suggests: libbzdev-doc
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libb/libbzdev-java/libbzdev-java_1.3.7_all.deb
+Size: 3336668
+SHA256: 101c3c1baf6fa5e5da1954237263df641db04dce3861ce29d5dd7e6df941b83b
+SHA1: fa9689e167645e9aadc3822f42e28bb41eae88b3
+MD5sum: 86b4e4fad783668d0260ec2680a8f309
+Description: Java class library containing general-purpose classes.
+ See the documentation for further details.
+
