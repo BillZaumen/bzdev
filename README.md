@@ -9,6 +9,9 @@ step-by-step instructions for using the Debian respository
 whose URL is https://billzaumen.github.io/bzdev/archive
 This repository contains a small number of Debian packages.
 
+The archive is located under the `docs/` directory. This is
+necessary because of GitHub constraints.
+
 ## Building the Debian package repository
 
 You will need to install the Debian package reprepro, which is
@@ -49,7 +52,7 @@ To add more classes, one can modify debs.list and run
 ```
 make
 git status
-git add  [any new files, particularly in web/archive/pool]
+git add  [any new files, particularly in docs/archive/pool]
 git commit -a
 git push
 ```
@@ -62,7 +65,7 @@ To eliminate Debian packages not in `debs.list`, use
 ```
 make rebuild
 git status
-git add  [any new files, particularly in web/archive/pool]
+git add  [any new files, particularly in docs/archive/pool]
 git commit -a
 git push
 ```
@@ -74,18 +77,18 @@ before using `git commit` and particularly `git push`.
 
 You can copy this git repository to create and manage a different
 Debian repository. If that is done, you should edit `README.md`
-and `web/index.md` so that `https://billzaumen.github.io/bzdev/` is
-replaced with the appropriate URL.  Similarly the file `web/BZDev.gpg`
+and `docs/index.md` so that `https://billzaumen.github.io/bzdev/` is
+replaced with the appropriate URL.  Similarly the file `docs/BZDev.gpg`
 should be renamed and changed to contain the proper public key: it
 was created by running
 
 ```
-gpg --export KEYID > web/BZDev.gpg
+gpg --export KEYID > docs/BZDev.gpg
 ```
-and a different name is appropriate.  Similarly  in `web/index.md`,
+and a different name is appropriate.  Similarly  in `docs/index.md`,
 BZDev.gpg and org.bzdev should be changed to something else.
 
 Finally, the strings `hirsute` and `contrib` should be changed in
-`web/index.md` to whatever values are appropriate (one names a
+`docs/index.md` to whatever values are appropriate (one names a
 Debian/Unbuntu release and the other names a repository component).
 Note that multiple components are allowed.

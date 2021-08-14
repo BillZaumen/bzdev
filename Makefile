@@ -47,11 +47,11 @@
 DEBS = $(shell cat debs.list)
 
 
-all: web/archive/conf/distributions $(DEBS)
+all: docs/archive/conf/distributions $(DEBS)
 	for i in $(DEBS) ; do \
 	j=`basename $$i` ; \
 	ln -s $$i $$j ; \
-	reprepro -b web/archive/ includedeb hirsute $$j ; \
+	reprepro -b docs/archive/ includedeb hirsute $$j ; \
 	rm -f $$j ; \
 	done
 
@@ -60,20 +60,20 @@ all: web/archive/conf/distributions $(DEBS)
 # that we can commit and push the new version.
 #
 rebuild: 
-	rm -f web/archive/conf/distributions
-	rm -fr web/archive/db
-	rm -fr web/archive/dists
-	rm -fr web/archvive/pool
-	$(MAKE) web/archive/conf/distributions
+	rm -f docs/archive/conf/distributions
+	rm -fr docs/archive/db
+	rm -fr docs/archive/dists
+	rm -fr docs/archvive/pool
+	$(MAKE) docs/archive/conf/distributions
 	$(MAKE) all
 	echo use git '"commit -a"' to make changes permanent
 
-web/archive/conf/distributions:
-	mkdir -p web/archive/conf
+docs/archive/conf/distributions:
+	mkdir -p docs/archive/conf
 	echo Origin: `git config --local --get distributions.origin` > \
-		web/archive/conf/distributions
+		docs/archive/conf/distributions
 	for i in Label Codename Architectures Components Description \
 		SignWith ; \
 	do echo $$i: `git config --local --get distributions.$$i` >> \
-		web/archive/conf/distributions ; \
+		docs/archive/conf/distributions ; \
 	done
