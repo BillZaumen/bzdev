@@ -37,4 +37,50 @@ package files that will be included. The debs.list can contain
 relative path names. Relative path names assume that the current
 working directory is this git directory.
 
+## Updating the Debian package repository.
 
+To add more classes, one can modify debs.list and run
+
+```
+make
+git status
+git add  [any new files, particularly in web/archive/pool]
+git commit -a
+git push
+```
+
+With the sequence above, any Debian packages previously added but
+not currently in `debs.list` will remain in the repository.
+
+To eliminate Debian packages not in `debs.list`, use
+
+```
+make rebuild
+git status
+git add  [any new files, particularly in web/archive/pool]
+git commit -a
+git push
+```
+
+While it should be obvious, naturally everything should be checked
+before using `git commit` and particularly `git push`.
+
+## Forking
+
+You can copy this git repository to create and manage a different
+Debian repository. If that is done, you should edit `README.md`
+and `web/index.md` so that `https://billzaumen.github.io/bzdev/` is
+replaced with the appropriate URL.  Similarly the file `web/BZDev.gpg`
+should be renamed and changed to contain the proper public key: it
+was created by running
+
+```
+gpg --export KEYID > web/BZDev.gpg
+```
+and a different name is appropriate.  Similarly  in `web/index.md`,
+BZDev.gpg and org.bzdev should be changed to something else.
+
+Finally, the strings `hirsute` and `contrib` should be changed in
+`web/index.md` to whatever values are appropriate (one names a
+Debian/Unbuntu release and the other names a repository component).
+Note that multiple components are allowed.

@@ -37,7 +37,6 @@
 # Using reprepro
 # http://blog.jonliv.es/blog/2011/04/26/creating-your-own-signed-apt-repository-and-debian-packages/
 
-#
 # Location of Debian files copied to this archive.
 # The file debs.list was not added to this git repository
 # because it is system dependent.
@@ -56,18 +55,18 @@ all: web/archive/conf/distributions $(DEBS)
 	rm -f $$j ; \
 	done
 
-#
 # Rebuild the archive so it contains only the packages listed
-# in debs.list
+# in debs.list. git rm is used to delete the unneeded files so
+# that we can commit and push the new version.
 #
-rebuild: clear all
-
-#
-# Remove the archive
-#
-clear:
+rebuild: 
 	rm -f web/archive/conf/distributions
-	(cd web/archive; rm -rf db dists pool)
+	rm -fr web/archive/db
+	rm -fr web/archive/dists
+	rm -fr web/archvive/pool
+	$(MAKE) web/archive/conf/distributions
+	$(MAKE) all
+	echo use git '"commit -a"' to make changes permanent
 
 web/archive/conf/distributions:
 	mkdir -p web/archive/conf
@@ -78,4 +77,3 @@ web/archive/conf/distributions:
 	do echo $$i: `git config --local --get distributions.$$i` >> \
 		web/archive/conf/distributions ; \
 	done
-
