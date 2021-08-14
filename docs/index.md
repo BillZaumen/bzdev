@@ -26,14 +26,14 @@ There are three steps:
 First run the command
 
 ```
-sudo wget -O BZDev.gpg https://billzaumen.gethub.io/bzdev/BZDev.gpg
+sudo wget -O BZDev.gpg https://billzaumen.github.io/bzdev/BZDev.gpg
 ```
 
 to copy the GPG key used to sign files in the archive.  To verify that
 the correct key was downloaded, run
 
 ```
-gpg --show-keys /etc/apt/trusted.gpg.d/org.BZDev.gpg
+gpg --show-keys BZDev.gpg
 ```
 
 If this command prints a line containing
@@ -54,7 +54,7 @@ That program is being deprecated.
 Second, run the command
 
 ```
-sudo echo deb https://billzaumen.gethub.io/bzdev/archive/ \
+sudo echo deb https://billzaumen.github.io/bzdev/archive/ \
 hirsute contrib  > /etc/apt/sources.list.d/org.bzdev.BZDev.list
 ```
 
