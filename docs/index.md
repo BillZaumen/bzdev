@@ -21,7 +21,7 @@ claims).
 
 ## Configuring apt so it can use the BZDev Debian repository.
 
-There are three steps:
+There are a few steps, starting in an empty directory:
 
 First run the command
 
@@ -48,17 +48,21 @@ it is safe to continue by running the command
 sudo cp BZDev.gpg /etc/apt/trusted.gpg.d/org.bzdev.BZDev.gpg
 ```
 
-to install the key. Many web pages suggest using apt-key instead.
-That program is being deprecated.
+to install the key. Many web pages suggest using apt-key instead, but
+that program is being deprecated.
 
-Second, run the command
+Next, run the command
 
 ```
-sudo echo deb https://billzaumen.github.io/bzdev/archive/ \
-hirsute contrib  > /etc/apt/sources.list.d/org.bzdev.BZDev.list
+echo deb https://billzaumen.github.io/bzdev/archive/ hirsute contrib  > s.list
+```
+and then
+
+```
+sudo cp s.list /etc/apt/sources.list.d/org.bzdev.BZDev.list
 ```
 
-Finally run the command
+Finally,  run the command
 
 ```
 sudo apt update

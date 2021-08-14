@@ -36,7 +36,7 @@ needs. The Architectures entry for `https://billzaumen.github.io/bzdev/archive`
 is quite long because Java runs on a wide variety of systems:
 
 ```
-i385 amd64 Armel armhf arm64 mipsel mips64el ppc64el s390x
+i386 amd64 Armel armhf arm64 mipsel mips64el ppc64el s390x
 ```
 
 Finally, a file named `debs.list` has to be created. This should

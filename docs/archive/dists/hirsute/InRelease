@@ -4,14 +4,14 @@ Hash: SHA512
 Origin: billzaumen.github.io
 Label: apt repository
 Codename: hirsute
-Date: Sat, 14 Aug 2021 00:48:20 UTC
-Architectures: i385 amd64 Armel armhf arm64 mipsel mips64el ppc64el s390x
+Date: Sat, 14 Aug 2021 03:19:35 UTC
+Architectures: i386 amd64 Armel armhf arm64 mipsel mips64el ppc64el s390x
 Components: contrib
 Description: BZDev packages
 MD5Sum:
- b1042f1bde7865cd82df00fc1cb473a4 1658 contrib/binary-i385/Packages
- 74b1996fef247548f6b6728fa8036c08 924 contrib/binary-i385/Packages.gz
- 6e29a52dc9b34ca67d04a51f88c44a40 117 contrib/binary-i385/Release
+ b1042f1bde7865cd82df00fc1cb473a4 1658 contrib/binary-i386/Packages
+ 74b1996fef247548f6b6728fa8036c08 924 contrib/binary-i386/Packages.gz
+ 33f4cac96c112e70251faea01723d266 117 contrib/binary-i386/Release
  b1042f1bde7865cd82df00fc1cb473a4 1658 contrib/binary-amd64/Packages
  74b1996fef247548f6b6728fa8036c08 924 contrib/binary-amd64/Packages.gz
  46bf4ca61c6d0ce1a2a0b4e599637a2d 118 contrib/binary-amd64/Release
@@ -37,9 +37,9 @@ MD5Sum:
  74b1996fef247548f6b6728fa8036c08 924 contrib/binary-s390x/Packages.gz
  40018223fcccfa4138826db717e826e2 118 contrib/binary-s390x/Release
 SHA1:
- 58fd3feadd5a791646bbbc0af0b04d60f07f2641 1658 contrib/binary-i385/Packages
- e02edb744ddbc8d271ab7bfe85c5b0e7d4591274 924 contrib/binary-i385/Packages.gz
- 86a0319969d5a6f8ec57ca39cf4846eff3421239 117 contrib/binary-i385/Release
+ 58fd3feadd5a791646bbbc0af0b04d60f07f2641 1658 contrib/binary-i386/Packages
+ e02edb744ddbc8d271ab7bfe85c5b0e7d4591274 924 contrib/binary-i386/Packages.gz
+ e2ba451d7628b4cebbaa2054dee140de31f7c27f 117 contrib/binary-i386/Release
  58fd3feadd5a791646bbbc0af0b04d60f07f2641 1658 contrib/binary-amd64/Packages
  e02edb744ddbc8d271ab7bfe85c5b0e7d4591274 924 contrib/binary-amd64/Packages.gz
  940536ad95d9dc48d55995e060f887a6c0a2ef3b 118 contrib/binary-amd64/Release
@@ -65,9 +65,9 @@ SHA1:
  e02edb744ddbc8d271ab7bfe85c5b0e7d4591274 924 contrib/binary-s390x/Packages.gz
  a37e992bc632a33e8110d72f1032bf2faea14915 118 contrib/binary-s390x/Release
 SHA256:
- e06338521164d3ab186a17185d82c119b387ebdc126033cd84c95b27a2ac8eb9 1658 contrib/binary-i385/Packages
- e02763e8a377ee26171fab17fb46ed2af875cab2bd568b9e0e8f4884a5c0d8d5 924 contrib/binary-i385/Packages.gz
- 9aeb40b3a5edc71f83082e65467294323b03b977b3b98900d08e8a5bc2be4d69 117 contrib/binary-i385/Release
+ e06338521164d3ab186a17185d82c119b387ebdc126033cd84c95b27a2ac8eb9 1658 contrib/binary-i386/Packages
+ e02763e8a377ee26171fab17fb46ed2af875cab2bd568b9e0e8f4884a5c0d8d5 924 contrib/binary-i386/Packages.gz
+ d6b33abfeec297d36efcbf28ae1330cd83466d56869e5aee060493dbf4095f51 117 contrib/binary-i386/Release
  e06338521164d3ab186a17185d82c119b387ebdc126033cd84c95b27a2ac8eb9 1658 contrib/binary-amd64/Packages
  e02763e8a377ee26171fab17fb46ed2af875cab2bd568b9e0e8f4884a5c0d8d5 924 contrib/binary-amd64/Packages.gz
  dfd8416de6d645c6c9a7f41d77b354732cbf4377cbc1b595ab925da1cd0accb9 118 contrib/binary-amd64/Release
@@ -94,17 +94,17 @@ SHA256:
  c079fe0367568145e31dbde6bedda685bbc84a2d0e604d6ee5e379f7138d8663 118 contrib/binary-s390x/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEkXmfiT+OgIpjzRIOMLX1GvHXGUAFAmEXEtQACgkQMLX1GvHX
-GUDOFw//SPjpHn1dzowiaUxx1fIDUSlqe08R9Lg5iBF0G3N9ZGAd2n8ja9KCI7bv
-doIE9fEAnfqXyBqfwyd60hjWpr2IqEnnAjO3DSe3R/gX9sk2aVQFSUBrNDSwl1/v
-SFkR/zjMAfmMFPWjQqxV0tbvrtnRGhWBSNxFZKCH0qwVj22EuN4cgkuLtf/Z5ElJ
-NIuPcRgOZ1c5apCvArlqyRuOGsolyZ3mTSbjLKVe+TZHlc/KU15Oe/k7hyCfpOO6
-z7JPIh1D50+r++KAIMlIdwISXmEtmftHmEvbap/o5lCOw/6VXoWYSPyHWbY9y7Y3
-qovza9mEfbA/B0OwLHIEgCJRVUfQ76VAXlSM4kT1b6sR/TawLo8KNZ/u3hYa+0rn
-Is5IducWpQbHUEkOVCdD/L9uVebSEWNc0XYVXo5kVzm9Mu8o9Ya22nOdOOIPHtN9
-w+Wf/jjSAoljc25pBYt5RQybYZFepHIvt0s8crrot+dwPuXkrOgYhZmxZsTUQNgR
-pqWWOZjinLn83hUYboCrK80GIQt4EIQn0mPlx+QvgK0ejDyrwUM2BKjll9e00Ysf
-VkMLKFpQSB/RDwbDExUwxKv2V6sinzv+JrHREu4LwzJx5PuVYPVGinsKVn5Ya/ZR
-ordBjtkqK93xjm6hiQ0oX9Pf4CJzrMbUMfg9RAwlBNlb4bZ03f8=
-=Liqy
+iQIzBAEBCgAdFiEEkXmfiT+OgIpjzRIOMLX1GvHXGUAFAmEXNkgACgkQMLX1GvHX
+GUA+gQ/7BlZVsxPdbuvXVo3HmdABK4qFeAqzMYI68YqUBobMrFbXaA8nIDkYgqGI
+s/KKQ7MNA7KwGUUFU83+JPmsymygHZR1eIg8a//UGanTUSY2XssnFvcHRqNwLIAE
+MpojtcuHlsmjUMVPkjySxetU1xdAAFf0zQu6B7aIy4JiWej3rZPSCcNM5FV4n12N
+3yVOZDeIrEIbucuCFoixablnn+a1xNuMSSEietAMLuthlRolmJ+SGJueZldUTWZE
+11xdRDvNvsejdrI/Xp5H0omezwQ8rnpVUCMLqNPdJLjV7uNb828UHY4phJ2nJ1M/
+conhmHUD6Q1v2phRvGUU44PZQijfIWc/puIQ6/ye2frP2Gy21xrNGRBRgL79DLrM
+SuOqO3jVpkkzTR6Oc6mDL+RCz/UQjoG+myHzIEUiaaKzHCuBYGFoYkU54gaX4Adq
+cPMWxF/xXTxWz3Zln4FxfX7AfKQRT4NzFLmy+tZpl7U8LpK/SobYBYJMl0A/Phgl
+nn67soLwnXZ37yT56RRka0+j9qTXW0AqSllRNGjaH4Dd/ayfHstnNqiu/cuU2dd0
+y7O59SbxQvxw2eC9Fmr95rfjRZs+6mcSd7OtS+jNIT0tqVXy6lZOTdB5TWkdrxrs
+9ucH27aqLJSGIFvN+LMWY6WgAQxA+GLZwHmqz2duKtCknSDmNmE=
+=g6sY
 -----END PGP SIGNATURE-----
