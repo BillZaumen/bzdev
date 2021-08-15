@@ -6,22 +6,38 @@ repository is set up to support a large number of architectures:
 i385, amd64, Armel, armhf, arm64, mipsel, mips64el, ppc64el, and  s390x
 because the packages are not system dependent.
 
+There is a "one liner" for activating this repository:
+
+```
+wget -O - https://billzaumen.github.io/bzdev/setup.sh | sh
+```
+
+This will create two files in subdirectories of `/etc/apt/`.
+
+  - `/etc/apt/sources.list.d/org.bzdev.BZDev.list`
+  - `/etc/apt/trusted.gpg.d/org.bzdev.BZDev.gpg`
+
+For those not comfortable running code they have not inspected, the
+individual steps (there are only a few) are provided below, and each
+can be run separately.
+
 ## Setting up apt so that it can use HTTPS
 
-GitHub's web servers always use https.  To ensure that `apt` can handle
+GitHub's web servers always use HTTPS.  To ensure that `apt` can handle
 this protocol for older versions of apt, run the command
 
 ```
 apt-get install apt-transport-https
 ```
 
-This is not necessary after apt version 1.5: recent versions of apt
-provide HTTPS support by default (at least that is what the documentation
-claims).
+This should not be necessary after apt version 1.5: recent versions of apt
+provide HTTPS support by default.
 
 ## Configuring apt so it can use the BZDev Debian repository.
 
-There are a few steps, starting in an empty directory:
+If the "one liner" was not used, the repository can be enabled by
+executing the following steps.  These steps should be performed in an
+empty directory.
 
 First run the command
 
@@ -30,7 +46,7 @@ wget -O BZDev.gpg https://billzaumen.github.io/bzdev/BZDev.gpg
 ```
 
 to copy the GPG key used to sign files in the archive.  To verify that
-the correct key was downloaded, run
+the correct key was downloaded, one can run
 
 ```
 gpg --show-keys BZDev.gpg
@@ -42,7 +58,7 @@ If this command prints a line containing
 91799F893F8E808A63CD120E30B5F51AF1D71940
 ```
 
-it is safe to continue by running the command
+the correct key was downloaded.  To continue, run the command
 
 ```
 sudo cp BZDev.gpg /etc/apt/trusted.gpg.d/org.bzdev.BZDev.gpg
@@ -56,6 +72,7 @@ Next, run the command
 ```
 echo deb https://billzaumen.github.io/bzdev/archive/ hirsute contrib  > s.list
 ```
+
 and then
 
 ```
@@ -69,6 +86,4 @@ sudo apt update
 ```
 
 At this point, the archive will be available for use by `apt` (and other
-package managers).
-
-
+package managers for Debian repositories).
