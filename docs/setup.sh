@@ -11,5 +11,6 @@ trap '' INT QUIT
   sudo apt update && echo OK ) || echo FAILED
 rm -f BZDev.gpg
 rm -f s.list
+sudo -k
 cd ..
 [ -d $tmp ] && rmdir $tmp

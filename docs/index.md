@@ -9,7 +9,7 @@ because the packages are not system dependent.
 There is a "one liner" for activating this repository:
 
 ```
-wget -O - https://billzaumen.github.io/bzdev/setup.sh | sh
+wget -q -O - https://billzaumen.github.io/bzdev/setup.sh | sh
 ```
 
 This will create two files in subdirectories of `/etc/apt/`.
