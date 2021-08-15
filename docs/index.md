@@ -42,7 +42,7 @@ empty directory.
 First run the command
 
 ```
-wget -O BZDev.gpg https://billzaumen.github.io/bzdev/BZDev.gpg
+wget -q -O BZDev.gpg https://billzaumen.github.io/bzdev/BZDev.gpg
 ```
 
 to copy the GPG key used to sign files in the archive.  To verify that
