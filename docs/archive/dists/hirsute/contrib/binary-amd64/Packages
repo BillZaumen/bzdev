@@ -22,18 +22,18 @@ Description: Utility that processes QR codes and  shc URIs
  fully vaccinated and that the signature was valid.
 
 Package: libbzdev-java
-Version: 1.3.7
+Version: 1.3.8
 Architecture: all
 Recommends: libbzdev-util, libbzdev-misc
 Suggests: libbzdev-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/java
-Filename: pool/contrib/libb/libbzdev-java/libbzdev-java_1.3.7_all.deb
-Size: 3336668
-SHA256: 101c3c1baf6fa5e5da1954237263df641db04dce3861ce29d5dd7e6df941b83b
-SHA1: fa9689e167645e9aadc3822f42e28bb41eae88b3
-MD5sum: 86b4e4fad783668d0260ec2680a8f309
+Filename: pool/contrib/libb/libbzdev-java/libbzdev-java_1.3.8_all.deb
+Size: 3346008
+SHA256: a77ea59525eeff53c0802537c411eff170fc20c2a6fc00d1e8f2a57d36a2733d
+SHA1: a68d0d4b9bd5c620c8ae192467f71a3b5a47988d
+MD5sum: d29e0b1a99361eabb4e4d1ae336a8bfb
 Description: Java class library containing general-purpose classes.
  See the documentation for further details.
 
