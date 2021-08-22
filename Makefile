@@ -77,3 +77,16 @@ docs/archive/conf/distributions:
 	do echo $$i: `git config --local --get distributions.$$i` >> \
 		docs/archive/conf/distributions ; \
 	done
+
+#
+# check that the links in DEBS are valid.
+#
+check-list:
+	for i in $(DEBS) ; do \
+		if [ -f $$i ] ; then \
+		  echo ... $$i OK; \
+		else \
+		   echo *** $$i FAILED; \
+		   exit 1; \
+		fi ; \
+	done

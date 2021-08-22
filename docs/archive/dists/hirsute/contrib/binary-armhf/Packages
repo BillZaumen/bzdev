@@ -21,6 +21,36 @@ Description: Utility that processes QR codes and  shc URIs
  values indicating that the owner of the record has been
  fully vaccinated and that the signature was valid.
 
+Package: evdisk
+Version: 1.12.0
+Architecture: all
+Depends: cryptsetup-bin (>= 2:2.1.0), mount (>= 2.33.1), gpg (>= 2.2.12), gpgconf (>= 2.2.12), sudo (>=1.8.27), util-linux (>= 2.33.1), coreutils (>= 8.30), default-jdk, mlocate (>= 0.26), psmisc (>= 23.2)
+Recommends: exfat-fuse, exfat-utils
+Maintainer: Bill Zaumen <bill.zaumen+software@gmail.com>
+Priority: optional
+Section: contrib/admin
+Filename: pool/contrib/e/evdisk/evdisk_1.12.0_all.deb
+Size: 82712
+SHA256: a57e9f3326706bdd3ffb9edb210669889dbabf4c74a60874a93f2c172aa6d8df
+SHA1: 851749a5299eafa0ea458c5ca1012c05a2e50f90
+MD5sum: dbbf9b3244f13f007bc536834d820e7a
+Description:Utility that provides an encrypted virtual disk
+ containing an ext4 file system. This virtual disk is
+ represented by a target directory containing three files:
+ the file key.gpg, which contains a GPG encrypted LUKS key,
+ the file encrypted, which contains the encrypted file
+ system, and a directory named root, which serves as a
+ mount point. Typically the target directory will be on
+ a flash drive. For virtual file systems whose encrypted
+ file would exceed the limits set by a FAT32 or VFAT file
+ system, a flash drive should contain an ext4 or an exfat
+ files ystem, neither of which hava a 4 Gbyte limit on file
+ sizes. The evdisk program is intended for cases in
+ which a virtual file system is mounted temporarily
+ (e.g., to provide an encrypted backup that can be
+ safely carried around because reading the key requires
+ the right GPG keyring, which is stored separately).
+
 Package: libbzdev-java
 Version: 1.3.8
 Architecture: all
