@@ -1,3 +1,19 @@
+Package: bzdev-wallpapers
+Version: 1.0.0
+Architecture: all
+Provides: ubuntu-wallpapers
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: x11
+Filename: pool/contrib/b/bzdev-wallpapers/bzdev-wallpapers_1.0.0_all.deb
+Size: 33684
+SHA256: d00d825289946345ae40b506ad963cb10b827193556a64ee9ba388216294c575
+SHA1: d00ca364e4bf9a3546481ad98d8a02931700c169
+MD5sum: 507206f5b108322c5640813f9ab964c8
+Description: Wallpaper images.
+ A small collection of wallpapers based on the space-filling Hilbert
+ curve.
+
 Package: cvrdecode
 Version: 1.0
 Architecture: all
