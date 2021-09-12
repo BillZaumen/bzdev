@@ -140,3 +140,25 @@ Description: Utility programs for the libbzdev-java package
  org.bzdev.scripting.ScriptingContext.  These subclasses
  include several simulation classes.
 
+Package: libosgbatik-java
+Version: 0.3.0
+Architecture: all
+Depends: libbzdev-java (>= 1.2.34)
+Recommends: libbzdev-util
+Maintainer: Bill Zaumen <bzdev.org@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libo/libosgbatik-java/libosgbatik-java_0.3.0_all.deb
+Size: 1193316
+SHA256: c909f4e3b130edc16e23c17d61e41d6b37edf6492b9e87fa0ab1c493343cfb95
+SHA1: de6f40a4b07faeb83b8b02d684044d920894be60
+MD5sum: c18dcfbb2ededaef57a79c79aea25ff7
+Description: Service-provider package for SVG output stream graphics using
+ the Apache Batik code. Because of some technical issues with how the
+ Batik jar files are structured, this package contains copies of enough
+ of the Batik classes to operate as a stand-alone package, restricted to
+ graphics output. The Batik class files will be eliminated once Batik
+ is updated so that the Batik jar files are consistent with Java modules
+ (the issues were classes that duplicated JDK functionality and packages
+ that were split across multiple JAR files).
+
