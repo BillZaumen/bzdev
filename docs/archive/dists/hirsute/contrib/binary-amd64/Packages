@@ -37,6 +37,52 @@ Description: Utility that processes QR codes and  shc URIs
  values indicating that the owner of the record has been
  fully vaccinated and that the signature was valid.
 
+Package: epts
+Version: 0.1.18
+Architecture: all
+Depends: default-jre, bash (>= 3.2), libbzdev-java (>= 1.2.178)
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/graphics
+Filename: pool/contrib/e/epts/epts_0.1.18_all.deb
+Size: 1530464
+SHA256: 64a0c027f28646bbbf2952651bdcc684de15e14b5c3c2bff674dae55284f8eb0
+SHA1: 0a03c067e48406248ecfef72a2b833eaece25767
+MD5sum: e85655acbb4ecf467ac4f452b4af2d79
+Description: Graphics editor for creating  points, and paths.
+ The paths consist of segments that can be straight-line
+ segments, quadratic or cubic Bezier curves, or splines that
+ are implemented as sequences of cubic Bezier curves such that
+ the first and second derivatives are continuous functions. The
+ paths can be open or closed. Curves can be drawn over an image
+ used for reference, with the output values scaled. This editor
+ can also measure distances between two points. Several output
+ formats are available, one as a set of ECMAScript statements
+ that can be used with the org.bzdev.anim2d package and other
+ packages based on that package.
+
+Package: epts-pop-icons
+Version: 0.1.18
+Architecture: all
+Depends: pop-icon-theme
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/e/epts-pop-icons/epts-pop-icons_0.1.18_all.deb
+Size: 178188
+SHA256: 86bf9ff4a4631b8ee7fa83b1e904696fb22ed4a9c56b07b18956c1d6d7e16ff2
+SHA1: 0510ef8cceef7e4a1478bf5689e29c14cd1f7940
+MD5sum: 21f6e878293bc10a80ab525b6bd0d84f
+Description: Gnome support for EPTS icons for Pop OS.
+ This package provides the icons for various mime types
+ specific to EPTS. The GUI for Pop OS does not find
+ icons in /usr/share/icons/hicolor, so for that case the
+ icons have to be in /usr/share/icons/Pop. This installion
+ will fail if the icons are already installed and owned by
+ a different package.  The dependency on pop-icon-theme is
+ intended to prevent this package from being installed on
+ systems that do not use the Pop OS icons.
+
 Package: evdisk
 Version: 1.12.0
 Architecture: all
@@ -66,6 +112,36 @@ Description:Utility that provides an encrypted virtual disk
  (e.g., to provide an encrypted backup that can be
  safely carried around because reading the key requires
  the right GPG keyring, which is stored separately).
+
+Package: libbikeshr-doc
+Version: 1.4.4
+Architecture: all
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/libb/libbikeshr-doc/libbikeshr-doc_1.4.4_all.deb
+Size: 492508
+SHA256: 25fa15f68e078d24f1480db17d584fa50436dbc832dfdb6a2c5b08c56dfd120b
+SHA1: 63491a0e73399d9285964218e89bc0b87ca0c678
+MD5sum: dd39069c4e42ef00026426bcdd17ab3c
+Description: API Documentation for the libbikeshr-java package
+ The documentation is in javadoc format.
+
+Package: libbikeshr-java
+Version: 1.4.4
+Architecture: all
+Depends: libbzdev-java (>= 1.3.5)
+Recommends: libbzdev-util
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libb/libbikeshr-java/libbikeshr-java_1.4.4_all.deb
+Size: 222156
+SHA256: 42f4577d96f507d8ac6a1eb06eed2602722f600626d5b60e4039ab2f2a159d49
+SHA1: d8ae4dc55fb23f80fa63d1c49797cb860169fea3
+MD5sum: 2e0f6cf0659847bbaa32436e2484f135
+Description: Java class library for a simulation of a
+ bike-sharing system. See the documentation for further details.
 
 Package: libbzdev-java
 Version: 1.3.9
@@ -161,4 +237,78 @@ Description: Service-provider package for SVG output stream graphics using
  is updated so that the Batik jar files are consistent with Java modules
  (the issues were classes that duplicated JDK functionality and packages
  that were split across multiple JAR files).
+
+Package: librdanim-doc
+Version: 1.4.3
+Architecture: all
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/libr/librdanim-doc/librdanim-doc_1.4.3_all.deb
+Size: 271824
+SHA256: 83cc04058fecbf5fa2c370944d2954f8ff1d18711c78f4c5878663529f72acd2
+SHA1: 7de2e8ef76f17ea8e7f51151454d20b29e32c43c
+MD5sum: e73784aa70e5d64136d858f8f79e23b5
+Description: API Documentation for the librdanim-java package
+ The documentation is in javadoc format.
+
+Package: librdanim-java
+Version: 1.4.3
+Architecture: all
+Depends: libbzdev-java (>= 1.2.153)
+Recommends: libbzdev-util
+Maintainer: Bill Zaumen <bzdev.org@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libr/librdanim-java/librdanim-java_1.4.3_all.deb
+Size: 145552
+SHA256: 73a24685d0b0e24bccece6984fc1124c29b4bf9f01830375076e85c7d38ce708
+SHA1: 876357a1cdc7720eadc5c08d403180a48df75e53
+MD5sum: e69e6d57bcdc9dc43a6bf09540fa4aa3
+Description: Java class library for animations of vehicles, bicycles,
+ and pedestrians. See the documentation for further details
+
+Package: webnail
+Version: 1.2.1
+Architecture: all
+Depends: default-jre, bash (>= 3.2), libbzdev-java (>= 0.132.94)
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/graphics
+Filename: pool/contrib/w/webnail/webnail_1.2.1_all.deb
+Size: 1081740
+SHA256: 7d7d1322a01d05f72aec01a5e9e7e0e6f9c685a01b11c91901c8c1b25c0041a3
+SHA1: 7a44e54d2f3f8129e3970f5a817ff217111e7ccf
+MD5sum: 284c20b4200bc7fdb8c2a999437af902
+Description: Program that scales images to fit in a bounding box.
+ The program, named webnail, can create a web page to display these
+ images. A selection of layout styles is available. The default creates
+ a vertical list of images that can be scrolled or selected to display
+ an image at a larger size. A slideshow mode allows the images to be
+ viewed in (nearly) full-screen window. Users can add HTML elements
+ in the document head and before or after the images, with support
+ for javascript. For simple cases, the webnail program will simply
+ create a zip file or directory containing the scaled images.
+
+Package: webnail-pop-icons
+Version: 1.2.1
+Architecture: all
+Depends: pop-icon-theme
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/w/webnail-pop-icons/webnail-pop-icons_1.2.1_all.deb
+Size: 80084
+SHA256: 19eeed1842751b94e120bee694a23e354816e3df9cc40ee1a76c1e56c118a6ab
+SHA1: eaccb5c078feae1e93fc4b189624958337f7af7e
+MD5sum: d0870fabd532e8cd225d0e9376e76020
+Description: Gnome support for webnail icons for Pop OS.
+ This package provides the icons for various mime types
+ specific to webnail. The GUI for Pop OS does not find
+ icons in /usr/share/icons/hicolor, so for that case the
+ icons have to be in /usr/share/icons/Pop. This installion
+ will fail if the icons are already installed and owned by
+ a different package.  The dependency on pop-icon-theme is
+ intended to prevent this package from being installed on
+ systems that do not use the Pop OS icons.
 
