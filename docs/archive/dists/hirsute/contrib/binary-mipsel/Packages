@@ -113,6 +113,25 @@ Description:Utility that provides an encrypted virtual disk
  safely carried around because reading the key requires
  the right GPG keyring, which is stored separately).
 
+Package: geth
+Version: 0.4
+Architecture: all
+Depends: dash, default-jdk
+Maintainer: Bill Zaumen <bill.zaumen+software@gmail.com>
+Priority: optional
+Section: contrib/web
+Filename: pool/contrib/g/geth/geth_0.4_all.deb
+Size: 198820
+SHA256: 9e88122885b0a18377bfaee788ba66e567dd4e5e880fb8217dca67b439b0e4da
+SHA1: d73da40da15ecf0f17e9e25c782d45aa5f5970ea
+MD5sum: 4287e56d34bfe90b1b062b80cbe85bbc
+Description: Utility that sends an HTTP request and
+ records the response, including all headers and all
+ HTTP redirects. For various text-based formats, the
+ resource provided by the web server can be printed as
+ well. This utility is intended for debugging HTTP/HTTPS
+ servers.
+
 Package: libbikeshr-doc
 Version: 1.4.4
 Architecture: all
