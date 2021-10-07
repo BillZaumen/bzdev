@@ -55,6 +55,12 @@ all: docs/archive/conf/distributions $(DEBS)
 	rm -f $$j ; \
 	done
 
+listdebs:
+	for i in $(DEBS); do \
+	j=`basename $$i` ; \
+	echo $$j ; \
+	done
+
 # Rebuild the archive so it contains only the packages listed
 # in debs.list. git rm is used to delete the unneeded files so
 # that we can commit and push the new version.
@@ -63,10 +69,10 @@ rebuild:
 	rm -f docs/archive/conf/distributions
 	rm -fr docs/archive/db
 	rm -fr docs/archive/dists
-	rm -fr docs/archvive/pool
+	rm -fr docs/archive/pool
 	$(MAKE) docs/archive/conf/distributions
 	$(MAKE) all
-	echo use git '"commit -a"' to make changes permanent
+	echo use '"git commit -a"' to make changes permanent
 
 docs/archive/conf/distributions:
 	mkdir -p docs/archive/conf

@@ -163,49 +163,49 @@ Description: Java class library for a simulation of a
  bike-sharing system. See the documentation for further details.
 
 Package: libbzdev-java
-Version: 1.3.9
+Version: 1.3.10
 Architecture: all
 Recommends: libbzdev-util, libbzdev-misc
 Suggests: libbzdev-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/java
-Filename: pool/contrib/libb/libbzdev-java/libbzdev-java_1.3.9_all.deb
-Size: 3346596
-SHA256: c147bdaf37d180e19ea37c85097f72ed4e0762ab23549f38e9ba173e7663d09f
-SHA1: 2a011f87bb2855f913d50a1defb824c9a9dfef6f
-MD5sum: 1b0f2d59904fcc5ff6f4a9251355efc1
+Filename: pool/contrib/libb/libbzdev-java/libbzdev-java_1.3.10_all.deb
+Size: 3353048
+SHA256: 81a7797ded991429a9ec6dac4e255570bedad8d28ad7e0cade245a797506a575
+SHA1: d5e04dfe32bf5d86c3d6e2d1d4f95aa23a02dd7e
+MD5sum: febd381c379588ac33e4c4c1d63e6460
 Description: Java class library containing general-purpose classes.
  See the documentation for further details.
 
 Package: libbzdev-misc
-Version: 1.3.9
+Version: 1.3.10
 Architecture: all
 Depends: shared-mime-info, libgtk2.0-bin
 Suggests: libbzdev-java, libbzdev-util
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/misc
-Filename: pool/contrib/libb/libbzdev-misc/libbzdev-misc_1.3.9_all.deb
-Size: 76192
-SHA256: 36088f08bc1e33c93096a7eeec8f25d7eea5c0fc34a92a3a1c2c534a94d2a2cd
-SHA1: 1d7a42b9a89339341fe920c7415cf70fc3272e97
-MD5sum: aca057f5844ba63a82c505b9d0420c33
+Filename: pool/contrib/libb/libbzdev-misc/libbzdev-misc_1.3.10_all.deb
+Size: 76212
+SHA256: b17dc992081ebc48b6f0a8eb36f55fcdae188d436389dc7967d0c0cc1c7f6641
+SHA1: f843887fb01a7e0995a95181cfa335d5d3b17ee8
+MD5sum: 04163e99c3e29e90ccefdb6e76e6e930
 Description: Media types and icons for data formats.
  The types and icons are designed for the libbzdev package.
 
 Package: libbzdev-pop-icons
-Version: 1.3.9
+Version: 1.3.10
 Architecture: all
 Depends: pop-icon-theme
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/misc
-Filename: pool/contrib/libb/libbzdev-pop-icons/libbzdev-pop-icons_1.3.9_all.deb
-Size: 38556
-SHA256: d2ba4c7fb60b33ac2ea84e96802a31868f196dc888224807078aa74c5777e697
-SHA1: a39b027aede71abde594a1dc056422d9023b74d8
-MD5sum: a9608075a5eefe3752a95c81855fbb9f
+Filename: pool/contrib/libb/libbzdev-pop-icons/libbzdev-pop-icons_1.3.10_all.deb
+Size: 38564
+SHA256: 0f5e27ec8f1ba6fbb6d361bbeceba7f9f3dfc1542fdae61a1023e080c578be62
+SHA1: 52974b16c80c2b765be128a87d14dadbbcc7fe3d
+MD5sum: 4743bc3870d4e58f9e78070b8f21bc22
 Description: Pop-OS media types and icons for data formats.
  This package puts copies of the libbzdev media-type icons
  into subdirectories of /usr/share/icons/Pop. These are the
@@ -214,17 +214,17 @@ Description: Pop-OS media types and icons for data formats.
  directory.
 
 Package: libbzdev-util
-Version: 1.3.9
+Version: 1.3.10
 Architecture: all
 Depends: libbzdev-java (>= 1.2.151)
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/utils
-Filename: pool/contrib/libb/libbzdev-util/libbzdev-util_1.3.9_all.deb
-Size: 104136
-SHA256: e85a1faf07ef81524688196b97e577975291f6f27fefa769b7a6fb393d2b6aae
-SHA1: 270c35b7a1194da23512869503943e025c91e19a
-MD5sum: 7a5e697b8b4b855bca08914a38d84b68
+Filename: pool/contrib/libb/libbzdev-util/libbzdev-util_1.3.10_all.deb
+Size: 104144
+SHA256: 7034ce750dc4af047c0bec4db5b544d4867ecc82313ae8d8fa71e3d0cc57dca6
+SHA1: 7fd1ee17f982f31e052502eedf4d6f9d7788f7d9
+MD5sum: 67c5a8e71f83790a10ea9f2cee4536c5
 Description: Utility programs for the libbzdev-java package
  This package contains the programs lsnof and scrunner,
  and man pages for both. These programs use a configuration
