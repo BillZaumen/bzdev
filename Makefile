@@ -96,3 +96,9 @@ check-list:
 		   exit 1; \
 		fi ; \
 	done
+
+#
+# Add new debian packages (finish after the next try)
+#
+add:
+	git status | grep ".deb" | grep -v ":" || echo -n
