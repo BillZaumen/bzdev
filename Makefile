@@ -101,4 +101,6 @@ check-list:
 # Add new debian packages (finish after the next try)
 #
 add:
-	git status | grep ".deb" | grep -v ":" || echo -n
+	for i in `git status | grep ".deb" | grep -v ":" || echo -n` ; \
+	do git add $$i ; done
+
