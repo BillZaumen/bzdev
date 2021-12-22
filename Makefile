@@ -72,7 +72,8 @@ rebuild:
 	rm -fr docs/archive/pool
 	$(MAKE) docs/archive/conf/distributions
 	$(MAKE) all
-	echo use '"git commit -a"' to make changes permanent
+	echo run '"make add"' to add any new files
+	echo run '"git commit -a --gpg-sign=..."' to make changes permanent
 
 docs/archive/conf/distributions:
 	mkdir -p docs/archive/conf
