@@ -123,3 +123,10 @@ add:
 	    [ "`git status | grep $$j`" = "$$j" ] && git add $$i ; \
 	done
 
+add-test:
+	for i in `git status | grep ".deb" | grep -v ":" || echo -n` ; \
+	do echo git add $$i ; done
+	for i in `git config --local --get-all distributions.codenames` ; \
+	do  j="docs/archive/dists/$$i" ; \
+	    [ "`git status | grep $$j`" = "$$j" ] && echo git add $$i ; \
+	done
