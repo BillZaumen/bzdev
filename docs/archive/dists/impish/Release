@@ -1,9 +1,6 @@
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA512
-
 Origin: billzaumen.github.io
 Label: apt repository
-Codename: hirsute
+Codename: impish
 Date: Sun, 26 Dec 2021 18:43:55 UTC
 Architectures: i386 amd64 Armel armhf arm64 mipsel mips64el ppc64el s390x
 Components: contrib
@@ -92,19 +89,3 @@ SHA256:
  93272a00206f1619d92fee8246abc2c677a65c22072f1784214301c174819244 26457 contrib/binary-s390x/Packages
  57bb6541becaa48930ab0d0670fb03a582a7b350f3e019ca6978d4371452d133 8016 contrib/binary-s390x/Packages.gz
  c079fe0367568145e31dbde6bedda685bbc84a2d0e604d6ee5e379f7138d8663 118 contrib/binary-s390x/Release
------BEGIN PGP SIGNATURE-----
-
-iQIzBAEBCgAdFiEEkXmfiT+OgIpjzRIOMLX1GvHXGUAFAmHIt+sACgkQMLX1GvHX
-GUBQIRAAra7N7W5vS9qSmROR9rmNdcHActimJrPC3tT6gqwa2jIf3hgGKtexrBJp
-DSmqDrZS6GGSJ4yhCd/DQRKTmHD3zEud58DVgIoeh26JWGdrkcaDcYQ/zEiMf7uW
-UFuRSxd/pLw4SncgwRB41uq0JygVIqJmDCCWz3CC8OAW/yBiOgnS3A7KnpZOcC9g
-htQkM9jvd5DeP5scAtAxH3XSlI2bI1wrE9B5F7HDKHxe9Dbx9at5mgw2W0mQfNgE
-6JXnrLWaeSazItwkFvKuohSg0a7/yRgeZNVL9qf92wMZhxAvTZmDWobt3tJjeWMG
-yKNOmT3wDFzdFLJ0JXnQUDN6JFHDXZ1GXoynLF0fD+fZxguCc7kCcCi9JxSXyo4Y
-iTwz03H9GmiZMdVbxtNOyJ4Ko4uQTsqMiiDTQMlOAeqiZLMEJQfc4HZ0wBGurJCw
-++ADbCogVU8/f1cIevcG67B7yptCGR1dtWhwmL2SY6j36Zk8VYdnzr6pja1ukjIi
-Nnk7BtLSGQ5XSaUPlGfHh30Yk1yNvUruOYZDNT2QGSuevf8f1tbY6l7tLI4B0Dlb
-ktaOXyJWHOBG6+IwAs5OgX/P1jFQLTkvK94x5gOyAv4tf63F4ZsybFKHaXkolMV0
-TwYlLRtIbftfH3cID3ME/C/GIDmwAZF/aARtGJ07KUV2CDTM7iw=
-=8n/x
------END PGP SIGNATURE-----

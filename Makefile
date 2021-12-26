@@ -9,7 +9,8 @@
 #
 #	git config --local distributions.Origin billzaumen.gethub.io
 #       git config --local distributions.Label "apt repository"
-#       git config --local distributions.Codename hirsute
+#       git config --local distributions.Codenames hirsute
+#       git config --local --add distributions.Codenames impish
 #       git config --local distributions.Architectures "i386 amd64 ..."
 #       git config --local distributions.Components contrib
 #       git config --local distributions.Description "BZDev packages"
@@ -20,7 +21,8 @@
 # NOTE: users should not use the configuration above when creating a
 # different repository.  In particular, the 'SignWith' line must
 # specify a GPG key fingerprint for which there is a private key in
-# the user's keyring.
+# the user's keyring.  Distributions.Codenames have multiple names listed
+# because the Java packages are identical for multiple Debian releases.
 #
 # Users must set up the debs.list file so it contains ".deb" files to put
 # in the archive, one per line. After git was configured as described
@@ -51,7 +53,8 @@ all: docs/archive/conf/distributions $(DEBS)
 	for i in $(DEBS) ; do \
 	j=`basename $$i` ; \
 	ln -s $$i $$j ; \
-	reprepro -b docs/archive/ includedeb hirsute $$j ; \
+	for k in `git config --local --get-all distributions.codenames` ; \
+	do reprepro -b docs/archive/ includedeb $$k $$j ; done ; \
 	rm -f $$j ; \
 	done
 
@@ -75,15 +78,26 @@ rebuild:
 	@echo run '"make add"' to add any new files
 	@echo run '"git commit -a --gpg-sign=..."' to make changes permanent
 
+#
+# Need to use tail and head because the recursive make puts a line
+# at the start and a line at the end.
+# 
 docs/archive/conf/distributions:
 	mkdir -p docs/archive/conf
-	echo Origin: `git config --local --get distributions.origin` > \
+	make distributions | tail -n +2 | head -n -1 > \
 		docs/archive/conf/distributions
-	for i in Label Codename Architectures Components Description \
+
+distributions:
+	@for j in `git config --local --get-all distributions.codenames` ; \
+	do echo Origin: `git config --local --get distributions.origin` ; \
+	   echo Codename: $$j ; \
+	   for i in Label Architectures Components Description \
 		SignWith ; \
-	do echo $$i: `git config --local --get distributions.$$i` >> \
-		docs/archive/conf/distributions ; \
-	done
+	   do echo $$i: `git config --local --get distributions.$$i` ; \
+	   done ; \
+	   echo ; \
+	done | head -n -1
+
 
 #
 # check that the links in DEBS are valid.
@@ -104,4 +118,8 @@ check-list:
 add:
 	for i in `git status | grep ".deb" | grep -v ":" || echo -n` ; \
 	do git add $$i ; done
+	for i in `git config --local --get-all distributions.codenames` ; \
+	do  j="docs/archive/dists/$$i" ; \
+	    [ "`git status | grep $$j`" = "$$j" ] && git add $$i ; \
+	done
 
