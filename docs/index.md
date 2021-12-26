@@ -71,6 +71,7 @@ Next, run the command
 
 ```
 echo deb https://billzaumen.github.io/bzdev/archive/ hirsute contrib  > s.list
+echo deb https://billzaumen.github.io/bzdev/archive/ impish contrib  > s.list
 ```
 
 and then
