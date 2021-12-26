@@ -84,18 +84,18 @@ Description: Gnome support for EPTS icons for Pop OS.
  systems that do not use the Pop OS icons.
 
 Package: evdisk
-Version: 1.12.0
+Version: 1.13.0
 Architecture: all
 Depends: cryptsetup-bin (>= 2:2.1.0), mount (>= 2.33.1), gpg (>= 2.2.12), gpgconf (>= 2.2.12), sudo (>=1.8.27), util-linux (>= 2.33.1), coreutils (>= 8.30), default-jdk, mlocate (>= 0.26), psmisc (>= 23.2)
 Recommends: exfat-fuse, exfat-utils
 Maintainer: Bill Zaumen <bill.zaumen+software@gmail.com>
 Priority: optional
 Section: contrib/admin
-Filename: pool/contrib/e/evdisk/evdisk_1.12.0_all.deb
-Size: 82712
-SHA256: a57e9f3326706bdd3ffb9edb210669889dbabf4c74a60874a93f2c172aa6d8df
-SHA1: 851749a5299eafa0ea458c5ca1012c05a2e50f90
-MD5sum: dbbf9b3244f13f007bc536834d820e7a
+Filename: pool/contrib/e/evdisk/evdisk_1.13.0_all.deb
+Size: 83256
+SHA256: ddcbb59c77e8f3c9ab7d345336e230c447841b0f8c3bc6e541ef084aa686ac28
+SHA1: 982b3136b6b6926498268a801811f610cac830a9
+MD5sum: 5e923fa74e1e3fa44a73434a0da0f7fd
 Description:Utility that provides an encrypted virtual disk
  containing an ext4 file system. This virtual disk is
  represented by a target directory containing three files:
@@ -114,17 +114,17 @@ Description:Utility that provides an encrypted virtual disk
  the right GPG keyring, which is stored separately).
 
 Package: geth
-Version: 0.5
+Version: 0.6
 Architecture: all
-Depends: dash, default-jdk
+Depends: dash, default-jdk, libbzdev-base-java (>= 1.3.37), ligbbzdev-desktop (>=1.3.37)
 Maintainer: Bill Zaumen <bill.zaumen+software@gmail.com>
 Priority: optional
 Section: contrib/web
-Filename: pool/contrib/g/geth/geth_0.5_all.deb
-Size: 198744
-SHA256: 7bd9a43396bc5d980e1f93499374abdad4ec7433291b1b1e38a555272652ffb8
-SHA1: de0759d3fcbb09ed6bf898c5870f3620b9cd87b2
-MD5sum: ce5c866b98b21dbf99072440c9479048
+Filename: pool/contrib/g/geth/geth_0.6_all.deb
+Size: 81882
+SHA256: 0905fc85803543a506917528a333b1c4c5059c5e9cd5fcec86004d2a9316f201
+SHA1: 606237e764111d84cd66f0bd78eb125df9223bff
+MD5sum: 69d6b3f0d33d42b537ac18cb2e4f9332
 Description: Utility that sends an HTTP request and
  records the response, including all headers and all
  HTTP redirects. For various text-based formats, the
@@ -570,17 +570,17 @@ Description: Java class library for animations of vehicles, bicycles,
  and pedestrians. See the documentation for further details
 
 Package: webnail
-Version: 1.2.1
+Version: 1.2.3
 Architecture: all
 Depends: default-jre, bash (>= 3.2), libbzdev-java (>= 0.132.94)
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/graphics
-Filename: pool/contrib/w/webnail/webnail_1.2.1_all.deb
-Size: 1081740
-SHA256: 7d7d1322a01d05f72aec01a5e9e7e0e6f9c685a01b11c91901c8c1b25c0041a3
-SHA1: 7a44e54d2f3f8129e3970f5a817ff217111e7ccf
-MD5sum: 284c20b4200bc7fdb8c2a999437af902
+Filename: pool/contrib/w/webnail/webnail_1.2.3_all.deb
+Size: 1079254
+SHA256: ef0f40de36e136a899ec645aa4263a3ca1624ac8dd1486f935e89317ee08b4f3
+SHA1: b7333b09c0b3045cdc063a57250e0bb0f048c7a3
+MD5sum: 028001c50cc07806d3f4fb43401002e0
 Description: Program that scales images to fit in a bounding box.
  The program, named webnail, can create a web page to display these
  images. A selection of layout styles is available. The default creates
@@ -592,17 +592,17 @@ Description: Program that scales images to fit in a bounding box.
  create a zip file or directory containing the scaled images.
 
 Package: webnail-pop-icons
-Version: 1.2.1
+Version: 1.2.3
 Architecture: all
 Depends: pop-icon-theme
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/doc
-Filename: pool/contrib/w/webnail-pop-icons/webnail-pop-icons_1.2.1_all.deb
-Size: 80084
-SHA256: 19eeed1842751b94e120bee694a23e354816e3df9cc40ee1a76c1e56c118a6ab
-SHA1: eaccb5c078feae1e93fc4b189624958337f7af7e
-MD5sum: d0870fabd532e8cd225d0e9376e76020
+Filename: pool/contrib/w/webnail-pop-icons/webnail-pop-icons_1.2.3_all.deb
+Size: 81094
+SHA256: a75d7c631a003731766beb8bd71e054479a39dd7dcd432d96e3346718eff8a74
+SHA1: 0f4b6ea14fbb5d9aae766f5ae5234f24d012e308
+MD5sum: 62ebd29affa44981a7ce1c6509afc35b
 Description: Gnome support for webnail icons for Pop OS.
  This package provides the icons for various mime types
  specific to webnail. The GUI for Pop OS does not find
