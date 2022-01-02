@@ -120,7 +120,7 @@ add:
 	do git add $$i ; done
 	for i in `git config --local --get-all distributions.codenames` ; \
 	do  j="docs/archive/dists/$$i" ; \
-	    [ "`git status | grep $$j`" = "$$j" ] && git add $$i ; \
+	    [ "`git status | grep $$j`" = "$$j" ] && git add $$i || echo -n ; \
 	done
 
 add-test:
@@ -128,5 +128,6 @@ add-test:
 	do echo git add $$i ; done
 	for i in `git config --local --get-all distributions.codenames` ; \
 	do  j="docs/archive/dists/$$i" ; \
-	    [ "`git status | grep $$j`" = "$$j" ] && echo git add $$i ; \
+	    [ "`git status | grep $$j`" = "$$j" ] && echo git add $$i  \
+		|| echo -n ; \
 	done

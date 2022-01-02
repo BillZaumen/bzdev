@@ -84,18 +84,18 @@ Description: Gnome support for EPTS icons for Pop OS.
  systems that do not use the Pop OS icons.
 
 Package: evdisk
-Version: 1.13.0
+Version: 1.13.1
 Architecture: all
 Depends: cryptsetup-bin (>= 2:2.1.0), mount (>= 2.33.1), gpg (>= 2.2.12), gpgconf (>= 2.2.12), sudo (>=1.8.27), util-linux (>= 2.33.1), coreutils (>= 8.30), default-jdk, mlocate (>= 0.26), psmisc (>= 23.2)
 Recommends: exfat-fuse, exfat-utils
 Maintainer: Bill Zaumen <bill.zaumen+software@gmail.com>
 Priority: optional
 Section: contrib/admin
-Filename: pool/contrib/e/evdisk/evdisk_1.13.0_all.deb
-Size: 83270
-SHA256: c37d4bf37b7d7a7e5fe31a5c0c62e292075d9de0721e6f0bc90a16c5db889759
-SHA1: 1eed3bfe0ea4f7991624bddfd127615f5f9d7660
-MD5sum: 1d0c66af55aa904e324f5c2b9d6f8861
+Filename: pool/contrib/e/evdisk/evdisk_1.13.1_all.deb
+Size: 83594
+SHA256: 12042ecd84ca6e64ce5bd92e4a607117353841a996cf874e8ec59e0616ba6ba7
+SHA1: 1b9a90c9a8c72d1f8476e567a24dd361e2f6f8a8
+MD5sum: 4c69858a6ee8bbf37828f442764eb8ad
 Description:Utility that provides an encrypted virtual disk
  containing an ext4 file system. This virtual disk is
  represented by a target directory containing three files:
