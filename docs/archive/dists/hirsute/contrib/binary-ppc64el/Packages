@@ -45,10 +45,10 @@ Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/graphics
 Filename: pool/contrib/e/epts/epts_0.1.32_all.deb
-Size: 1648860
-SHA256: dbcfc8a07012d0700a7a6e44fafb3ef1b2a57d57249a1692961727a9f2236d12
-SHA1: ab5063db3391c441720c8ca2300ab7d28b7579ec
-MD5sum: bc54aa412753a2c81863ae0f9a6cad5a
+Size: 1648822
+SHA256: a6b3d57389a314d5c3fb92e20d0ed9bd01129db679d40706176d543b15888247
+SHA1: 282322901e45802a14b3cc68d5aa768142737b18
+MD5sum: cb2f5d8c8e10cba95e93bf542bc1979e
 Description: Graphics editor for creating  points, and paths.
  The paths consist of segments that can be straight-line
  segments, quadratic or cubic Bezier curves, or splines that
@@ -121,10 +121,10 @@ Maintainer: Bill Zaumen <bill.zaumen+software@gmail.com>
 Priority: optional
 Section: contrib/web
 Filename: pool/contrib/g/geth/geth_1.0.1_all.deb
-Size: 111304
-SHA256: 5cc65d89bc5fb12ef91bddfb6e68e36d34a3c3cb0d747f02997808a099222e4a
-SHA1: 754c263db0c79b7384b55b8528890ef7cf001e38
-MD5sum: 5c20a23454687924a3ed839431743868
+Size: 111314
+SHA256: e028f3ca29b8e057448c9a602ce83a9e8d8fa07f5976da38494339eca421b467
+SHA1: 396ee4cc7830c2187d2bdfe1be58f2e0d3c3ff09
+MD5sum: 80aa2aecbcf8f198ceab1df6e9191ff9
 Description: Utility that sends an HTTP request and
  records the response, including all headers and all
  HTTP redirects. For various text-based formats, the
@@ -140,10 +140,10 @@ Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/doc
 Filename: pool/contrib/libb/libbikeshr-darkmode-doc/libbikeshr-darkmode-doc_1.4.6_all.deb
-Size: 570192
-SHA256: a52609568af9bff7f6ed2942050f028301170abe5c6404a9f57f5b5657cd0fce
-SHA1: 422050c9b4c5552d48290b95991cf7e88fb1532b
-MD5sum: eee739610d384371af1d0e98cb42c403
+Size: 574542
+SHA256: 51cbea751c68a5b83515af841add69e5323919ee2c7b43b8a90b35d8662e4eb9
+SHA1: 5692e8db06d4d53147850e39b1a298f3646e696b
+MD5sum: 47e78c1933293524f9d15fd88c0515cc
 Description: API Documentation for the libbikeshr-java package.
  The documentation is in javadoc format using a 'dark' style.
 
@@ -155,10 +155,10 @@ Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/doc
 Filename: pool/contrib/libb/libbikeshr-doc/libbikeshr-doc_1.4.6_all.deb
-Size: 572216
-SHA256: 1a694ebf1b27b458f9caf60a4c1cfefe44d55ffdc4442433ac54b41b76551467
-SHA1: 7146e21fcfa58251854c812a26c2efdf914a04b2
-MD5sum: 33b7f1997a2c1b876e3cebd881980eea
+Size: 576344
+SHA256: 84a9c3038dd9f7d8ac12e91cecec1d4a9c175190bc1e8f69cf4fe9a4aff4db87
+SHA1: f5b456b884ac860b42bd030a16927255782634c7
+MD5sum: a24f8b2070cebe2b846255201fcb6f9b
 Description: API Documentation for the libbikeshr-java package.
  The documentation is in javadoc format.
 
@@ -171,10 +171,10 @@ Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/java
 Filename: pool/contrib/libb/libbikeshr-java/libbikeshr-java_1.4.6_all.deb
-Size: 222304
-SHA256: aeb104d52205f75077573f04a8ab9ff79c99d4b3c429614acefd6378fb1305b7
-SHA1: b2bd58732d0e86a09488eec98767b0b1cea3cd17
-MD5sum: 7d1c58927bb5cbe7f11b139575781294
+Size: 221408
+SHA256: 1d59debcbf8d82fd40bf2b278d314a37caf295ff39e4a881a4f0ffd7b0d5334c
+SHA1: 660bc40481c25e9865c2df3980762dec588a29a0
+MD5sum: db7a14e28b8a534ccdcb86f587165fc0
 Description: Java class library for a simulation of a
  bike-sharing system. See the documentation for further details.
 
@@ -402,10 +402,10 @@ Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/misc
 Filename: pool/contrib/libb/libbzdev-misc/libbzdev-misc_1.3.39_all.deb
-Size: 77942
-SHA256: f220e62e0e40374a2b7e6d861aad92d1a5e7120a96f1fef37de1de5a61b5e296
-SHA1: a24ab9ba3408c2066fffc6a9f25442c8d3d7f062
-MD5sum: 6a889543750947a648fb897f16b33bfc
+Size: 77926
+SHA256: 07f6333513d1610062faf45ed9f1a01e75acc60a5bf283ce37d6c81800ddb284
+SHA1: 7c3daf6b82858703c90f11b978a7a30693c56b9d
+MD5sum: a245605ee3ba736a25be8481c00ee0bd
 Description: Media types and icons for data formats.
  The types and icons are designed for the libbzdev package.
 
@@ -531,10 +531,10 @@ Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/doc
 Filename: pool/contrib/libr/librdanim-darkmode-doc/librdanim-darkmode-doc_1.4.6_all.deb
-Size: 270140
-SHA256: 5f7d80f71bc283e34dde43ed0826cdb8bb23284af30fd801f987005548daea25
-SHA1: 67489265856d72489dcfa2111b964e0941b5c8db
-MD5sum: b32e1f38dc52e4e2effb68aacdd0ec26
+Size: 275242
+SHA256: fd09570c8122cf11f7c2b11445cc23f03ef9deb9b608950af8161c7cc10e1d21
+SHA1: bfd6a5090be6e40d412786ab63aacd7155533ab7
+MD5sum: 46b302bb14a8f3303c2d55099d28caab
 Description: API Documentation for the librdanim-java package.
  The documentation is in javadoc format, using a 'dark mode' style.
 
@@ -546,10 +546,10 @@ Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/doc
 Filename: pool/contrib/libr/librdanim-doc/librdanim-doc_1.4.6_all.deb
-Size: 271832
-SHA256: b5cd87a8b01e53e508f564ff38463b8f855b9f86a1991176732af7edbf01f5bc
-SHA1: 925b41f28f45e5408e037eb1a8d85cb7a1e08b13
-MD5sum: 4e59cbdacb8e030bf7dc410aa76183de
+Size: 274908
+SHA256: 029f6df1ca5f8d8e6937ee9a6794c925e49064a81d283aa7fe5e5bd6881e850a
+SHA1: 72502fa02664c42845118af2700c6488de01cb49
+MD5sum: c7f5aa5f3e695821ecbedc950a656bf6
 Description: API Documentation for the librdanim-java package.
  The documentation is in javadoc format, using the standard javadoc style
 
@@ -562,25 +562,25 @@ Maintainer: Bill Zaumen <bzdev.org@gmail.com>
 Priority: optional
 Section: contrib/java
 Filename: pool/contrib/libr/librdanim-java/librdanim-java_1.4.6_all.deb
-Size: 146464
-SHA256: 03d8fe2171bf97a3d5157f52b748c62c3270795ea6e21aaae19e43b0dca174aa
-SHA1: feadb34bb7a416812c4d6d9424f53ac12a063308
-MD5sum: 6bf7635e9447fb6f95279292097a058a
+Size: 146362
+SHA256: 875cae3690add9db924ad2de01f989cb91a3d0b76ae05f8c2e1ebe81e28646a6
+SHA1: 948cdd85c92b6eda43cd37d6e8f2d11de888abdf
+MD5sum: c75317c878c10e501afd01dcac66096b
 Description: Java class library for animations of vehicles, bicycles,
  and pedestrians. See the documentation for further details
 
 Package: webnail
-Version: 1.2.3
+Version: 1.2.6
 Architecture: all
 Depends: default-jre, bash (>= 3.2), libbzdev-java (>= 0.132.94)
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/graphics
-Filename: pool/contrib/w/webnail/webnail_1.2.3_all.deb
-Size: 1079254
-SHA256: ef0f40de36e136a899ec645aa4263a3ca1624ac8dd1486f935e89317ee08b4f3
-SHA1: b7333b09c0b3045cdc063a57250e0bb0f048c7a3
-MD5sum: 028001c50cc07806d3f4fb43401002e0
+Filename: pool/contrib/w/webnail/webnail_1.2.6_all.deb
+Size: 1280774
+SHA256: 55ad6e87481fe4789c6ccdf3b4d10bf71b95222472881c197f533ffb02556d6b
+SHA1: ab29f8efd945b3d34c0783c33569e79bbff6dc93
+MD5sum: 7cd58df6f59331ce096c2dd144053a2b
 Description: Program that scales images to fit in a bounding box.
  The program, named webnail, can create a web page to display these
  images. A selection of layout styles is available. The default creates
@@ -592,17 +592,17 @@ Description: Program that scales images to fit in a bounding box.
  create a zip file or directory containing the scaled images.
 
 Package: webnail-pop-icons
-Version: 1.2.3
+Version: 1.2.6
 Architecture: all
 Depends: pop-icon-theme
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/doc
-Filename: pool/contrib/w/webnail-pop-icons/webnail-pop-icons_1.2.3_all.deb
-Size: 81094
-SHA256: a75d7c631a003731766beb8bd71e054479a39dd7dcd432d96e3346718eff8a74
-SHA1: 0f4b6ea14fbb5d9aae766f5ae5234f24d012e308
-MD5sum: 62ebd29affa44981a7ce1c6509afc35b
+Filename: pool/contrib/w/webnail-pop-icons/webnail-pop-icons_1.2.6_all.deb
+Size: 81080
+SHA256: 30bdb5a20cf53428af53a528246339527fde3852e31f6da0eff866104e4bed48
+SHA1: 5678ab97370fa429a502c18b65e3273cce72d273
+MD5sum: a05bcfc9fc2298060a24be8aca80a288
 Description: Gnome support for webnail icons for Pop OS.
  This package provides the icons for various mime types
  specific to webnail. The GUI for Pop OS does not find

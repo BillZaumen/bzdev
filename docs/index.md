@@ -9,7 +9,7 @@ because the packages are not system dependent.
 There is a "one liner" for activating this repository:
 
 ```
-wget -q -O - https://billzaumen.github.io/bzdev/setup.sh | sh
+curl https://billzaumen.github.io/bzdev/setup.sh | sh
 ```
 
 This will create two files in subdirectories of `/etc/apt/`.
@@ -42,7 +42,7 @@ empty directory.
 First run the command
 
 ```
-wget -q -O BZDev.gpg https://billzaumen.github.io/bzdev/BZDev.gpg
+curl -s -o BZDev.gpg https://billzaumen.github.io/bzdev/BZDev.gpg
 ```
 
 to copy the GPG key used to sign files in the archive.  To verify that
