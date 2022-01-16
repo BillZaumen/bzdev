@@ -105,9 +105,9 @@ distributions:
 check-list:
 	for i in $(DEBS) ; do \
 		if [ -f $$i ] ; then \
-		  echo ... $$i OK; \
+		  echo  ... $$i OK ; \
 		else \
-		   echo *** $$i FAILED; \
+		   echo -e *** $$i "\e[31mFAILED\e[0m" ; \
 		   exit 1; \
 		fi ; \
 	done
