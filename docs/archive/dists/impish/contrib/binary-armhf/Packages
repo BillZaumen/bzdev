@@ -577,48 +577,48 @@ Description: Service-provider package for SVG output stream graphics using
  that were split across multiple JAR files).
 
 Package: librdanim-darkmode-doc
-Version: 1.4.6
+Version: 1.4.7
 Architecture: all
 Conflicts: librdanim-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/doc
-Filename: pool/contrib/libr/librdanim-darkmode-doc/librdanim-darkmode-doc_1.4.6_all.deb
-Size: 275242
-SHA256: fd09570c8122cf11f7c2b11445cc23f03ef9deb9b608950af8161c7cc10e1d21
-SHA1: bfd6a5090be6e40d412786ab63aacd7155533ab7
-MD5sum: 46b302bb14a8f3303c2d55099d28caab
+Filename: pool/contrib/libr/librdanim-darkmode-doc/librdanim-darkmode-doc_1.4.7_all.deb
+Size: 275282
+SHA256: 8015732c8b3ed61c6a158fcc7ab76590bf86e70eb1afcff4db710a93a516caa9
+SHA1: 0f4670844dc56d1958973e9fc4f7587e39ba698f
+MD5sum: cf448dddb1da24fdbbe160419630bf07
 Description: API Documentation for the librdanim-java package.
  The documentation is in javadoc format, using a 'dark mode' style.
 
 Package: librdanim-doc
-Version: 1.4.6
+Version: 1.4.7
 Architecture: all
 Conflicts: librdanim-darkmode-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/doc
-Filename: pool/contrib/libr/librdanim-doc/librdanim-doc_1.4.6_all.deb
-Size: 274908
-SHA256: 029f6df1ca5f8d8e6937ee9a6794c925e49064a81d283aa7fe5e5bd6881e850a
-SHA1: 72502fa02664c42845118af2700c6488de01cb49
-MD5sum: c7f5aa5f3e695821ecbedc950a656bf6
+Filename: pool/contrib/libr/librdanim-doc/librdanim-doc_1.4.7_all.deb
+Size: 276818
+SHA256: 2ee7491b3569d5b861c2e0d363840ca3cca4be8f7e08595e772330642867670c
+SHA1: f2114f4aaf774b64d110dc77f82ebfd2175adb65
+MD5sum: 1e790aedc674f2aa7c358fe6af3ff3f5
 Description: API Documentation for the librdanim-java package.
  The documentation is in javadoc format, using the standard javadoc style
 
 Package: librdanim-java
-Version: 1.4.6
+Version: 1.4.7
 Architecture: all
 Depends: libbzdev-java (>= 1.2.153)
 Recommends: libbzdev-util
 Maintainer: Bill Zaumen <bzdev.org@gmail.com>
 Priority: optional
 Section: contrib/java
-Filename: pool/contrib/libr/librdanim-java/librdanim-java_1.4.6_all.deb
-Size: 146362
-SHA256: 875cae3690add9db924ad2de01f989cb91a3d0b76ae05f8c2e1ebe81e28646a6
-SHA1: 948cdd85c92b6eda43cd37d6e8f2d11de888abdf
-MD5sum: c75317c878c10e501afd01dcac66096b
+Filename: pool/contrib/libr/librdanim-java/librdanim-java_1.4.7_all.deb
+Size: 146438
+SHA256: 60fe1dd89b027acc8e144bab239afc008b1709e54290ca4a5663024da405b84b
+SHA1: 2284dafa47f8e21acd2862e61b5ceee9a7c6e4a3
+MD5sum: 7147f57d45ce9029033737b6f240995c
 Description: Java class library for animations of vehicles, bicycles,
  and pedestrians. See the documentation for further details
 
