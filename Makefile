@@ -123,7 +123,7 @@ add:
 	    [ "`git status | grep $$j`" = "$$j" ] && git add $$i || echo -n ; \
 	done
 
-add-test:
+check-add:
 	@for i in `git status | grep ".deb" | grep -v ":" || echo -n` ; \
 	do echo git add $$i ; done
 	@for i in `git config --local --get-all distributions.codenames` ; \
