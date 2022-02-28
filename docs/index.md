@@ -207,9 +207,6 @@ to other package-manager formats.  As a warning, one should hand-check
 any scripts (these merely set up symbolic links and call programs to
 update icons and media types, which would otherwise require rebooting).
 
-Please visit [Debian Package URLS](https://billzaumen.github.io/bzdev/debian-urls.html)
-for a list of URLs for the relevant Debian packages.
-
 # Docker Containers
 
 The following Docker containers are available:
