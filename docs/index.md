@@ -93,93 +93,110 @@ several Debian packages, listed below.
 ## Debian packages for the BZDev class library
 
     - libbzdev-java (the Debian package with dependencies on 
-      the following 13 packages)
+      the following 13 packages).
 
         - libbzdev-anim2d-java (the Debian package for the module
-	  org.bzdev.anim2d)
+	  org.bzdev.anim2d).
 
         - libbzdev-base-java (the Debian package for the module
-	  org.bzdev.base)
+	  org.bzdev.base).
 
         - libbzdev-desktop-java (the Debian package for the module
-          org.bzdev.desktop)
+          org.bzdev.desktop).
 
         - libbzdev-devqsim-java (the Debian package for the module
-	  org.bzdev.devqsim)
+	  org.bzdev.devqsim).
 
         - libbzdev-dmethods-java (the Debian package for the module
-	  org.bzdev.dmethods)
+	  org.bzdev.dmethods).
 
         - libbzdev-drama-java (the Debian package for the module
-	  org.bzdev.drama)
+	  org.bzdev.drama).
 
         - libbzdev-ejws-java (the Debian package for the module
-	  org.bzdev.ejws)
+	  org.bzdev.ejws).
 
         - libbzdev-esp-java (the Debian package for the module
-	  org.bzdev.esp)
+	  org.bzdev.esp).
 
         - libbzdev-graphics-java (the Debian package for the module
-	  org.bzdev.graphics)
+	  org.bzdev.graphics).
 
         - libbzdev-math-java (the Debian package for the module
-	  org.bzdev.math)
+	  org.bzdev.math).
 
         - libbzdev-obnaming-java (the Debian package for the module
-	  org.bzdev.obnaming)
+	  org.bzdev.obnaming).
 
         - libbzdev-parmproc-java (the Debian package for the module
-	  org.bzdev.parmproc)
+	  org.bzdev.parmproc).
 
         - libbzdev-p3d-java (the Debian package for the module
-          org.bzdev.p3d)
+          org.bzdev.p3d).
 
     - libbzdev-util (the Debian package containing the programs
-      lsnof, scrunner, and yrunner)
+      lsnof, scrunner, and yrunner).
 
     - libbzdev-misc (the Debian package providing icons for files
-      of various types and their media/MIME types)
+      of various types and their media/MIME types).
 
-    - libbzdev-doc  (pending)
+    - libbzdev-doc (the API Documention using a default style).
 
-    - libbzdev-darkmode-doc (pending)
+    - libbzdev-darkmode-doc (the API documentation using a revere-video,
+      high contrast theme for better readibility).
 
     - libbzdev-pop-icons (the Debian package setting up icons for
-      Pop!_OS)
+      Pop!_OS).
 
 ## Debian packages for supplemental libraries
 
-    - libbikeshare-darkmode-doc
+    - libbikeshare-java (A simulation of a bicycle-sharing system,
+      useful as an example).
 
-    - libbikeshare-doc
+    - libbikeshare-doc (the API documentation for bicycle-sharing
+      simulation using the default style).
 
-    - libbikeshare-java
+    - libbikeshare-darkmode-doc (the API documentation for bicycle-sharing
+      simulation using a high-contrast, reverse-video theme).
 
     - libosgbatik-java (the Debian package for a service provider
-      for SVG graphics, based on the Apache Batik project)
-
-    - librdanim-darkmode-doc (the Debian package with documentation for
-      librdanim-java usig a dark-mode style)
-
-    - librdanim-doc  (the Debian package with documentation for
-      librdanim-java using the default style)
+      for SVG graphics, based on the Apache Batik project).
 
     - librdanim-java (the Debian package with classes that define
-      objects used by the libbzdev-anim2d-java package)
+      objects used by the libbzdev-anim2d-java package).
+
+    - librdanim-doc  (the Debian package with documentation for
+      librdanim-java using the default style).
+
+    - librdanim-darkmode-doc (the Debian package with documentation for
+      librdanim-java usig a dark-mode style).
 
 ## Debian packages for programs and miscellaneous files 
 
-    - bzdev-wallpapers
+    - bzdev-wallpapers (Screen backgrounds based on Hilbert's space-filling
+      curve).
 
-    - cvrdecode
+    - cvrdecode (A program to decode California digital vaccine records and
+      create a table giving names, date of birth, and whether or not fully
+      vaccinated).
 
-    - epts
+    - epts (A graphics editor for paths that can export files in a variety
+      of formats including SVG and the scripting language used by the
+      simulation and animation softwre listed above).
 
-    - evdisk
+    - evdisk (A simple Linux-based utility that will create an
+      encrypted file system using LUKS, accessed via the loopback
+      device; the password [32 random printable characters] is
+      provided as well but encrypted using GPG).
 
-    - geth
+    - geth (A utility that will print out HTTP headers returned from an
+      HTTP request, including those from an HTTP redirect).
 
-    - webnail
+    - webnail (A graphics program that can take multiple image files,
+      scale them to fit inside a bounding box, an generate a set of web
+      pages that can display the images as a slide show).  Webnail has
+      a built-in web server that allows multiple computers to show the
+      same images at the same time.
 
 # Other Package Managers
 
@@ -191,9 +208,28 @@ update icons and media types, which would otherwise require rebooting).
 Please visit [Debian Package URLS] (https://billzaumen.github.io/bzdev/debian-urls.html)
 for a list of URLs for the relevant Debian packages.
 
+# Docker Containers
+
+The following Docker containers are available:
+
+    - [wtzbzdev/cvrdecode](https://hub.docker.com/r/wtzbzdev/cvrdecode)
+      (A container that creates a web server that can process a ZIP
+      file containing California digital vaccine records, verify the
+      digital signatures, and provide a CSV file with a line for each
+      record.)
+
+    - [wtzbzdev/epimodel](https://hub.docker.com/r/wtzbzdev/epimodel)
+      (A container that creates a web server that will run a simple
+      epidemiological model and show the output as a graph).
+
+    - [wtzbzdev/webnail](https://hub.docker.com/r/wtzbzdev/webnail)
+      (A container that creates a web server that can provide web
+      pages generated by the webnail program).
+
 # Installers
 
 Installers for other systems are available as JAR files. Please
 visit [Installer JAR Files](https://billzaumen.gethub.io/bzdev/installers.html)
 for a list of commands (using curl) that will download these JAR
-files and store them in the current working directory.
+files and store them in the current working directory. [This is pending---should
+be done shortly].
