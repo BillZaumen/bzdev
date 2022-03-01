@@ -131,3 +131,15 @@ check-add:
 	    [ "`git status | grep $$j`" = "$$j" ] && echo git add $$i  \
 		|| echo -n ; \
 	done
+
+installers:
+	mkdir -p docs/installers
+	rm docs/installers/*.jar
+	echo '# Installers' > docs/installers.md
+	for i in libbzdev-pkg roadanim-pkg bikeshare-pkg epts-pkg webnail-pkg \
+		geth do ; \
+	   j=`cd ../$$i; ls -rt *.jar | tail -1` ; \
+	   cp ../$$i/$$j docs/installers/$$j ; \
+	   loc=http://billzaumen.github.io/bzdev/installers ; \
+	   echo '  - ['$$j']('$$loc/$$j')' >> docs/installers.md ; \
+	done

@@ -37,6 +37,86 @@ Description: Utility that processes QR codes and  shc URIs
  values indicating that the owner of the record has been
  fully vaccinated and that the signature was valid.
 
+Package: ecdb-derby
+Version: 0.1.2
+Architecture: all
+Depends: libecdb-java (>= 0.0.18), libderby-java (>= 10.14.2.0)
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/misc
+Filename: pool/contrib/e/ecdb-derby/ecdb-derby_0.1.2_all.deb
+Size: 1900
+SHA256: adb9b2a0e5ffdacec365e9875db7aba64d0d03e83ec63a2ff590e71aa4294479
+SHA1: a914c61496c5515ede7f44760daf0eae46d2dd79
+MD5sum: f61035d6e65f6e57fef90dd89f9e7380
+Description: ECDB configuration for the Apache Derby Database.
+ This package arranges for Apache Derby to be used locally with the ECDB
+ (Event Calendar DataBase) package libecdb-java.
+ 
+
+Package: ecdb-desktop
+Version: 0.1.2
+Architecture: all
+Depends: libecdb-java (>= 0.0.18)
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/e/ecdb-desktop/ecdb-desktop_0.1.2_all.deb
+Size: 229644
+SHA256: 96fac758d8c73606ba2c89ace1157a494d49a5a3bf674f70657a76c283899fa7
+SHA1: 9c9c70e8eb3b5f4bb9fd3efbdc9917867e49d9b7
+MD5sum: 0b9b235ae652ecf29749127cf087dd97
+Description: Gnome support for ECDB.
+ This package provides the desktop, media types, and icons for ECDB,
+ ECDB itself consists of a program and library for managing and
+ using a database that tracks events and allows messages regarding
+ those events to be sent to users with calendar appointments. The
+ calendar appointments can include up to two alarms, with the alarm
+ times configured on a per-user basis.  The first can be preconfigured
+ based on the event location, the time of day, and whether the event
+ occurs on a weekday or weekend. The second alarm is configured by
+ providing an offset from the start of the event.
+
+Package: ecdb-javamail
+Version: 0.1.2
+Architecture: all
+Depends: default-jre, libecdb-java, libmail-java (>= 1.6.2), libactivation-java (>= 1.2.0)
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/misc
+Filename: pool/contrib/e/ecdb-javamail/ecdb-javamail_0.1.2_all.deb
+Size: 6882
+SHA256: c9ab6b428883357d522c7beff138a38bcd3bc70c0ab8cb935a62c356e48c7860
+SHA1: 019a283e1031a1a6dd7377898d6595d465f939a5
+MD5sum: 9e0c0dfa38b35df7c97f0f4ce955c7b7
+Description: SMTP plugin for ECDB using javamail.
+ This package sets up the ECDB system directory so that
+ ECDB can use java mail.  It implements an ECDB service provider
+ interface and sets up symbolic links to some java mail and java
+ activation JAR files.
+
+Package: ecdb-pop-icons
+Version: 0.1.2
+Architecture: all
+Depends: pop-icon-theme
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/e/ecdb-pop-icons/ecdb-pop-icons_0.1.2_all.deb
+Size: 130544
+SHA256: bc777f8802e06a41b7e380e1cb7d7a4f44cb9de1cc0dd29f4604470797cd961e
+SHA1: e37a266277d040ef9535550da6fb807b20ad167c
+MD5sum: 2fcddb4f096abfe11d1545979ed6d8f5
+Description: Gnome support for ECDB icons for Pop OS.
+ This package provides the icons for various mime types
+ specific to ECDB. The GUI for Pop OS does not find
+ icons in /usr/share/icons/hicolor, so for that case the
+ icons have to be in /usr/share/icons/Pop. This installion
+ will fail if the icons are already installed and owned by
+ a different package.  The dependency on pop-icon-theme is
+ intended to prevent this package from being installed on
+ systems that do not use the Pop OS icons.
+
 Package: epts
 Version: 0.1.33
 Architecture: all
@@ -45,10 +125,10 @@ Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/graphics
 Filename: pool/contrib/e/epts/epts_0.1.33_all.deb
-Size: 1649404
-SHA256: 5bffe90ce917f85423e16ba772dd79ca699bfe4df14b5aaeb74c962a5a6a82a7
-SHA1: 37ff8a9911b547fe83beb609899cc36f60b32bcd
-MD5sum: 99d3d335f6dcec04c3223d3fb11c86ef
+Size: 1649364
+SHA256: 1f26cd377116c75b7598ff4870678f4a773872463948e4d01abb005833450bdc
+SHA1: feed0e0f34f787544eb399b74347e5acb107e57b
+MD5sum: 26c4ba768a87fe863c7212d907585d30
 Description: Graphics editor for creating  points, and paths.
  The paths consist of segments that can be straight-line
  segments, quadratic or cubic Bezier curves, or splines that
@@ -69,10 +149,10 @@ Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/doc
 Filename: pool/contrib/e/epts-pop-icons/epts-pop-icons_0.1.33_all.deb
-Size: 178976
-SHA256: 808d038cc0ee344ada72dbbd22bb2c9b5987315dbfde20e32038634dc8908122
-SHA1: 74c925fb09cf6b15efca78bd13015afc3f897b16
-MD5sum: 4ff3f0f2942c6d93b24bd00950479bb4
+Size: 179058
+SHA256: 1c42b1e0cbf89571c1801332280894ab7add32d0d16625e7892e14e524c118f7
+SHA1: d37877c9b35de22dde8a11c5e0a6f62a04a457d2
+MD5sum: 120a44879b8ad865112a33677edab61c
 Description: Gnome support for EPTS icons for Pop OS.
  This package provides the icons for various mime types
  specific to EPTS. The GUI for Pop OS does not find
@@ -553,6 +633,62 @@ Description: Utility programs for the libbzdev-java package.
  a scripting language to be used with subclasses of
  org.bzdev.scripting.ScriptingContext.  These subclasses
  include several simulation classes.
+
+Package: libecdb-darkmode-doc
+Version: 0.1.2
+Recommends: default-jdk-doc, libbzdev-doc (>= 1.2.34)
+Conflicts: libecdb-doc
+Architecture: all
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/libe/libecdb-darkmode-doc/libecdb-darkmode-doc_0.1.2_all.deb
+Size: 443184
+SHA256: 9b2c5303f9bb2f7c83066487f1dd30260aa2433ea11ce9c03df17d63a551e3ba
+SHA1: bb6fece2d8b016d4a748fef876fc95af21f55d33
+MD5sum: 27fee693064de39052417150c0c2b7a0
+Description: API Documentation for the libecdb-java package.
+ The documentation is in javadoc format using a 'dark mode' style.
+
+Package: libecdb-doc
+Version: 0.1.2
+Recommends: default-jdk-doc, libbzdev-doc (>= 1.2.34)
+Conflicts: libecdb-darkmode-doc
+Architecture: all
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/libe/libecdb-doc/libecdb-doc_0.1.2_all.deb
+Size: 444192
+SHA256: 26c76e29db2b905cfc6968bd26d94563e392852ef45944be7ad23be5ea89063d
+SHA1: 468a06f3980d601a68fcfdde8210ec5e3f2ef194
+MD5sum: 509fadbb32a3d1787a2983a593d747a1
+Description: API Documentation for the libecdb-java package.
+ The documentation is in javadoc format using the default style.
+
+Package: libecdb-java
+Version: 0.1.2
+Architecture: all
+Depends: bash (>= 3.2), libbzdev-java (>= 1.2.171), gpg (>= 2.2.19)
+Recommends: libderby-java (>= 10.14.2.0), ecdb-javamail (>= 0.0.1), ecdb-desktop (>= 0.0.1)
+Suggests: libbzdev-doc (>= 1.2.34), libecdb-doc (= 0.1.2)
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/misc
+Filename: pool/contrib/libe/libecdb-java/libecdb-java_0.1.2_all.deb
+Size: 262110
+SHA256: 8fb00425b56d024ea33c2dadda28f7139a9d2dee2fa5c75aaeb6fb8ba5e292f1
+SHA1: 1c55101ebd40b7901ce28d08677a59cbfa900830
+MD5sum: fca1a84168328e1babb3d72e235fb3a5
+Description: Event-calendar database manager.
+ This software consists of a program and library for managing and
+ using a database that tracks events and allows messages regarding
+ those events to be sent to users with calendar appointments. The
+ calendar appointments can include up to two alarms, with the alarm
+ times configured on a per-user basis.  The first can be preconfigured
+ based on the event location, the time of day, and whether the event
+ occurs on a weekday or weekend. The second alarm is configured by
+ providing an offset from the start of the event.
 
 Package: libosgbatik-java
 Version: 0.4.2

@@ -186,6 +186,8 @@ The packages are the following:
     of formats including SVG and the scripting language used by the
     simulation and animation softwre listed above).
 
+      - epts-pop-icons (Icons for EPTS for use with Pop!_OS)
+
   - evdisk (A simple Linux-based utility that will create an
     encrypted file system using LUKS, accessed via the loopback
     device; the password [32 random printable characters] is
@@ -199,6 +201,29 @@ The packages are the following:
     pages that can display the images as a slide show).  Webnail has
     a built-in web server that allows multiple computers to show the
     same images at the same time.
+
+      - webnail-pop-icons (Icons for webnail for use with Pop!_OS)
+
+      - webnail-server (A simplified webnail package that provides
+        a server but cannot create output files or directories - used
+	when only the web server needs to be installed)
+
+  -  libecdb-java  (the library used to implement a service that can
+     email calendar appointments)
+
+       - ecdb-javamail (An ecdb service provider that allows ecdb to use
+         javamail)
+
+       - ecdb-doc (ecdb API documentation using the default style) 
+
+       - ecdb-darkmode-doc (ecdb API documentation using a dark-mode style)
+
+       - ecdb-desktop (the ecdb desktop files, ecdb command, and man pages)
+
+       - ecdb-derby (package to configure the Derby database for use with
+         ecdb)
+
+       - ecdb-pop-icons (ecdb icons for Pop!_OS)
 
 # Other Package Managers
 
