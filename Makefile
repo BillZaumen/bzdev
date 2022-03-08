@@ -57,6 +57,21 @@ all: docs/archive/conf/distributions $(DEBS)
 	do reprepro -b docs/archive/ includedeb $$k $$j ; done ; \
 	rm -f $$j ; \
 	done
+	echo '# Direct links to Debian packages' > docs/packages.md
+	(cd docs ; \
+	 for i in `find . -name '*.deb' | sort` ; \
+	 do j=`echo $$i | cut -d / -f 6` ; \
+	  echo ' ' >> packages.md ; \
+	  echo '  - ['$$j']('$$i')' >> packages.md ; \
+	done )
+
+listdebfiles:
+	(cd docs ; \
+	 for i in `find . -name '*.deb'` ; \
+	 do j=`echo $$i | cut -d / -f 6` ; \
+	  echo $$j $$i ; \
+	done )
+
 
 listdebs:
 	for i in $(DEBS); do \

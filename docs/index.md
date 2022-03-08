@@ -231,6 +231,9 @@ For other package managers, the program alien can convert debian packages
 to other package-manager formats.  As a warning, one should hand-check
 any scripts (these merely set up symbolic links and call programs to
 update icons and media types, which would otherwise require rebooting).
+To use alien, it is necessary to download the Debian packages, probably
+without using apt or apt-get. To help locate these, there is a
+[list of package links](https://billzaumen.github.io/bzdev/packages.html).
 
 # Docker Containers
 
