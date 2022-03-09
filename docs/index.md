@@ -1,5 +1,16 @@
 # The BZDev Debian Repository
 
+Links to other sections:
+
+  - [Other Package Managers](#other-package-managers). How to convert
+    to RPM, etc.
+
+  - [Docker Containers](#docker-containers). Docker containers based on
+    this library.
+
+  - [Installers](#installers). Installers for other Unix systems and
+    Windows.
+
 The BZDev Debian repository contains a small number of Debian packages
 and is intended for use until these are available elsewhere. This
 repository is set up to support a large number of architectures:
@@ -257,6 +268,11 @@ The following Docker containers are available:
 
 Installers for other systems are available as JAR files. Please
 visit [Installer JAR Files](https://billzaumen.gethub.io/bzdev/installers.html)
-for a list of commands (using curl) that will download these JAR
-files and store them in the current working directory. [This is pending---should
-be done shortly].
+for a list of links for downloading installers. Each installer can be
+run using the command
+
+```
+java -jar INSTALLER
+```
+
+where INSTALLER is a JAR file.

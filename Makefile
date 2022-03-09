@@ -24,14 +24,19 @@
 # the user's keyring.  Distributions.Codenames have multiple names listed
 # because the Java packages are identical for multiple Debian releases.
 #
-# Users must set up the debs.list file so it contains ".deb" files to put
-# in the archive, one per line. After git was configured as described
-# above, the user should run
+# Users must set up the debs.list file so it contains ".deb" files to
+# put in the archive, one per line. Similarly, the file inst.list must
+# be set up to contain the initial path to the 'install' jar files
+# (relative paths from the current directory are OK), followed by a
+# tab and then a descriptive string, again one per line.  After git
+# and this directory are configured as described above, the user
+# should run
 #
 #     make
 #
 # To rebuild the archive with a totally new configuration - that is
-# without any existing members not listed in debs.list, use
+# without any existing members not listed in debs.list and without
+# keeping old installers, use
 #
 #     make rebuild
 
@@ -39,15 +44,15 @@
 # Using reprepro
 # http://blog.jonliv.es/blog/2011/04/26/creating-your-own-signed-apt-repository-and-debian-packages/
 
-# Location of Debian files copied to this archive.
-# The file debs.list was not added to this git repository
-# because it is system dependent.
+# Location of Debian files copied to this archive.  The file
+# debs.list, which contains the locations of Debian files copied to
+# this archive, was not added to this git repository because it is
+# system dependent.  Similarly inst.list was not add.
 #
 # make all, or make with no arguments, will add files in debs.list
 # to the archive.
 #
 DEBS = $(shell cat debs.list)
-
 
 all: docs/archive/conf/distributions $(DEBS)
 	for i in $(DEBS) ; do \
@@ -64,6 +69,7 @@ all: docs/archive/conf/distributions $(DEBS)
 	  echo ' ' >> packages.md ; \
 	  echo '  - ['$$j']('$$i')' >> packages.md ; \
 	done )
+	make installers
 
 listdebfiles:
 	(cd docs ; \
@@ -88,6 +94,7 @@ rebuild:
 	rm -fr docs/archive/db
 	rm -fr docs/archive/dists
 	rm -fr docs/archive/pool
+	rm -f docs/installers/*.jar
 	$(MAKE) docs/archive/conf/distributions
 	$(MAKE) all
 	@echo run '"make add"' to add any new files
@@ -122,7 +129,7 @@ check-list:
 		if [ -f $$i ] ; then \
 		  echo  ... $$i OK ; \
 		else \
-		   echo -e *** $$i "\e[31mFAILED\e[0m" ; \
+		   /usr/bin/echo -e '***' $$i "\e[31mFAILED\e[0m" ; \
 		   exit 1; \
 		fi ; \
 	done
@@ -137,6 +144,8 @@ add:
 	do  j="docs/archive/dists/$$i" ; \
 	    [ "`git status | grep $$j`" = "$$j" ] && git add $$i || echo -n ; \
 	done
+	for i in `git status | grep ".jar" | grep -v ":" || echo -n` ; \
+	do git add $$i ; done
 
 check-add:
 	@for i in `git status | grep ".deb" | grep -v ":" || echo -n` ; \
@@ -146,15 +155,51 @@ check-add:
 	    [ "`git status | grep $$j`" = "$$j" ] && echo git add $$i  \
 		|| echo -n ; \
 	done
+	@for i in `git status | grep ".jar" | grep -v ":" || echo -n` ; \
+	do echo git add $$i ; done
 
 installers:
 	mkdir -p docs/installers
-	rm docs/installers/*.jar
 	echo '# Installers' > docs/installers.md
-	for i in libbzdev-pkg roadanim-pkg bikeshare-pkg epts-pkg webnail-pkg \
-		geth do ; \
-	   j=`cd ../$$i; ls -rt *.jar | tail -1` ; \
-	   cp ../$$i/$$j docs/installers/$$j ; \
-	   loc=http://billzaumen.github.io/bzdev/installers ; \
-	   echo '  - ['$$j']('$$loc/$$j')' >> docs/installers.md ; \
+	echo -n The bzdev installer must be run before >> docs/installers.md
+	echo ' 'any of the other installers are run,  >> docs/installers.md
+	echo with the exception of cvrdecode.  >> docs/installers.md
+	sort -k 2 inst.list | while IFS= read -r entry ; do \
+	   echo >> docs/installers.md ; \
+	   i=`echo "$$entry" | cut -f 1` ; \
+	   name=`echo "$$entry" | cut -f 2` ; \
+	   j=`ls -rt $$i-*.jar | tail -1` ; \
+	   jarfile=`basename $$j` ; \
+	   cp $$j docs/installers/$$jarfile ; \
+	   loc=https://billzaumen.github.io/bzdev/installers ; \
+	   echo '  - ['$$name']('$$loc/$$jarfile')' >> docs/installers.md ; \
+	done
+	echo >> docs/installers.md
+	echo To run an installer, use the command >> docs/installers.md
+	echo >> docs/installers.md
+	echo '```' >> docs/installers.md
+	echo >> docs/installers.md
+	echo java -jar INSTALLER >> docs/installers.md
+	echo '```' >> docs/installers.md
+	echo >> docs/installers.md
+	echo where INSTALLER is a downloaded JAR file. >> docs/installers.md
+
+
+#
+# check that the initial paths in inst.list are valid. These paths
+# exclude the version number and the ".jar" suffix
+#
+check-inst:
+	@cat inst.list | while IFS= read -r entry ; do \
+	   i=`echo "$$entry" | cut -f 1` ; \
+	   j=`ls -rt $$i-*.jar | tail -1` ; \
+	   if [ -z "$$j" ] ; then \
+		   /usr/bin/echo -e '***' $$i "\e[31mFAILED\e[0m" ; \
+		   exit 1; \
+	   elif [ -f $$j ] ; then \
+		  echo  ... $$i OK ; \
+	   else \
+		   /usr/bin/echo -e '***' $$i "\e[31mFAILED\e[0m" ; \
+		   exit 1; \
+	   fi ; \
 	done
