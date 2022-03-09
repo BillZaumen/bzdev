@@ -244,7 +244,7 @@ any scripts (these merely set up symbolic links and call programs to
 update icons and media types, which would otherwise require rebooting).
 To use alien, it is necessary to download the Debian packages, probably
 without using apt or apt-get. To help locate these, there is a
-[list of package links](https://billzaumen.github.io/bzdev/packages.html).
+[list of package links](https://billzaumen.github.io/bzdev/packages.md).
 
 # Docker Containers
 
@@ -267,7 +267,7 @@ The following Docker containers are available:
 # Installers
 
 Installers for other systems are available as JAR files. Please
-visit [Installer JAR Files](https://billzaumen.gethub.io/bzdev/installers.html)
+visit [Installer JAR Files](https://billzaumen.gethub.io/bzdev/installers.md)
 for a list of links for downloading installers. Each installer can be
 run using the command
 
