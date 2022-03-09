@@ -55,21 +55,23 @@
 DEBS = $(shell cat debs.list)
 
 all: docs/archive/conf/distributions $(DEBS)
-	for i in $(DEBS) ; do \
+	@for i in $(DEBS) ; do \
 	j=`basename $$i` ; \
 	ln -s $$i $$j ; \
 	for k in `git config --local --get-all distributions.codenames` ; \
 	do reprepro -b docs/archive/ includedeb $$k $$j ; done ; \
 	rm -f $$j ; \
 	done
-	echo '# Direct links to Debian packages' > docs/packages.md
-	(cd docs ; \
+	@echo '# Direct links to Debian packages' > docs/packages.md
+	@(cd docs ; \
 	 for i in `find . -name '*.deb' | sort` ; \
 	 do j=`echo $$i | cut -d / -f 6` ; \
 	  echo ' ' >> packages.md ; \
 	  echo '  - ['$$j']('$$i')' >> packages.md ; \
+	  echo '    sha256:' `sha256sum $$i | cut -d ' ' -f 1` \
+		>> packages.md ; \
 	done )
-	make installers
+	@make installers
 
 listdebfiles:
 	(cd docs ; \
@@ -159,12 +161,12 @@ check-add:
 	do echo git add $$i ; done
 
 installers:
-	mkdir -p docs/installers
-	echo '# Installers' > docs/installers.md
-	echo -n The bzdev installer must be run before >> docs/installers.md
-	echo ' 'any of the other installers are run,  >> docs/installers.md
-	echo with the exception of cvrdecode.  >> docs/installers.md
-	sort -k 2 inst.list | while IFS= read -r entry ; do \
+	@mkdir -p docs/installers
+	@echo '# Installers' > docs/installers.md
+	@echo -n The bzdev installer must be run before >> docs/installers.md
+	@echo ' 'any of the other installers are run,  >> docs/installers.md
+	@echo with the exception of cvrdecode.  >> docs/installers.md
+	@sort -k 2 inst.list | while IFS= read -r entry ; do \
 	   echo >> docs/installers.md ; \
 	   i=`echo "$$entry" | cut -f 1` ; \
 	   name=`echo "$$entry" | cut -f 2` ; \
@@ -173,16 +175,18 @@ installers:
 	   cp $$j docs/installers/$$jarfile ; \
 	   loc=https://billzaumen.github.io/bzdev/installers ; \
 	   echo '  - ['$$name']('$$loc/$$jarfile')' >> docs/installers.md ; \
+	   echo '    sha256:' `sha256sum $$j | cut -d ' '  -f 1`  \
+		 >> docs/installers.md ; \
 	done
-	echo >> docs/installers.md
-	echo To run an installer, use the command >> docs/installers.md
-	echo >> docs/installers.md
-	echo '```' >> docs/installers.md
-	echo >> docs/installers.md
-	echo java -jar INSTALLER >> docs/installers.md
-	echo '```' >> docs/installers.md
-	echo >> docs/installers.md
-	echo where INSTALLER is a downloaded JAR file. >> docs/installers.md
+	@echo >> docs/installers.md
+	@echo To run an installer, use the command >> docs/installers.md
+	@echo >> docs/installers.md
+	@echo '```' >> docs/installers.md
+	@echo >> docs/installers.md
+	@echo java -jar INSTALLER >> docs/installers.md
+	@echo '```' >> docs/installers.md
+	@echo >> docs/installers.md
+	@echo where INSTALLER is a downloaded JAR file. >> docs/installers.md
 
 
 #
