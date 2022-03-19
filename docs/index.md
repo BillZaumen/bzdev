@@ -213,37 +213,38 @@ The packages are the following:
     a built-in web server that allows multiple computers to show the
     same images at the same time.
 
-      - webnail-pop-icons (Icons for webnail for use with Pop!_OS)
+      - webnail-pop-icons (icons for webnail for use with Pop!_OS)
 
-      - webnail-server (A simplified webnail package that provides
+      - webnail-server (a simplified webnail package that provides
         a server but cannot create output files or directories - used
 	when only the web server needs to be installed)
 
   -  libecdb-java  (the library used to implement a service that can
      email calendar appointments)
 
-       - ecdb-javamail (An ecdb service provider that allows ecdb to use
-         javamail)
+       - ecdb-javamail (an ecdb service provider that allows ecdb to use
+         javamail; javamail must be downloaded separately)
 
-       - ecdb-doc (ecdb API documentation using the default style) 
+       - libecdb-doc (ecdb API documentation using the default style)
 
-       - ecdb-darkmode-doc (ecdb API documentation using a dark-mode style)
+       - libecdb-darkmode-doc (ecdb API documentation using a dark-mode style)
 
        - ecdb-desktop (the ecdb desktop files, ecdb command, and man pages)
 
        - ecdb-derby (package to configure the Derby database for use with
-         ecdb)
+         ecdb; the Derby database must be downloaded separately)
 
        - ecdb-pop-icons (ecdb icons for Pop!_OS)
 
 # Other Package Managers
 
-For other package managers, the program alien can convert debian packages
-to other package-manager formats.  As a warning, one should hand-check
-any scripts (these merely set up symbolic links and call programs to
-update icons and media types, which would otherwise require rebooting).
-To use alien, it is necessary to download the Debian packages, probably
-without using apt or apt-get. To help locate these, there is a
+For other package managers, the program alien can convert debian
+packages to other package-manager formats.  As a warning, one should
+hand-check any scripts (the ones in the Debian packages merely set up
+symbolic links and call programs to update icons and media types,
+which would otherwise require rebooting).  To use alien, it is
+necessary to download the Debian packages, probably without using apt
+or apt-get. To help locate these, there is a
 [list of package links](https://billzaumen.github.io/bzdev/packages.html).
 
 # Docker Containers
