@@ -18,11 +18,11 @@
   - [ecdb-pop-icons](./archive/pool/contrib/e/ecdb-pop-icons/ecdb-pop-icons_0.1.2_all.deb)
     sha256: bc777f8802e06a41b7e380e1cb7d7a4f44cb9de1cc0dd29f4604470797cd961e
  
-  - [epts](./archive/pool/contrib/e/epts/epts_1.0.3_all.deb)
-    sha256: b012c8b010ca0ba5880a9136d6f6125afd55cee4d7880cfea07df80629bdd716
+  - [epts](./archive/pool/contrib/e/epts/epts_1.0.7_all.deb)
+    sha256: fca5dac47dde7259c4f4074c538880891ffea2235201feadcf86a5208e87da23
  
-  - [epts-pop-icons](./archive/pool/contrib/e/epts-pop-icons/epts-pop-icons_1.0.3_all.deb)
-    sha256: 36ea8583d8cace8b503c1846b42dde91b1e266dcd4f2767d934ce24733016212
+  - [epts-pop-icons](./archive/pool/contrib/e/epts-pop-icons/epts-pop-icons_1.0.7_all.deb)
+    sha256: 0a3f261f47bef47e8a7cd130efcc5be61c93998e56519af4802b79a2382ff2d0
  
   - [evdisk](./archive/pool/contrib/e/evdisk/evdisk_1.13.1_all.deb)
     sha256: 12042ecd84ca6e64ce5bd92e4a607117353841a996cf874e8ec59e0616ba6ba7
@@ -120,11 +120,11 @@
   - [librdanim-java](./archive/pool/contrib/libr/librdanim-java/librdanim-java_1.4.9_all.deb)
     sha256: 5250496c56d0ea69083c7117cfd1ecb531cc3d835a7129f14a7ef0b60ddf6b03
  
-  - [webnail-pop-icons](./archive/pool/contrib/w/webnail-pop-icons/webnail-pop-icons_1.6.8_all.deb)
-    sha256: d486d915816705301d43c42b5e0f72843d70c1f8c415b34a5ce70bb674c60054
+  - [webnail-pop-icons](./archive/pool/contrib/w/webnail-pop-icons/webnail-pop-icons_1.6.13_all.deb)
+    sha256: bda2b29868181413b680ffae3615470562cf6e2aded434c2a0cc5b4d56fda126
  
-  - [webnail-server](./archive/pool/contrib/w/webnail-server/webnail-server_1.6.8_all.deb)
-    sha256: 8abeae972a80cbf77aad21f02b806c76e8f31fe99cdc42392441ab251da70c62
+  - [webnail-server](./archive/pool/contrib/w/webnail-server/webnail-server_1.6.13_all.deb)
+    sha256: 7a4ff9dc1e146d213af4908035052e8fffb840619b15ed1597affc84bd7c23a7
  
-  - [webnail](./archive/pool/contrib/w/webnail/webnail_1.6.8_all.deb)
-    sha256: fe85dc8f89482836c20c1116cec486d516765f2bd8c6914d006c6f6b86cf6bde
+  - [webnail](./archive/pool/contrib/w/webnail/webnail_1.6.13_all.deb)
+    sha256: 36711e00d5b0f51fccbca2cdcdf484eb927cdbc2014abd5d4a437d73a3bce219

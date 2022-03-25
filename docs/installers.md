@@ -11,8 +11,8 @@ with the exception of cvrdecode.
   - [cvrdecode](https://billzaumen.github.io/bzdev/installers/cvrdecode-install-1.1.jar)
     sha256: 91fa06dd30f01e295dfa1bd9808810542f01f7c9ac19bbfa64fab645870daa8f
 
-  - [epts](https://billzaumen.github.io/bzdev/installers/epts-install-1.0.3.jar)
-    sha256: 784c4bfa95312cd086603329cb7a8b4df79b239f92bde237f24ea99fa8e5355c
+  - [epts](https://billzaumen.github.io/bzdev/installers/epts-install-1.0.7.jar)
+    sha256: 6ad2dca4a1b9c87a99a8148f2d69a16bc5df50d8fa6b6c3ec5c916473808b340
 
   - [geth](https://billzaumen.github.io/bzdev/installers/geth-install-1.0.2.jar)
     sha256: 9166ea2089cf8253b8fc681df10e42410a3414c9efc7297346c26c180f8ec4d9
@@ -20,8 +20,8 @@ with the exception of cvrdecode.
   - [roadanim (librdanim-*)](https://billzaumen.github.io/bzdev/installers/roadanim-install-1.4.9.jar)
     sha256: 58d7614e6da99ef073bba295a8b10313ca7ec9f9dcf54d331b2000429ba02e92
 
-  - [webnail](https://billzaumen.github.io/bzdev/installers/webnail-install-1.6.8.jar)
-    sha256: 27b68506878879bd4fb37d1c81c76658688aa4d19486d1f4a958a867a1ee5d9b
+  - [webnail](https://billzaumen.github.io/bzdev/installers/webnail-install-1.6.13.jar)
+    sha256: febc4de994465e2619d7169e5f49a54b20a1e8fee39c7505e47df3677f9f8291
 
 To run an installer, use the command
 
