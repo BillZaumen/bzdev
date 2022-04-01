@@ -18,11 +18,11 @@
   - [ecdb-pop-icons](./archive/pool/contrib/e/ecdb-pop-icons/ecdb-pop-icons_0.1.2_all.deb)
     sha256: bc777f8802e06a41b7e380e1cb7d7a4f44cb9de1cc0dd29f4604470797cd961e
  
-  - [epts](./archive/pool/contrib/e/epts/epts_1.0.7_all.deb)
-    sha256: fca5dac47dde7259c4f4074c538880891ffea2235201feadcf86a5208e87da23
+  - [epts](./archive/pool/contrib/e/epts/epts_1.1.1_all.deb)
+    sha256: 2b609c44a11f48bb909107b9c91df841022b217d9b52721b3c0046c5f46b5f8a
  
-  - [epts-pop-icons](./archive/pool/contrib/e/epts-pop-icons/epts-pop-icons_1.0.7_all.deb)
-    sha256: 0a3f261f47bef47e8a7cd130efcc5be61c93998e56519af4802b79a2382ff2d0
+  - [epts-pop-icons](./archive/pool/contrib/e/epts-pop-icons/epts-pop-icons_1.1.1_all.deb)
+    sha256: 9afb3804957afdcb92ea1495fb8a2ea6f181ebaa273dae8770cbe38aa4d0506d
  
   - [evdisk](./archive/pool/contrib/e/evdisk/evdisk_1.13.1_all.deb)
     sha256: 12042ecd84ca6e64ce5bd92e4a607117353841a996cf874e8ec59e0616ba6ba7
