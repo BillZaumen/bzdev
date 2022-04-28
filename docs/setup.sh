@@ -9,6 +9,8 @@ trap '' INT QUIT
 	contrib > s.list && \
   echo deb https://billzaumen.github.io/bzdev/archive/ impish \
 	contrib >> s.list && \
+  echo deb https://billzaumen.github.io/bzdev/archive/ jammy \
+	contrib >> s.list && \
   sudo cp s.list /etc/apt/sources.list.d/org.bzdev.BZDev.list && \
   sudo apt update && echo OK ) || echo FAILED
 rm -f BZDev.gpg
