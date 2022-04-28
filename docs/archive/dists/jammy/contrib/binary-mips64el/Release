@@ -1,0 +1,5 @@
+Component: contrib
+Origin: billzaumen.github.io
+Label: apt repository
+Architecture: mips64el
+Description: BZDev packages
