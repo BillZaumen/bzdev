@@ -5,14 +5,14 @@ with the exception of cvrdecode.
   - [bikeshr (libbikeshr-*)](https://billzaumen.github.io/bzdev/installers/bikeshr-install-1.4.8.jar)
     sha256: 05a70fe28ca0ab5b61f6ba217bfadca20e0e7d29a72bdb01ed46772575040d6d
 
-  - [bzdev (libbzdev-*)](https://billzaumen.github.io/bzdev/installers/bzdev-install-1.5.9.jar)
-    sha256: 8d8ef69ab33bf8a0266bc5494d536a76b3b584dc278c59cf7abd7437ad4fb4cd
+  - [bzdev (libbzdev-*)](https://billzaumen.github.io/bzdev/installers/bzdev-install-1.5.10.jar)
+    sha256: 7ffaa2cc2d41ba9be74dbb106b26bbe445d6fff61a05dc6b047d0c3ada4f0cb4
 
   - [cvrdecode](https://billzaumen.github.io/bzdev/installers/cvrdecode-install-1.1.jar)
     sha256: 91fa06dd30f01e295dfa1bd9808810542f01f7c9ac19bbfa64fab645870daa8f
 
-  - [epts](https://billzaumen.github.io/bzdev/installers/epts-install-1.1.5.jar)
-    sha256: 6e09af34a29b1738e87c0cc28927e0010318c58f21c6224333d8d8ad126533a4
+  - [epts](https://billzaumen.github.io/bzdev/installers/epts-install-1.1.7.jar)
+    sha256: 18fdbcd5bdd87e511509141d36af8c20eed5dc5d7236538d6db44f5d8d8b313a
 
   - [geth](https://billzaumen.github.io/bzdev/installers/geth-install-1.0.2.jar)
     sha256: 00b0676c92b634e0ca92c614b3dc4bb4523403f4137cf1e9a96abdaf6d6b3b1f
