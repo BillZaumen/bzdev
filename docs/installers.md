@@ -5,8 +5,8 @@ with the exception of cvrdecode.
   - [bikeshr (libbikeshr-*)](https://billzaumen.github.io/bzdev/installers/bikeshr-install-1.4.8.jar)
     sha256: 05a70fe28ca0ab5b61f6ba217bfadca20e0e7d29a72bdb01ed46772575040d6d
 
-  - [bzdev (libbzdev-*)](https://billzaumen.github.io/bzdev/installers/bzdev-install-1.5.12.jar)
-    sha256: d277f9d48f22e4471237798cb5b7e9fef8459b33cad25ed4921f268f9e252b75
+  - [bzdev (libbzdev-*)](https://billzaumen.github.io/bzdev/installers/bzdev-install-1.5.13.jar)
+    sha256: 45ab1f087e733873b454b03a485ea57bf06a4bb53cdb0f0d2efc8f1bb662642e
 
   - [cvrdecode](https://billzaumen.github.io/bzdev/installers/cvrdecode-install-1.1.jar)
     sha256: 91fa06dd30f01e295dfa1bd9808810542f01f7c9ac19bbfa64fab645870daa8f
