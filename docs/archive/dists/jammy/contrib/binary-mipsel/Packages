@@ -767,18 +767,18 @@ Description: Java class library for animations of vehicles, bicycles,
  and pedestrians. See the documentation for further details
 
 Package: webnail
-Version: 1.6.15
+Version: 1.6.18
 Architecture: all
 Depends: default-jre, bash (>= 3.2), libbzdev-java (>= 1.3.53)
 Conflicts: webnail-server
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/graphics
-Filename: pool/contrib/w/webnail/webnail_1.6.15_all.deb
-Size: 1317160
-SHA256: 2c35801f49624a7d6b720ba997da107d416d1f1fc3c7756c02c0d40f95829500
-SHA1: 2e06e22df0ebe09dc9c012040a29547bbe796d4d
-MD5sum: 4117a947f895f41a872e90fe23f27d5a
+Filename: pool/contrib/w/webnail/webnail_1.6.18_all.deb
+Size: 1317428
+SHA256: 5ebf1d3dd3b60fd87d91e90fee2f6170df351b8e71ee9b2dd7ad327dd2901765
+SHA1: b40a7b146d3162f403601165bb0885a0cc3adcc4
+MD5sum: 80ae3b6834587588d4fde46f52591326
 Description: Program that scales images to fit in a bounding box.
  The program, named webnail, can create a web page to display these
  images. A selection of layout styles is available. The default creates
@@ -790,17 +790,17 @@ Description: Program that scales images to fit in a bounding box.
  create a zip file or directory containing the scaled images.
 
 Package: webnail-pop-icons
-Version: 1.6.15
+Version: 1.6.18
 Architecture: all
 Depends: pop-icon-theme
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/doc
-Filename: pool/contrib/w/webnail-pop-icons/webnail-pop-icons_1.6.15_all.deb
-Size: 4926
-SHA256: 4b99ac59c28e1c4a6c1ef2c9081b632ee92d7ab3d5aa06d93ba95144f0d1e8b5
-SHA1: 58e3187b412ace90dd92300494b8ec1109953e1b
-MD5sum: ac6e3cefcce7e13a1f03f197dc8808e9
+Filename: pool/contrib/w/webnail-pop-icons/webnail-pop-icons_1.6.18_all.deb
+Size: 4974
+SHA256: 4c02392c81658ced8dd54f0e7a94f2834de68a93adaa629456e80f99239aa294
+SHA1: c900f06dafcf7902acdb0e08386fe7fc92e4b428
+MD5sum: 14d0dabb1f8dd831621d09927421efb1
 Description: Gnome support for webnail icons for Pop OS.
  This package provides the icons for various mime types
  specific to webnail. The GUI for Pop OS does not find
@@ -812,18 +812,18 @@ Description: Gnome support for webnail icons for Pop OS.
  systems that do not use the Pop OS icons.
 
 Package: webnail-server
-Version: 1.6.15
+Version: 1.6.18
 Architecture: all
 Depends: libbzdev-base-java (>= 1.3.53),libbzdev-ejws-java (>= 1.3.53)
 Conflicts: webnail
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/graphics
-Filename: pool/contrib/w/webnail-server/webnail-server_1.6.15_all.deb
-Size: 8210
-SHA256: 08fea64988b28f8e66e804a42c7217e290b405ae836ddb9582494d61f975db09
-SHA1: 937d76bdc8ceb3ab3c73cdb1323d9ab05c63a82c
-MD5sum: 44ba3696f53fa193fbe2e7151fff7146
+Filename: pool/contrib/w/webnail-server/webnail-server_1.6.18_all.deb
+Size: 8256
+SHA256: 201d32140bf4be9a9a1279017ab443adfb2d8c91668ec526aa0584bda47db8a6
+SHA1: 3ed70c780aeff7b3e6dcad23db0c72c7465f739e
+MD5sum: d4fd8c67fa863c89d1f40a49eab76c70
 Description: Server for files and directories created with webnail.
  The software consists of a single JAR file containing a few of the
  classes that the webnail package provides. It includes a 'main' class
