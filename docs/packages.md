@@ -120,11 +120,11 @@
   - [librdanim-java](./archive/pool/contrib/libr/librdanim-java/librdanim-java_1.4.9_all.deb)
     sha256: 5250496c56d0ea69083c7117cfd1ecb531cc3d835a7129f14a7ef0b60ddf6b03
  
-  - [webnail-pop-icons](./archive/pool/contrib/w/webnail-pop-icons/webnail-pop-icons_1.6.18_all.deb)
-    sha256: 4c02392c81658ced8dd54f0e7a94f2834de68a93adaa629456e80f99239aa294
+  - [webnail-pop-icons](./archive/pool/contrib/w/webnail-pop-icons/webnail-pop-icons_1.6.21_all.deb)
+    sha256: 1dcdc64ba0000edb57e4cd8ba566c9d46e13d1d604cd80bf7d3ae78de8f2c4a7
  
-  - [webnail-server](./archive/pool/contrib/w/webnail-server/webnail-server_1.6.18_all.deb)
-    sha256: 201d32140bf4be9a9a1279017ab443adfb2d8c91668ec526aa0584bda47db8a6
+  - [webnail-server](./archive/pool/contrib/w/webnail-server/webnail-server_1.6.21_all.deb)
+    sha256: bfaa2dfe90f74af3d086a9c81931e01ec24a02d3290e991b5e39bde3fbe1e2fd
  
-  - [webnail](./archive/pool/contrib/w/webnail/webnail_1.6.18_all.deb)
-    sha256: 5ebf1d3dd3b60fd87d91e90fee2f6170df351b8e71ee9b2dd7ad327dd2901765
+  - [webnail](./archive/pool/contrib/w/webnail/webnail_1.6.21_all.deb)
+    sha256: 675752fa2e8f7e526b395ee54f4c7caf10f9de479227d9718ed96be660c4dea9
