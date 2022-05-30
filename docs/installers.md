@@ -27,7 +27,7 @@ To run an installer, use the command
 
 ```
 
-java -jar INSTALLER
+sudo java -jar INSTALLER
 ```
 
 where INSTALLER is a downloaded JAR file.

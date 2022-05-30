@@ -183,7 +183,7 @@ installers:
 	@echo >> docs/installers.md
 	@echo '```' >> docs/installers.md
 	@echo >> docs/installers.md
-	@echo java -jar INSTALLER >> docs/installers.md
+	@echo sudo java -jar INSTALLER >> docs/installers.md
 	@echo '```' >> docs/installers.md
 	@echo >> docs/installers.md
 	@echo where INSTALLER is a downloaded JAR file. >> docs/installers.md
