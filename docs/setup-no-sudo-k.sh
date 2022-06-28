@@ -1,5 +1,8 @@
 #/bin/sh
-sudo -k
+# This version is the same as setup.sh but without
+# the use of sudo -k, and is intended for use in
+# scripts. As with setup, this should be fetched
+# using curl and then piped to sh.
 tmp=bzdev$$.tmp
 mkdir $tmp
 cd $tmp
@@ -16,6 +19,5 @@ trap '' INT QUIT
   sudo apt update && echo OK ) || echo FAILED
 rm -f BZDev.gpg
 rm -f s.list
-sudo -k
 cd ..
 [ -d $tmp ] && rmdir $tmp

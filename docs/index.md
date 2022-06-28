@@ -28,6 +28,14 @@ This will create two files in subdirectories of `/etc/apt/`.
   - `/etc/apt/sources.list.d/org.bzdev.BZDev.list`
   - `/etc/apt/trusted.gpg.d/org.bzdev.BZDev.gpg`
 
+The script setup.sh using sudo -k so that a password is always
+required. This can be annoying in scripts.  In that case, one
+can use
+
+```
+curl https://billzaumen.github.io/bzdev/setup-no-sudo-k.sh | sh
+```
+
 For those not comfortable running code they have not inspected, the
 individual steps (there are only a few) are provided below, and each
 can be run separately.
