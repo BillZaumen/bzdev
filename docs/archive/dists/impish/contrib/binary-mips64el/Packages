@@ -126,17 +126,17 @@ Description: Gnome support for ECDB icons for Pop OS.
  systems that do not use the Pop OS icons.
 
 Package: epts
-Version: 1.1.10
+Version: 1.1.13
 Architecture: all
 Depends: default-jre, bash (>= 3.2), libbzdev-java (>= 2.0.1)
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/graphics
-Filename: pool/contrib/e/epts/epts_1.1.10_all.deb
-Size: 1641258
-SHA256: f685bf9d4b0abfa1f073f0a336ff203089889ba22cdc80d85078d19e7f45d99a
-SHA1: ab016289cb1589ecff217572e2a1db114693edfd
-MD5sum: fcce70539114b444aeff56dcce2fee16
+Filename: pool/contrib/e/epts/epts_1.1.13_all.deb
+Size: 1641438
+SHA256: af6a1d7b8e0bf718bc78bcd0102fca2c3af7178b4135ab1f9c716a1ccbeab9be
+SHA1: 2539dfcd00f17083f502d26ca2e66da242fcce67
+MD5sum: 687d5c0195577cbc857cc4102c01ae6f
 Description: Graphics editor for creating  points, and paths.
  The paths consist of segments that can be straight-line
  segments, quadratic or cubic Bezier curves, or splines that
@@ -150,17 +150,17 @@ Description: Graphics editor for creating  points, and paths.
  packages based on that package.
 
 Package: epts-pop-icons
-Version: 1.1.10
+Version: 1.1.13
 Architecture: all
 Depends: pop-icon-theme
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/doc
-Filename: pool/contrib/e/epts-pop-icons/epts-pop-icons_1.1.10_all.deb
-Size: 5474
-SHA256: 6fb50723dd2fd66d69d2651f0d3b957bafa0dbd80cffb64182fed9fe00f64908
-SHA1: 43696f844233a8e4f82bae75a6b05a7dc55b5548
-MD5sum: 9a5e6b1c2c6dab503fa8af67cb7d8e81
+Filename: pool/contrib/e/epts-pop-icons/epts-pop-icons_1.1.13_all.deb
+Size: 5516
+SHA256: de6798940d5d8d2a7a1cab5023885dec65080801727c0e978ce502a9378e22fa
+SHA1: 1c09246cae513da652c0e0499bbf38050f3c7837
+MD5sum: 709273999316168a304c1ed3a590ed8e
 Description: Gnome support for EPTS icons for Pop OS.
  This package provides the icons for various mime types
  specific to EPTS. The GUI for Pop OS does not find
