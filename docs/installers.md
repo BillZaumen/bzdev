@@ -11,8 +11,8 @@ with the exception of cvrdecode.
   - [cvrdecode](https://billzaumen.github.io/bzdev/installers/cvrdecode-install-1.1.jar)
     sha256: 91fa06dd30f01e295dfa1bd9808810542f01f7c9ac19bbfa64fab645870daa8f
 
-  - [epts](https://billzaumen.github.io/bzdev/installers/epts-install-1.1.9.jar)
-    sha256: 984b1697e39f72841f3dc4fe389820603584a85a07f9d23f55d76fa45a49f92b
+  - [epts](https://billzaumen.github.io/bzdev/installers/epts-install-1.1.10.jar)
+    sha256: 5e98e4dcd59218f083d1f61e054e0a118f2caee8b8bef7636a0d23308a0e22a8
 
   - [geth](https://billzaumen.github.io/bzdev/installers/geth-install-1.0.2.jar)
     sha256: 00b0676c92b634e0ca92c614b3dc4bb4523403f4137cf1e9a96abdaf6d6b3b1f
