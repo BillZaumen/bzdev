@@ -20,8 +20,8 @@ with the exception of cvrdecode.
   - [roadanim (librdanim-*)](https://billzaumen.github.io/bzdev/installers/roadanim-install-1.4.9.jar)
     sha256: 58d7614e6da99ef073bba295a8b10313ca7ec9f9dcf54d331b2000429ba02e92
 
-  - [webnail](https://billzaumen.github.io/bzdev/installers/webnail-install-1.6.23.jar)
-    sha256: 334bdf1c16a7dd649b212650ae310199e6a448c3af75111505b75390c60b4b34
+  - [webnail](https://billzaumen.github.io/bzdev/installers/webnail-install-1.6.24.jar)
+    sha256: 595cf6cc2ad2376fbe17e19d41f24dbd6c5d653916dcdf4f5e9394343fdae0c5
 
 To run an installer, use the command
 
