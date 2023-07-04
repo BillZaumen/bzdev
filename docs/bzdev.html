@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<LINK rel="stylesheet" type="text/css" href="bzdev.css">
+<STYLE TYPE="text/css">
+.example {background-color: rgb(50,50,50);}
+DIV.bodybg {background-color: rgb(10,10,25);}
+</STYLE>
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+  <IMG src="./bzdev.svg" height="100">
+  <H1>The BZDev class library and applications</H1>
+  <P>
+    The BZDev class library supports discrete-event simulation, graphs
+    and plotting, mathematical functions and numerical algorithms, 2D
+    animation, 3D printing, writing graphics to output streams,
+    integration of scripting with applications, additional Swing
+    components, etc.  This library, and several applications that use
+    it, can be installed by visiting
+    <BLOCKQUOTE>
+      <A HREF= "https://billzaumen.github.io/bzdev/">
+	https://billzaumen.github.io/bzdev/</A>
+    </BLOCKQUOTE>
+    and following the instructions provided there.  The location of
+    the Debian repository is temporary&mdash;it is provided for
+    initial use with a presumably small number of users.
+  <P>
+    The library uses &apos;factory&apos; classes for
+    configuring simulations and animations. Annotation processor makes
+    it relatively easy to create a factory class and provide support
+    for dynamic methods in which the types of a method&apos;s
+    arguments are determined at run time instead of compile time.  It
+    also provides a Java-specific scripting language
+    (<STRONG>ESP</STRONG>&mdash;Expression Sequence Processor) that
+    can be used to run simulations and animations.  It also provides
+    an implementation of a secure authentication algorithm called
+    <A HREF="SecureBasic.html">Secure Basic Authentication</A> for use
+    with web servers.
+  <P>
+    The library is provided as a series of Java modules, each with its
+    own JAR file.  The source code is available on GitHub:
+    <BLOCKQUOTE>
+      <A HREF= "https://github.com/BillZaumen/libbzdev">
+	https://github.com/BillZaumen/libbzdev</A>
+    </BLOCKQUOTE>
+  <P>
+    All of the module and package names start with
+    <CODE>org.bzdev</CODE>, which was chosen mainly for brevity.
+  <P>
+    There are also several applications and additional class libraries
+    based on the BZDev class library.  The more complex applications have
+    web pages describing them. The libraries do not as the API documentation
+    can be downloaded as part of an installation.
+    These applications and libraries include
+    <UL>
+      <LI> <A HREF="https://billzaumen.github.io/cvrdecode/"><STRONG>cvrdecode</STRONG></A>&mdash;a
+	utility for processing multiple images containing California
+	digital vaccine records for COVID-19 vaccinations. The program
+	extracts a minimum amount of information from the records and
+	produces a CSV file showing the records in a table, sorted by
+	name.  It was intended as a utility for people running events
+	were people would voluntarily email copies of their records.
+	For the source code, please visit
+	<BLOCKQUOTE>
+	  <A HREF= "https://github.com/BillZaumen/cvrdecode">
+	    https://github.com/BillZaumen/cvrdecode/</A>
+	</BLOCKQUOTE>
+      <LI> <A HREF="https://billzaumen.github.io/ecdb/"><STRONG>ecdb</STRONG></A>&mdash;a
+	simple database example for scheduling events and emailing
+	calendar appointments.  For the source code, please visit
+	<BLOCKQUOTE>
+	  <A HREF= "https://github.com/BillZaumen/ecdb">
+	    https://github.com/BillZaumen/ecdb/</A>
+	</BLOCKQUOTE>
+      <LI><A HREF="https://hub.docker.com/r/wtzbzdev/epimodel"><STRONG>epimodel</STRONG></A>&mdash;a
+	Docker container providing a basic model of a pandemic. This
+	code was written at the start of the COVID-19 pandemic during
+	the lockdown.  The initial model was written the first morning
+	of the lockdown and it was then expanded and set up to be run
+	using a web server in a Docker container. It can be used as a
+	short coding example. For the source code, please visit
+	<BLOCKQUOTE>
+	  <A HREF= "https://github.com/BillZaumen/epimodel">
+	    https://github.com/BillZaumen/epimodel/</A>
+	</BLOCKQUOTE>
+      <LI><A HREF="https://billzaumen.github.io/epts/"><STRONG>epts</STRONG></A>&mdash;a
+	graphics editor for creating paths and outputting the paths in
+	a variety of formats.  The output format can be controlled by
+	templates, both built-in templates and user-supplied
+	templates.  For the source code, please visit
+	<BLOCKQUOTE>
+	  <A HREF= "https://github.com/BillZaumen/epts">
+	    https://github.com/BillZaumen/epts/</A>
+	</BLOCKQUOTE>
+      <LI><A HREF="https://billzaumen.github.io/evdisk/"><STRONG>evdisk</STRONG></A>&mdash;an
+	application for managing a LUKS file system mounted via the
+	loopback device, using GPG to encrypt the file systems
+	password (this application does not use the library).
+	For the source code, currently Linux specific, please visit
+	<BLOCKQUOTE>
+	  <A HREF= "https://github.com/BillZaumen/evdisk">
+	    https://github.com/BillZaumen/evdisk/</A>
+	</BLOCKQUOTE>
+      <LI><A HREF="https://billzaumen.github.io/geth/"><STRONG>gethdrs</STRONG></A>&mdash;a
+	simple application for tracing HTTP and HTTPS headers,
+	including showing series of HTTP redirects.  For the source
+	code, please visit
+	<BLOCKQUOTE>
+	  <A HREF= "https://github.com/BillZaumen/geth">
+	    https://github.com/BillZaumen/geth/</A>
+	</BLOCKQUOTE>
+      <LI><STRONG>libosgbatik</STRONG>&mdash;a Java service provider
+	based on the Apache Batik project for adding SVG support to the
+	output-stream graphics classes in the BZDev library.  For the source
+	code, please visit
+	<BLOCKQUOTE>
+	  <A HREF= "https://github.com/BillZaumen/osg-batik">
+	    https://github.com/BillZaumen/osg-batik/</A>
+	</BLOCKQUOTE>
+	The current package includes a stripped-down copy of Apache
+	Batik because of an issue with Java modules: the Batik code
+	duplicated some XML-related classes from packages whose names
+	start with org.w3c and those classes cause a conflict that
+	prevents the use of the standard Batik JAR files as Java
+	automatic modules.  When that issue is resolved, libosgbatik
+	will be modified so that it just contains the classes specific
+	to the <CODE>libbzdev</CODE> modules.
+      <LI><STRONG>librdanim</STRONG>&mdash;a small library providing
+	classes that can be used for creating animations showing cars,
+	bicycles, and pedestrians by using the <CODE>org.bzdev.anim2d</CODE>
+	Java package. This package is particularly useful in the event of
+	a car accident where an animation would help describe the situation
+	(the author wrote it after being involved in a "fender bender" caused
+	by an aggressive drive trying to pass by using a shoulder while the
+	author was making a right turn from a right-turn-only lane onto a
+	street with only a single lane in each direction).
+	For the source code, please visit
+	<BLOCKQUOTE>
+	  <A HREF= "https://github.com/BillZaumen/librdanim">
+	    https://github.com/BillZaumen/librdanim/</A>
+	</BLOCKQUOTE>
+	This library contain 1866 lines of source code (augmented by
+	3768 lines of code generated by an annotation processor used
+	to create classes supporting factories).  It is short enough
+	and straightforward enough to be used as an example.
+      <LI><STRONG>libbikeshr</STRONG>&mdash;a simulation of a
+	bicycle-sharing system, useful mainly as a modest-sized
+	example of a simulation (4560 lines of code, excluding
+	comments and blank lines). For the source code, please visit
+	<BLOCKQUOTE>
+	  <A HREF= "https://github.com/BillZaumen/libbikeshr">
+	    https://github.com/BillZaumen/libbikeshr/</A>
+	</BLOCKQUOTE>
+      <LI><A HREF="https://billzaumen.github.io/QRLauncher/"><STRONG>QRLauncher</STRONG></A>&mdash;an
+	application that can extract URLs from QR codes and open the URLs
+	using a browser or display the QR code's contents.  THis application
+	can also generate QR codes in a variety of formats including SVG and
+	PostScript, with user-specified colors, sizes, and error-correction
+	levels. For the source code, please visit
+	<BLOCKQUOTE>
+	  <A HREF= "https://github.com/BillZaumen/QRLauncher">
+	    https://github.com/BillZaumen/QRLauncher/</A>
+	</BLOCKQUOTE>
+      <LI><A HREF="https://billzaumen.github.io/webnail/"><STRONG>webnail</STRONG></A>&mdash;a
+	utility that can take a series of images scale them to fit in
+	a specified bounding box, and generate zip files and web pages
+	that can provide a slideshow.  It includes a built-in web
+	server that can be optionally used. For the source code,
+	please visit
+	<BLOCKQUOTE>
+	  <A HREF= "https://github.com/BillZaumen/webnail">
+	    https://github.com/BillZaumen/webnail/</A>
+	</BLOCKQUOTE>
+	A Docker container can run <STRONG>webnail</STRONG>&apos;s internal
+	web server.  The web page
+	<BLOCKQUOTE>
+	  <A HREF= "https://hub.docker.com/r/wtzbzdev/webnail">
+	    https://hub.docker.com/r/wtzbzdev/webnail</A>
+	</BLOCKQUOTE>
+	contains instructions.
+    </UL>
+  <P>
+    While there is extensive API documentation, there are also several
+    books currently in preparation or being planned that provides more of
+    a tutorial.
+
+    <H2> Short utility programs </H2>
+
+    There are several (currently 1) short programs provided as JAR
+    files, intended primarily for debugging, that can be downloaded.
+    The <A HREF= "https://billzaumen.github.io/bzdev/">BZDev class library</A>
+    has to be installed before these can be used.
+    <UL>
+      <LI><A HREF="utils/transfertest.jar">transfertest.jar</A>. This
+	will provide a console with a drop location near the top of
+	a window.  If you drag and drop objects to that location, information
+	about the data flavors the transfer provides will be displayed and
+	may be saved to a file or printed.
+	In the same directory in which <CODE>transfertest.jar</CODE> is
+	placed, run the command
+	<BLOCKQUOTE><PRE><CODE>
+ln -s /usr/share/bzdev/libbzdev-desktop.jar .
+	</CODE></PRE></BLOCKQUOTE>
+	To run the utility, use
+	<BLOCKQUOTE><PRE><CODE>
+java -jar transfertest.jar
+	</CODE></PRE></BLOCKQUOTE>
+or
+	<BLOCKQUOTE><PRE><CODE>
+java -jar transfertest.jar default
+	</CODE></PRE></BLOCKQUOTE>
+	The output can be printed or saved in a file.  The 'default'
+	option changes the text field representing the drop location
+	to an uneditable text field and replaces its transfer handler.
+	Without this option, new text may appear in the text field when
+	a drag and drop operation completes.
+    </UL>
+    The paths in the instructions above may have to be changed if a
+    system stores the JAR files in different locations. The source code
+    is location at
+	<BLOCKQUOTE>
+	  <A HREF= "https://github.com/BillZaumen/utils">
+	    https://github.com/BillZaumen/utils/</A>
+	</BLOCKQUOTE>
+
+    <H2>Discussions and commenting</H2>
+
+    There are currently two options:
+    <UL>
+      <LI> add an issue using GitHub.  All of the applications and
+	libraries listed above have their source code on GitHub.
+      <LI> visit
+	<A HREF="https://fosstodon.org/@bzdev">https://fosstodon.org/@bzdev</A>
+	or just use the handle @bzdev@fosstodon.org in the usual way on
+	any Mastodon server.
+    </UL>
+  
+    <H2>About the banner</H2>
+  <P>
+    Besides providing a name, the adjacent figure shows an orbit
+    around a black hole (no electric charge and not spinning), with
+    color changes denoting redshifts due to both the relativistic
+    Doppler effect and time running at different rates at various
+    distances from the center.  It was produced by using the
+    BZDev class library to
+    <UL>
+      <LI> solve differential equations numerically and use splines
+	to represent the solutions.
+      <LI> compute colors given a wavelength for a monochromatic
+	light source.
+      <LI> draw the image while expressing positions in units suitable
+	to the problem domain (as opposed to pixels on a screen our output
+	device).
+    </UL>
+    <H2>About this web page</H2>
+  <P>
+    Readers may find the design kind of "old fashioned" as it uses
+    hand-written HTML with a style sheet to control the layout,
+    font-sizes, colors, etc.  It was designed to load quickly (only a
+    single, small image), and to be fully usable with a small screen
+    width. That's useful if you are using an adjacent terminal window.
+</BODY>
+</HTML>
+
+<!--  LocalWords:  helvetica rgb monospace BLOCKQUOTE bodybg BZDev
+ -->
+<!--  LocalWords:  cvrdecode COVID CSV ecdb epts evdisk LUKS loopback
+ -->
+<!--  LocalWords:  GPG geth HTTPS libosgbatik SVG librdanim webnail
+ -->
+<!--  LocalWords:  libbikeshr redshifts epimodel lockdown uneditable
+ -->
+<!--  LocalWords:  transfertest
+ -->
