@@ -227,3 +227,13 @@ utils: docs/utils/transfertest.jar
 
 docs/utils/transfertest.jar: ../utils/transfertest.jar
 	cp ../utils/transfertest.jar docs/utils/transfertest.jar
+
+# Truncate history
+truncate-history:
+	ref=`git rev-list main~ ^main~~` ; \
+	git checkout --orphan temp $ref ; \
+	git commit -a -m "truncate history" ; \
+	git rebase -onto temp $$ref main
+	git branch -D temp
+	git reflog expire --expire-unreachable=now --all
+	git gc --prune=now
