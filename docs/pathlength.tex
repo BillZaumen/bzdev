@@ -2,7 +2,7 @@
 \title{Computing the length of a B\'{e}zier path}
 \author{Bill Zaumen}
 \date{October 17, 2023}
-\addtolength{\textheight}{4.0ex}
+\addtolength{\textheight}{5.0ex}
 
 \begin{document}
 \maketitle
@@ -136,13 +136,20 @@ $P(t)$. There are three cases:
   \item If there are no roots in common, $A(t)^2 + B(t)^2$ is a
 	fourth degree polynomial with no real roots, and can be
 	factored into two polynomials $Q_1(t)$ and $(Q_2(t)$ that
-	also have no real roots that have positive values for all values
+	have no real roots and that have positive values for all values
 	of $t$.
 \end{enumerate}
-Cases 1 and 2 involve integrals that are listed in the CRC
-Standard Mathematical Tables, and use elementary
-functions. While each has several cases, these are similar to
-the ones outlines in Section~\ref{quadratic}.
+
+Cases 1 and 2 involve integrals that are listed in the CRC Standard
+Mathematical Tables, and use elementary functions. While each has
+several cases, these are similar to the ones outlines in
+Section~\ref{quadratic}.  One additional integral is useful:
+      \[ \int x\sqrt{X}\,dt = \frac{X\sqrt{X}}{3c}
+        - \frac{b}{2c}\int\sqrt{X}\,dt \]
+where $X = a + bt + ct^2$. This integral can be used for the case
+where $A(t)$ and $B(t)$ have on common root, in which case the
+integral is that for the absolute value of a first degree polynomial
+multiplied by the square root of a quadratic polynomial.
 
 The third case, which requires integrating the square root of
 a quartic polynomial, uses elliptic integrals. If $Q_1(t)$ and
