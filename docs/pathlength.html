@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+  <HEAD>
+    <LINK rel="stylesheet" type="text/css" href="bzdev.css">
+    <STYLE TYPE="text/css">
+      .example {background-color: rgb(50,50,50);}
+      DIV.bodybg {background-color: rgb(10,10,25);}
+    </STYLE>
+    <script>
+      MathJax = {
+	  tex: {
+	      inlineMath: [['$', '$'], ['\\(', '\\)']],
+	      displayMath: [['$$', '$$'], ['\\[', '\\]']]}
+      };
+    </script>
+    <script ID="MathJax-script" async
+	    SRC="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    <TITLE>Computing the length of a B&eacute;zier path</TITLE>
+    <META NAME="author" content="Bill Zaumen">
+    <META NAME="description" content="B&eacute;zier curve length">
+  </HEAD>
+  <BODY>
+    <H1 style="text-align: center">
+      Computing the length of a B&eacute;zier path</H1>
+    <P style="text-align: center">
+      Bill Zaumen
+    <P>
+      For printing, see <A HREF="./pathlength.pdf">the PDF version</A>.
+
+      <H2>Introduction</H2>
+    <P>
+      B&eacute;zier paths, as used in practice, consist of multiple
+      segments, each of which is either a straight-line segment, a
+      quadratic B&eacute;zier curve segment, or a cubic B&eacute;zier
+      curve segment. These curves can be represented by the following
+      expressions:
+      <UL>
+	<LI> $\mathbf{p}(t) = \mathbf{p}_0B_{0,1}(t) + \mathbf{p}_1B_{1,1}(t)$
+	  for linear segments,
+	<LI> $\mathbf{p}(t) = \mathbf{p}_0B_{0,2}(t) + \mathbf{p}_1B_{1,2}(t)
+	  + \mathbf{p}_2B_{2,2}(t)$
+	  for quadratic segments,
+	<LI> $\mathbf{p}(t) = \mathbf{p}_0B_{0,3}(t) + \mathbf{p}_1B_{1,3}(t)
+	  + \mathbf{p}_2B_{2,3}(t) + \mathbf{p}_3B_{3,3}(t)$
+	  for cubic segments,
+      </UL>
+      where <STRONG>p</STRONG><sub>0</sub>, <STRONG>p</STRONG><sub>1</sub>,
+      <STRONG>p</STRONG><sub>2</sub>, and <STRONG>p</STRONG><sub>3</sub> are
+      control points,  $B_{i,n}(t)$ is a Bernstein polynomial defined
+      by the equation
+      $$ B_{i,n}(t) = \left(\begin{array}{c}n \\ i\end{array}\right)
+      t^i(1-t)^{n-i}\ ,$$
+      with <STRONG>p</STRONG>(t) and the control points represented by vectors.
+    <P>
+      If the X and Y components of $\mathbf{p}(t)$ are $x(t)$ and $y(t)$ (with
+      an obvious generalization to more dimensions), then the distance between
+      two points on a  segment is
+      $$ d(t_1,t_2) = \int_{t=t1}^{t2}\sqrt{A(t)^2 + B(t)^2}\,dt$$
+      where
+      $$ \begin{eqnarray}
+	A(t) &amp; = &amp; \frac{dx}{dt} \\
+	B(t) &amp; = &amp; \frac{dy}{dt}
+      \end{eqnarray} $$
+      These derivatives can be computed by using the relation,
+      $\frac{d}{dt}B_{i,n}(t) = n(B_{i-1,n-1}(t) - B_{i,n-1}(t))$
+      with $B_{-1,n-1}(t) = B_{n,n-1}(t) = 0$.  This relation can be
+      used to differentiate $x$ and $y$, representing the derivatives
+      as polynomials using a B&eacute;zier basis and the derivatives
+      can then be easily transformed to a monomial basis.
+    <P>
+      Because $A(t)$ and $B(t)$ are squared, the square root will
+      always be positive unless $A(t)$ and $B(t)$ share a common
+      root.  In addition, $A(t)$ and $B(t)$ can be at most quadratic
+      polynomials.   When $A(t)$ and $B(t)$ share at least one root,
+      we can write the integral as
+      $$ d(t_1,t_2) = \int_{t=t1}^{t2}|P(t)|\sqrt{Q(t)}\,dt$$
+      where P(t) and Q(t) are polynomials and where the degree of
+      $Q$ is either 2 or 0.
+      
+      <H2><A ID="linear"></A> Straight line segments</H2>
+    <P>
+      For linear line segments, $A(t)$ and $B(t)$ are constants and
+      the integral is trivial:the length of a line segment is a
+      constant multiplied by $t_2 - t_1$, with positive values
+      indicating that the path parameter is increasing and negative
+      values indicating that the path parameter is decreasing.
+
+      <H2><A ID="quadratic"></A>Quadratic line segments</H2>
+    <P>
+      For quadratic line segments, $A(t)$ and $B(t)$ are constants or
+      first degree polynomials.  If $A(t)$ and $B(t)$ have a common
+      root, the integrand is the absolute value of a
+      polynomial. Otherwise, the integral can be written as
+      $$ d(t_1, t_2) = \int_{t=t_1}^{t_2} \sqrt{a + bt + ct^2}\,dt$$
+      That integral can be found in the CRC Standard Mathematical
+      Tables, which states that it is
+      $$ d(t_1,t_2) = \left. \frac{(2ct+b)\sqrt{X}}{4c}
+      \right|_{t=t_1}^{t_2} + \frac{1}{2k}\int_{t=t_1}^{t_2}\frac{1}{
+      \sqrt{X}}\,dt$$
+      where $q = 4ac-b^2$, $k = \frac{4c}{q}$ and $X = a + bt + ct^2$
+      In addition,
+      $\int_{t=t_1}^{t_2}\frac{1}{\sqrt{X}}\,dt$ has different values for
+      <UL>
+	<LI> $c &gt; 0$, in which case
+	  $$\int \frac{dt}{\sqrt{X}} = \frac1{\sqrt{c}}
+	  \log (\sqrt{X} + t\sqrt{c} + \frac{b}{2/sqrt{c}}) $$
+	<LI> $c &gt; 0$ and $q &gt; 0$, in which case
+	  $$\int \frac{dt}{\sqrt{X}} = \frac1{\sqrt{c}}
+	  \sinh^{-1} \left(\frac{2ct+b}{\sqrt{4ac-b^2}}\right) $$
+	<LI> $c &lt 0$, in which case
+	  $$\int \frac{dt}{\sqrt{X}} = \frac1{\sqrt{-c}}
+	  \sin^{-1} \left(\frac{-2ct-b}{\sqrt{b^2 - 4ac}}\right) $$
+      </UL>
+      For $d(t_1,t_2)$, there are a few special cases.  If $q = 0$, the
+      integral reduces to the integral of the absolute value of a
+      first degree polynomial and that is a good approximation when q
+      is very close to zero as well.  Also, when $|c|$ is sufficiently
+      small, one can change the integral to
+      $$ \begin{eqnarray}d(t_1,t_2) &amp; = &amp; \int_{t=t_1}^{t_2} \sqrt{a+bt}
+      \sqrt{1 +\frac{ct^2}{a+bt}}\,dt \\
+      &amp; \approx &amp; \int_{t=t_1}^{t_2}\left[
+       \sqrt{a+bt} + \frac{ct^2}{2\sqrt{a+bt}}
+      \right]\,dt
+      \end{eqnarray}$$
+      and both terms in the approximate value have integrals in the CRC
+      Standard Mathematical Tables:
+      $$\begin{eqnarray}
+      \int \sqrt{a + bt}\,dt &amp; = &amp; \frac{2}{3b}\sqrt{(a+bt)^3} \\
+      \int \frac{t^2}{\sqrt{a+bt}}\,dt &amp; = &amp;
+           \frac{3(8a^2 - 4abt + 3b^2t^2)}{15b^3}\sqrt{a+bt}
+        \end{eqnarray}$$
+    <P>
+      For integrals containing absolute values of polynomials, it is
+      necessary to break the integral up into segments whose boundaries
+      are the limits of integration and the roots, with no segment including
+      a root internally. Finally, when the integral uses logarithms, it is
+      possible for $a+bt+ct^2$ to be positive for $t\in[t_1,t_2]$ and the
+      argument for the logarithm to be negative.  For this case
+      use $\log x = \log (-x) + i\pi$ for $x &lt; 0$. While the integral is
+      a complex number, the imaginary part is a constant and thus drops out
+      of definite integrals.
+      
+      <H2><A ID="cubic"></A>Cubic line segments</H2>
+    <P>
+      For cubic line segments, $A(t)$ and $B(t)$ could be constants or
+      first degree polynomials, but are typically second degree
+      polynomials If $A(t)$ and $B(t)$ have a common root, the
+      integrand is the square root of a constant or a second degree
+      polynomial $Q(t)$, multiplied by the absolute value of a polynomial
+      $P(t)$. There are three cases:
+      <OL>
+	<LI> if $A(t)$ and $B(t)$ share one common root, $P(t)$ is a first
+	  degree polynomial and $Q(t)$ is a second degree polynomial
+	<LI> if $A(t)$ and $B(t)$ share two roots or both have the same
+	  double root, then $P(t)$ is a second-degree polynomial and
+	  $Q(t)$ is a constant.
+	<LI> If there are no roots in common, $A(t)^2 + B(t)^2$ is a
+	  fourth degree polynomial with no real roots, and can be
+	  factored into two polynomials $Q_1(t)$ and $(Q_2(t)$ that
+	  also have no real roots that have positive values for all values
+	  of $t$.
+      </OL>
+      Cases 1 and 2 involve integrals that are listed in the CRC
+      Standard Mathematical Tables, and use elementary
+      functions. While each has several cases, these are similar to
+      the ones outlines in the section for <A HREF="#quadratic">the
+      quadratic case</A>.
+    <P>
+      The third case, which requires integrating the square root of
+      a quartic polynomial, uses elliptic integrals. If $Q_1(t)$ and
+      $Q_2(t)$ are written as
+      $$\begin{eqnarray}
+      Q_1(t) &amp; = &amp; f_1 + g_1t+h_1t^2 \\
+      Q_2(t) &amp; = &amp; f_2 + g_2t + h_2t^2 \ ,
+      \end{eqnarray}$$
+      the integral can be found in B.C. Carlson,
+      "<A HREF="https://www.ams.org/journals/mcom/1992-59-199/S0025-5718-1992-1134720-4/S0025-5718-1992-1134720-4.pdf">
+       A Table of Elliptic Integrals: Two Quadratic Factors</A>,"
+      Mathematics of Computation, Volume 59, Number 199, July 1992,
+      Pages 165&mdash;180. Equation 2.45 on Page 169, labeled as
+      [1, 1, 1, 1], contains this integral, and makes use of a number of
+      variables Carlson defined before Equation 2.45. One obtains
+      $$\begin{eqnarray}
+      \int_{t=y}^{x}\sqrt{Q_1(t)Q_2(t)}\,dt &amp; = &amp;
+                 (\delta^2_{22}/h_2^2 - \delta_{11}^2/h_1^2)[\psi_0H_0
+                 + (\Delta_0 - \delta_{12}^2)R_f]/8 \\
+      &amp; - &amp; (3\psi_0^2-4h_1h_2\delta_{12}^2)(\Sigma+\delta_{12}^2R_f)
+                    / (24h_1^2h_2^2) \\
+      &amp; + &amp;  [\Delta^2R_f-\psi_0A(1,1,1,1)]/(12h_1h_2) + E/(3h_1)
+      \end{eqnarray}$$
+      where the quantities in this integral are defined below. In the following
+      list of definitions, $i$ has each of two values (1 and 2) and the
+      functions $R_F$, $R_J$, $R_C$, and $R_D$ are the Carlson symmetric
+      forms of elliptic integrals:
+      $$\begin{eqnarray}
+        H_0 &amp; = &amp;  \delta_{11}^2\psi_0 [
+			R_J(M^2,L_{-}^2,L_{+}^2,\Omega_0^2)/3
+			+R_C(a_0^2,b_0^2)/2]/h_1^2
+			-X_0R_C(T_0^2,V_0^2) \\
+        a_0^2 &amp; = &amp; b_0^2 + \Lambda_0(\Lambda_{+} - \Lambda_0)
+			(\Lambda_0 - \Lambda_{-}) \\
+        b_0^2 &amp; = &amp;  (S^2/U^2 + \Lambda_0)\Omega_0^4 \\
+        V_0^2 &amp; = &amp; \mu_0^2(S^2 + \Lambda_0U^2)  \\
+        T_0 &amp; = &amp; \mu_0S + 2h_1h_2  \\
+        \mu_0 &amp; = &amp; h_1/(\xi_1\eta_1)  \\
+        X_0 &amp; = &amp; -(\xi_1^\prime\xi_2 + \eta_1^\prime\eta_2)/(x-y) \\
+        \Omega_0^2 &amp; = &amp; M^2 + \Lambda_0  \\
+        \Lambda_0 &amp; = &amp;  \delta_{11}^2h_2/h_1 \\
+        \psi_0 &amp; = &amp; g_1h_2 - g_2h_1 \\
+        A(1,1,1,1) &amp; = &amp; \xi_1\xi_2 - \eta_1\eta_2  \\
+        S &amp; = &amp; (\xi_1\eta_1\theta_2 + \xi_2\eta_2\theta_1)/(x-y)^2 \\
+        \Sigma &amp; = &amp; G-\Delta_{+}R_f + B  \\
+        R_f &amp; = &amp; R_F(M^2,L_{-}^2, L_{+}^2)  \\
+        G&amp; = &amp; 2\Delta\Delta_{+}R_D(M^2,L_{-}^2,L_{+}^2)/3
+                        + \Delta/(2U)
+			+ (\delta_{12}^2\theta_1 - \delta_{11}^2\theta_2)
+			  /(4\xi_1\eta_1U) \\
+        L_{\pm}^2 &amp; = &amp; M^2 + \Delta_{\pm}  \\
+        \Delta_{\pm} &amp; = &amp; \delta_{12}^2 \pm \Delta \\
+        \Delta &amp;=&amp; (\delta_{12}^4 -\delta_{11}^2\delta_{22}^2)^{1/2} \\
+        \delta_{ij} &amp; = &amp; (2f_ih_j + 2f_jh_i - g_ig_j)^{(1/2)}  \\
+        M &amp; = &amp; \zeta_1\zeta_2/(x - y) \\
+        U &amp; = &amp; (\xi_1\eta_2+\eta_1\xi_2)/(x - y)  \\
+        \zeta_i &amp; = &amp; [(\xi_i+\eta_i)^2 - h_i(x-y)^2]^{(1/2)} \\
+        \theta_i &amp; = &amp; \xi_i^2 + \eta_i^2 - h_i(x-y)^2  \\
+        E &amp; = &amp; \xi_1^\prime\xi_1^2\xi_2-\eta_1^\prime\eta_1^2\eta_2 \\
+        B &amp; = &amp; \xi_1^\prime\xi_2 - \eta_1^\prime\eta_2 \\
+        \eta_1^\prime &amp; = &amp; (g_1 + 2h_1y)/(2\eta_1)  \\
+        \xi_1^\prime &amp; = &amp; (g_1 + 2h_1x)/(2\xi_1)  \\
+        \eta_i&amp; = &amp; (f_i + g_iy + h_iy^2)^{1/2}  \\
+        \xi_i &amp; = &amp; (f_i + g_ix + h_ix^2)^{1/2}
+      \end{eqnarray}$$
+      Programs that define these variables should place them in the
+      reverse order.
+    <P>
+      An algorithm for factoring $Q(t)$ is described
+      in Brookfield, 
+      "<A HREF="https://www.maa.org/sites/default/files/Brookfield2007-103574.pdf">
+	Factoring Quartic Polynomials: A Lost Art</A>",
+      Mathematics Magazine, Vol. 80, No. 1, February 2007, Pages 67&ndash;70.
+      The easiest way to proceed is to factor $Q(t)$ into three terms:
+      a constant, and two quadratic polynomials whose $t^2$ coefficients are
+      1.0. There are two special cases.
+      <OL>
+	<LI> the minimum value of at least one of the two factors is
+	  small (e.g., less than $1 \times 10^{-4}$). In this case,
+	  tests indicate that numerical accuracy is poor, and one should
+	  use some other method such as numeric integration.
+	<LI> the two factors are identical.  In this case, the integrand
+	  is the absolute value of a quadratic polynomial. For this case,
+	  the integral given in Carlson's paper can fail: a Java implementation
+	  returned Double.NaN, most likely because of division by zero,
+	  which suggests that Carlson's integral may not be numerically
+	  accurate when the two factors are nearly, but not exactly
+	  identical.
+      </OL>
+      When the two factors are nearly identical (for example, when the
+      coefficients differ by less than $10^{-7}$), one can write
+      $$ \begin{eqnarray}
+      \sqrt{Q_1(t)Q_2(t)} &amp; = &amp; Q_1(t)\sqrt{\frac{Q_2(t)}{Q_1(t)}}
+       =  Q_1(t)\sqrt{1 + \frac{Q_2(t)}{Q_1(t)} - 1} \\
+      &amp; \approx &amp; Q_1(t)\left[1 + \frac12 (\frac{Q_2(t)}{Q_1(t)} - 1)
+      \right]
+      = \frac{Q_1(t) + Q_2(t)}{2}
+      \end{eqnarray}$$
+      and the integral can be approximated by the integral of a polynomial.
+  </BODY>
+</HTML>
+
+<!--  LocalWords:  rgb bodybg zier mathbf sqrt dt eqnarray frac dx dy
+ -->
+<!--  LocalWords:  monomial bt integrand CRC quartic Zaumen sinh abt
+ -->
+<!--  LocalWords:  ij ih jh ig iy Brookfield NaN
+ -->

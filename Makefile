@@ -92,7 +92,7 @@ listdebs:
 # in debs.list. git rm is used to delete the unneeded files so
 # that we can commit and push the new version.
 #
-rebuild: 
+rebuild: docs/pathlength.pdf 
 	rm -f docs/archive/conf/distributions
 	rm -fr docs/archive/db
 	rm -fr docs/archive/dists
@@ -102,6 +102,9 @@ rebuild:
 	$(MAKE) all
 	@echo run '"make add"' to add any new files
 	@echo run '"git commit -a --gpg-sign=..."' to make changes permanent
+
+docs/pathlength.pdf: docs/pathlength.tex
+	(cd docs; pdflatex pathlength.tex)
 
 #
 # Need to use tail and head because the recursive make puts a line
@@ -146,7 +149,7 @@ check-list:
 #
 # Add new debian packages (finish after the next try)
 #
-add:
+add:  docs/pathlength.pdf
 	for i in `git status | grep ".deb" | grep -v ":" || echo -n` ; \
 	do git add $$i ; done
 	for i in `git config --local --get-all distributions.codenames` ; \
@@ -155,6 +158,8 @@ add:
 	done
 	for i in `git status | grep ".jar" | grep -v ":" || echo -n` ; \
 	do git add $$i ; done
+	git add docs/pathlength.html
+	git add docs/pathlength.pdf
 
 check-add:
 	@for i in `git status | grep ".deb" | grep -v ":" || echo -n` ; \
