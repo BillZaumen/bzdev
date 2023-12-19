@@ -13,8 +13,8 @@ download the jar file for an installer:
   - [cvrdecode](https://billzaumen.github.io/bzdev/installers/cvrdecode-install-1.2.jar)
     sha256: 97513d64e6d6e0a9b640e7948129e0815371aebc213e12bfd69051ed145f2453
 
-  - [epts](https://billzaumen.github.io/bzdev/installers/epts-install-1.1.29.jar)
-    sha256: b75189157e2bb06fc40281e33f4583557e501b54a539614ed1e38cdc7de26c43
+  - [epts](https://billzaumen.github.io/bzdev/installers/epts-install-1.1.30.jar)
+    sha256: 9ea63d47d293dd9be63d0880db21ec9e0e8f61ce45a6cb8f61835dd9a11e3ee4
 
   - [gethdrs](https://billzaumen.github.io/bzdev/installers/gethdrs-install-1.1.1.jar)
     sha256: f2d898c4e00fef50657b4eaf562241d9e7530b5fced246df6c969f6b4e4bf768
