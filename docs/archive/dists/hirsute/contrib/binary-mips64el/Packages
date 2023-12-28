@@ -284,35 +284,35 @@ Description: Java class library for a simulation of a
  bike-sharing system. See the documentation for further details.
 
 Package: libbzdev-anim2d-java
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
 Recommends: libbzdev-util, libbzdev-misc
 Suggests: libbzdev-doc
-Depends: libbzdev-base-java (= 2.1.51), libbzdev-obnaming-java (= 2.1.51), libbzdev-devqsim-java (= 2.1.51), libbzdev-graphics-java (= 2.1.51), libbzdev-math-java (= 2.1.51)
+Depends: libbzdev-base-java (= 2.1.52), libbzdev-obnaming-java (= 2.1.52), libbzdev-devqsim-java (= 2.1.52), libbzdev-graphics-java (= 2.1.52), libbzdev-math-java (= 2.1.52)
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/java
-Filename: pool/contrib/libb/libbzdev-anim2d-java/libbzdev-anim2d-java_2.1.51_all.deb
-Size: 407880
-SHA256: cb8336a4d64185e3760831ab31623a572f840d01502686db08d133a05eb75946
-SHA1: d75483a99e79e8960eed289742f317944c1d6ef0
-MD5sum: 40cbf3b80468946b89b4659309bd82bf
+Filename: pool/contrib/libb/libbzdev-anim2d-java/libbzdev-anim2d-java_2.1.52_all.deb
+Size: 407932
+SHA256: 679eb3dbefb05eb531d7d97a4aae538cdb574bdb47b1b88ca085ce66bde3f68e
+SHA1: 445c06a08eb88da0727eb9d38b43ae4cc92eb813
+MD5sum: d18d48c5486779e69f02259e602b78a2
 Description: Java class library for 2D animations.
  See the documentation in the package libbzdev-doc for further details.
 
 Package: libbzdev-base-java
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
 Recommends: libbzdev-util, libbzdev-misc
 Suggests: libbzdev-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/java
-Filename: pool/contrib/libb/libbzdev-base-java/libbzdev-base-java_2.1.51_all.deb
-Size: 699198
-SHA256: 45bf0c4e0f5e7f4c22e136eba352620b7cf985c3da149a65fd4d532335668d96
-SHA1: ce6c5b57b9fa58ab6f798bce93f64d0c4000765a
-MD5sum: d9b5bc031effd737add16e5d8b246bf3
+Filename: pool/contrib/libb/libbzdev-base-java/libbzdev-base-java_2.1.52_all.deb
+Size: 699346
+SHA256: 5835f9f3160395f456d1125c4caabc0105131f9aacd2142480561a2489764b92
+SHA1: f5b15b2aa073061aeb036cd16d49e202faed4b5b
+MD5sum: ac34b1e234d2528f67878c5948dcaaee
 Description: Java class library supporting the libbzdev packages.
  This package contains the jar file for the Java module
  org.bzdev.base.  It contains IO classes, extensions to the
@@ -323,17 +323,17 @@ Description: Java class library supporting the libbzdev packages.
  See the documentation in the package libbzdev-doc for further details.
 
 Package: libbzdev-darkmode-doc
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
 Conflicts: libbzdev-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/doc
-Filename: pool/contrib/libb/libbzdev-darkmode-doc/libbzdev-darkmode-doc_2.1.51_all.deb
-Size: 4301314
-SHA256: c954b5c3a0230c1d8f6233c22193a2995544a7763340c028fa980811c9930db6
-SHA1: 408b1315ca91a7ee0f6fd5829ccf25f03f431d38
-MD5sum: a46e84310ee309b196ad155d082161d5
+Filename: pool/contrib/libb/libbzdev-darkmode-doc/libbzdev-darkmode-doc_2.1.52_all.deb
+Size: 4300720
+SHA256: ce44e37e606133829b8a251105aa809b268165f1d3a90851d5740c549f59da80
+SHA1: e1eeed431419f546be0d023a97d8090965d803cf
+MD5sum: b4d0d676dabed7a3febac48a38f5a601
 Description: API Documentation for the libbzdev-java package.
  The documentation is in javadoc format. This package uses
  a 'dark' style in which there is light text on a dark
@@ -341,88 +341,88 @@ Description: API Documentation for the libbzdev-java package.
  a computer's monitor.
 
 Package: libbzdev-desktop-java
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
-Depends: libbzdev-base-java (= 2.1.51), libbzdev-graphics-java (= 2.1.51), libbzdev-math-java (= 2.1.51), libbzdev-obnaming-java (= 2.1.51)
+Depends: libbzdev-base-java (= 2.1.52), libbzdev-graphics-java (= 2.1.52), libbzdev-math-java (= 2.1.52), libbzdev-obnaming-java (= 2.1.52)
 Recommends: libbzdev-util, libbzdev-misc
 Suggests: libbzdev-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/java
-Filename: pool/contrib/libb/libbzdev-desktop-java/libbzdev-desktop-java_2.1.51_all.deb
-Size: 561126
-SHA256: 4acd0c7cabb73799dbb18a44527a46fdae4e80b4d5a22d99f87843ab82659fdf
-SHA1: b50f2abb438ee82e4530cb0647cb68824a6718ae
-MD5sum: 4837b731c407efbfa49a59272ec3538c
+Filename: pool/contrib/libb/libbzdev-desktop-java/libbzdev-desktop-java_2.1.52_all.deb
+Size: 561136
+SHA256: 8e38f4fc70f8c10336ba4c02fa0339f90b381ad75638d929f15efe2843dc1cca
+SHA1: b802e892cb400a5cf664ab64ce11cf6ba17274ab
+MD5sum: e14a349b317d840d8671998688a8931c
 Description: Java class library for Swing extensions.
  See the documentation in the package libbzdev-doc for further details.
 
 Package: libbzdev-devqsim-java
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
-Depends: libbzdev-base-java (= 2.1.51), libbzdev-math-java (= 2.1.51), libbzdev-obnaming-java (= 2.1.51)
+Depends: libbzdev-base-java (= 2.1.52), libbzdev-math-java (= 2.1.52), libbzdev-obnaming-java (= 2.1.52)
 Recommends: libbzdev-util, libbzdev-misc
 Suggests: libbzdev-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/java
-Filename: pool/contrib/libb/libbzdev-devqsim-java/libbzdev-devqsim-java_2.1.51_all.deb
-Size: 488970
-SHA256: 7d4a34a61a56ef7ffd6fc912a0bb347033fd3a2eda866446cab59b49c52bd39f
-SHA1: 4efb4ce3c25229dd32804e505355f20b86bcadb0
-MD5sum: 8441d423bb924ace849d5fbf479e24f1
+Filename: pool/contrib/libb/libbzdev-devqsim-java/libbzdev-devqsim-java_2.1.52_all.deb
+Size: 489022
+SHA256: 25f86863c6be5305cc144e790e0e225d1b7a99f4074c77a18bf05e8ebdfa77c2
+SHA1: 40216ec236bbe678ad9e9a94d0cd4b0629afed0a
+MD5sum: 97157f7fa14e8e8d7cc2d66e6a015461
 Description: Java class library for discrete-event simulations.
  This library supports scheduling events, threads, queues, and
  instrumentation. See the documentation in the package libbzdev-doc
  for further details.
 
 Package: libbzdev-dmethods-java
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
-Depends: libbzdev-base-java (= 2.1.51)
+Depends: libbzdev-base-java (= 2.1.52)
 Recommends: libbzdev-util, libbzdev-misc
 Suggests: libbzdev-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/java
-Filename: pool/contrib/libb/libbzdev-dmethods-java/libbzdev-dmethods-java_2.1.51_all.deb
-Size: 96058
-SHA256: 68ffbbc01e34c3a24c827b2d45cbb353c4bc5dbacedd87a8e30b11dddbc224b0
-SHA1: bf1aed969b77a36ef523b34f472a469a182cedf3
-MD5sum: b48277f174851cd90cabca1e101b356e
+Filename: pool/contrib/libb/libbzdev-dmethods-java/libbzdev-dmethods-java_2.1.52_all.deb
+Size: 96134
+SHA256: 634da341daba2df6b85819ce9211978e2fee720dcbd1a1cfa3ad468c7519561c
+SHA1: 20e2f13e5f183122b606d672a01958f5e1908150
+MD5sum: 522d63ebb20f5903e9a754df4141b3ef
 Description: Java class library for a dynamic-method annotation processor.
  See the documentation in the package libbzdev-doc for further details.
 
 Package: libbzdev-doc
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
 Conflicts: libbzdev-darkmode-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/doc
-Filename: pool/contrib/libb/libbzdev-doc/libbzdev-doc_2.1.51_all.deb
-Size: 4301862
-SHA256: b065dea22ba8eb663134fdefc54b811d8f1b164e0e6937d2c6ca990ab4b7d446
-SHA1: 8122062b2f561131d342e21bc0b3241efd3157f3
-MD5sum: 62335490ec717be847516a415648076a
+Filename: pool/contrib/libb/libbzdev-doc/libbzdev-doc_2.1.52_all.deb
+Size: 4300702
+SHA256: eecf0f580b5ffdc5c8f96ca8a75e697bf7b477892afd32b0c9831cf5a769f21c
+SHA1: 99d2b979264985d108aefe731d583122ea1a3d54
+MD5sum: 225a009514fb0c46aecf2df3cc361182
 Description: API Documentation for the libbzdev-java package.
  The documentation is in javadoc format. This package uses
  the same style as the openjdk API documentation.
 
 Package: libbzdev-drama-java
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
-Depends: libbzdev-base-java (= 2.1.51), libbzdev-obnaming-java (= 2.1.51), libbzdev-devqsim-java (= 2.1.51), libbzdev-math-java (= 2.1.51)
+Depends: libbzdev-base-java (= 2.1.52), libbzdev-obnaming-java (= 2.1.52), libbzdev-devqsim-java (= 2.1.52), libbzdev-math-java (= 2.1.52)
 Recommends: libbzdev-util, libbzdev-misc
 Suggests: libbzdev-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/java
-Filename: pool/contrib/libb/libbzdev-drama-java/libbzdev-drama-java_2.1.51_all.deb
-Size: 196322
-SHA256: dfb946a00d516435e185039d51b553cdbe6083f848d9ee89772bc97aa0e65f13
-SHA1: f07472b4a0f743906eea0333ecbe49482d092fe0
-MD5sum: b63aea40d18ac3c1ffcbaa9c60870f9b
+Filename: pool/contrib/libb/libbzdev-drama-java/libbzdev-drama-java_2.1.52_all.deb
+Size: 196440
+SHA256: 39d25d2f893454f82890b800b3df6764a415b71c337b2741d6eb421b2d36ff6c
+SHA1: 4970da4a79c891eb22978f0bc5ab7c83cb1cdc3a
+MD5sum: 65ff39155c5855a6c7ece4e7e5f0a849
 Description: Java class library for an actor-based simulation.
  The actors can send messages to other actors with a time delay.
  The simulation supports groups for distributing messages to multiple
@@ -433,36 +433,36 @@ Description: Java class library for an actor-based simulation.
  libbzdev-doc for further details.
 
 Package: libbzdev-ejws-java
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
-Depends: libbzdev-base-java (= 2.1.51)
+Depends: libbzdev-base-java (= 2.1.52)
 Recommends: libbzdev-util, libbzdev-misc
 Suggests: libbzdev-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/java
-Filename: pool/contrib/libb/libbzdev-ejws-java/libbzdev-ejws-java_2.1.51_all.deb
-Size: 181416
-SHA256: 0fa905acba3c4965ec96a76f6820e278e70243d53d5059e192f855726a8d7cde
-SHA1: 7bc8ac430368fad3e20cd76564a268a59d4fcf67
-MD5sum: ad0e32086b63b7a4833a8d8327a16d9f
+Filename: pool/contrib/libb/libbzdev-ejws-java/libbzdev-ejws-java_2.1.52_all.deb
+Size: 181446
+SHA256: 9dcf8b4ff2dbdd6b1387257f87e239696af4a0d27956686b1e767f0baad2472a
+SHA1: 93308fb7fa926f7ff1c0e6dd3b06dd16f962507e
+MD5sum: e3f650db69e7fd0382abdd5174b37c2b
 Description: Java class library for an embedded web server.
  See the documentation in the package libbzdev-doc for further details.
 
 Package: libbzdev-esp-java
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
-Depends: libbzdev-base-java (= 2.1.51)
+Depends: libbzdev-base-java (= 2.1.52)
 Recommends: libbzdev-util, libbzdev-misc
 Suggests: libbzdev-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/java
-Filename: pool/contrib/libb/libbzdev-esp-java/libbzdev-esp-java_2.1.51_all.deb
-Size: 82142
-SHA256: 1819caefb2181f0f9a19baf6eacb6b39235840a79054d0e25461d5e104f92bee
-SHA1: a8c937e88b5b9dddb7c151077e59ffb9f5a4dc39
-MD5sum: dc383b108d7ea5f1f96f751f4289214c
+Filename: pool/contrib/libb/libbzdev-esp-java/libbzdev-esp-java_2.1.52_all.deb
+Size: 82218
+SHA256: 0f13342bf20826c58ebae22ea53a3527761996022c2dd9813656960d1a15ab43
+SHA1: 24510891ff8040a4235dc263affc1e6977294f0e
+MD5sum: 5613c29ce09ff3a8f5acbdffec7b16ab
 Description: Java class library for the ESP service provider.
  ESP (Expression Sequence Processor) is a Java-based scripting
  language that borrows most of its syntax from ECMAScript and
@@ -470,19 +470,19 @@ Description: Java class library for the ESP service provider.
  further details.
 
 Package: libbzdev-graphics-java
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
-Depends: libbzdev-base-java (= 2.1.51), libbzdev-math-java (= 2.1.51), libbzdev-obnaming-java (= 2.1.51)
+Depends: libbzdev-base-java (= 2.1.52), libbzdev-math-java (= 2.1.52), libbzdev-obnaming-java (= 2.1.52)
 Recommends: libbzdev-util, libbzdev-misc, libosgbatik-java
 Suggests: libbzdev-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/java
-Filename: pool/contrib/libb/libbzdev-graphics-java/libbzdev-graphics-java_2.1.51_all.deb
-Size: 725202
-SHA256: e85368970616cf7bcc921b1ee63a9a89afc221bf6a38822c804ae20f8e057ee3
-SHA1: cb838345d9be03fe55b95de4896e7fcb3624db52
-MD5sum: 2154fa3058da797135c926140c86e478
+Filename: pool/contrib/libb/libbzdev-graphics-java/libbzdev-graphics-java_2.1.52_all.deb
+Size: 725208
+SHA256: 58832e3dd969b7f5bc069db49016212aa911e5f02470e9ec839c10b032124ce7
+SHA1: 5ca2abbf9327c12256bd83288e35ca9b2ec4eb71
+MD5sum: e8823283c43ab5d8bf70a04adc75a083
 Description: Java class library for graphics operations.
  This library includes a graphs package, spline-based paths,
  3D paths, surfaces, image operations, and image IO, where
@@ -493,19 +493,19 @@ Description: Java class library for graphics operations.
  for further details.
 
 Package: libbzdev-java
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
-Depends: libbzdev-base-java (= 2.1.51), libbzdev-ejws-java (= 2.1.51), libbzdev-math-java (= 2.1.51), libbzdev-obnaming-java (= 2.1.51), libbzdev-graphics-java (= 2.1.51), libbzdev-devqsim-java (= 2.1.51), libbzdev-desktop-java (= 2.1.51), libbzdev-drama-java (= 2.1.51), libbzdev-anim2d-java (= 2.1.51), libbzdev-p3d-java (= 2.1.51), libbzdev-esp-java (= 2.1.51), libbzdev-dmethods-java (= 2.1.51), libbzdev-parmproc-java (= 2.1.51)
+Depends: libbzdev-base-java (= 2.1.52), libbzdev-ejws-java (= 2.1.52), libbzdev-math-java (= 2.1.52), libbzdev-obnaming-java (= 2.1.52), libbzdev-graphics-java (= 2.1.52), libbzdev-devqsim-java (= 2.1.52), libbzdev-desktop-java (= 2.1.52), libbzdev-drama-java (= 2.1.52), libbzdev-anim2d-java (= 2.1.52), libbzdev-p3d-java (= 2.1.52), libbzdev-esp-java (= 2.1.52), libbzdev-dmethods-java (= 2.1.52), libbzdev-parmproc-java (= 2.1.52)
 Recommends: libbzdev-util, libbzdev-misc, libosgbatik-java
 Suggests: libbzdev-doc, libbzdev-pop-icons
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/java
-Filename: pool/contrib/libb/libbzdev-java/libbzdev-java_2.1.51_all.deb
-Size: 73904
-SHA256: f2da3b75b62547a126553cd72b90aa905799227fb3deb84bee661d9584b55c46
-SHA1: 657c47e8482bc33b65f4fa20d40417a2e7ac80e1
-MD5sum: 2355270a4c0a07dfe09c69cf23e9d896
+Filename: pool/contrib/libb/libbzdev-java/libbzdev-java_2.1.52_all.deb
+Size: 74006
+SHA256: 5d342ed91a02b8ef0a124edd649f22a1866b736cf6cdad94cb3dfdc297ad16e8
+SHA1: af6ee823abbdbb3b160d940b0750c271bcf7af0f
+MD5sum: 9f73cc48920a616655cdb991856fa298
 Description: Meta package for the BZDev class library.
  This package contains a JAR file but that JAR file does not contain
  any classes. Instead, the JAR file contains meta data for setting up
@@ -513,19 +513,19 @@ Description: Meta package for the BZDev class library.
  further details.
 
 Package: libbzdev-math-java
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
-Depends: libbzdev-base-java (= 2.1.51)
+Depends: libbzdev-base-java (= 2.1.52)
 Recommends: libbzdev-util, libbzdev-misc
 Suggests: libbzdev-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/java
-Filename: pool/contrib/libb/libbzdev-math-java/libbzdev-math-java_2.1.51_all.deb
-Size: 554288
-SHA256: b850826b65f062e919367012dca18cdb7d6a093a315673bb421295441b62cd42
-SHA1: 7c1e0b670d9a43e0d8e5ae7739df98522b3d5d0a
-MD5sum: 338f929b92fa74bcba4210c10c7b928c
+Filename: pool/contrib/libb/libbzdev-math-java/libbzdev-math-java_2.1.52_all.deb
+Size: 554314
+SHA256: d3508b925ba8bd0933870c0c679c74434472f52b2dc877d66bc40ce5faa770a4
+SHA1: b6d2e1752d260201e7390f7a3017872a6da13841
+MD5sum: e5ead951323ec56b330e6429a9d67e89
 Description: Java class library for mathematical functions and algorithms.
  It also includes a basic statistics package, random variables,
  and an SPI (Service Provider Interface) for FFT implementations that
@@ -533,84 +533,84 @@ Description: Java class library for mathematical functions and algorithms.
  in the package libbzdev-doc for further details.
 
 Package: libbzdev-misc
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
 Depends: shared-mime-info, libgtk2.0-bin
 Suggests: libbzdev-java, libbzdev-util, libbzdev-pop-icons
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/misc
-Filename: pool/contrib/libb/libbzdev-misc/libbzdev-misc_2.1.51_all.deb
-Size: 512946
-SHA256: daa91fb97614db6c4b16d5f461a0fa45151a848c46d96875e4dfa8fa02f43649
-SHA1: a3b315411626d233539dd9093b2218dbc738502e
-MD5sum: ad7ad3427b7bdbe78322285a3464dde7
+Filename: pool/contrib/libb/libbzdev-misc/libbzdev-misc_2.1.52_all.deb
+Size: 512986
+SHA256: 8243f886b9440bebaa50674b7c324a96d68d03389cc62faf492ebdb31ee89426
+SHA1: 533520224142178a9fc672f38abd7e63b75c7de5
+MD5sum: 6f68e40d56a61cf0cd1104f7d67517e3
 Description: Media types and icons for data formats.
  The types and icons are designed for the libbzdev package.
 
 Package: libbzdev-obnaming-java
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
-Depends: libbzdev-base-java (= 2.1.51), libbzdev-math-java (= 2.1.51)
+Depends: libbzdev-base-java (= 2.1.52), libbzdev-math-java (= 2.1.52)
 Recommends: libbzdev-util, libbzdev-misc
 Suggests: libbzdev-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/java
-Filename: pool/contrib/libb/libbzdev-obnaming-java/libbzdev-obnaming-java_2.1.51_all.deb
-Size: 185458
-SHA256: 17d2d95dc472d6dfd924a2fd1edbb9d7d52896459a17a2ef4beabe5c7d26dafa
-SHA1: 1a133a2bb371ffce424e3f86c256661db3c09ac2
-MD5sum: c3cde6be75efbab5b0a7077dd96134de
+Filename: pool/contrib/libb/libbzdev-obnaming-java/libbzdev-obnaming-java_2.1.52_all.deb
+Size: 185488
+SHA256: 2c0a222335767ec63d44b932a36bd92941ac0259c8d9a1fa7849c8add95eed51
+SHA1: f583b2ef609752cce7a4b30abf89d8c2c0d22c81
+MD5sum: 14da57ee6967ccd986da168c195d2a69
 Description: Java class library for in-memory named objects.
  See the documentation in the package libbzdev-doc for further details.
 
 Package: libbzdev-p3d-java
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
-Depends: libbzdev-base-java (= 2.1.51), libbzdev-anim2d-java (= 2.1.51), libbzdev-obnaming-java (= 2.1.51), libbzdev-graphics-java (= 2.1.51), libbzdev-devqsim-java (= 2.1.51), libbzdev-math-java (= 2.1.51)
+Depends: libbzdev-base-java (= 2.1.52), libbzdev-anim2d-java (= 2.1.52), libbzdev-obnaming-java (= 2.1.52), libbzdev-graphics-java (= 2.1.52), libbzdev-devqsim-java (= 2.1.52), libbzdev-math-java (= 2.1.52)
 Recommends: libbzdev-util, libbzdev-misc
 Suggests: libbzdev-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/java
-Filename: pool/contrib/libb/libbzdev-p3d-java/libbzdev-p3d-java_2.1.51_all.deb
-Size: 293102
-SHA256: 58d10600ed46be9098fc5bc4cb52ec4ec44450e7cdca4f1f40fa12077a14e498
-SHA1: ace8d124dfdc03938adc81b2f2efc57418618e0d
-MD5sum: ceb222133ea6d7dc0653c254ffb3d449
+Filename: pool/contrib/libb/libbzdev-p3d-java/libbzdev-p3d-java_2.1.52_all.deb
+Size: 293192
+SHA256: 484802ff1c5835b395c8a6f8569b520a1b7438c7dea9a125f89b84d2ede8c6ec
+SHA1: 00199142fdda11db740dd7693e8fea1c93721e27
+MD5sum: 4576cb3f8332f551aea7256132503d24
 Description: Java class library for 3D printing.
  See the documentation in the package libbzdev-doc for further details.
 
 Package: libbzdev-parmproc-java
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
-Depends: libbzdev-base-java (= 2.1.51), libbzdev-math-java (= 2.1.51), libbzdev-obnaming-java (= 2.1.51)
+Depends: libbzdev-base-java (= 2.1.52), libbzdev-math-java (= 2.1.52), libbzdev-obnaming-java (= 2.1.52)
 Recommends: libbzdev-util, libbzdev-misc
 Suggests: libbzdev-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/java
-Filename: pool/contrib/libb/libbzdev-parmproc-java/libbzdev-parmproc-java_2.1.51_all.deb
-Size: 113614
-SHA256: 609fa92762efefc3fa39d91fb04813588f3bdffe03784f3abc1229501fe5132f
-SHA1: c189b5bfa80024e4ea92012bb0b16cc8144cbdbc
-MD5sum: 9ab69b572a4def3d9b25d24e43f40b47
+Filename: pool/contrib/libb/libbzdev-parmproc-java/libbzdev-parmproc-java_2.1.52_all.deb
+Size: 113734
+SHA256: bf55f7c6f2ced207176f64a0a4afd1cddf11a281b3ef07216a9f8171b463e56b
+SHA1: e9729645bad10b093d5b4f390bc28ddc6b973f96
+MD5sum: dadfcc07cf811c8727a560152725b761
 Description: Java class library for annotation processing to support factories.
  See the documentation in the package libbzdev-doc for further details.
 
 Package: libbzdev-pop-icons
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
 Depends: pop-icon-theme
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/misc
-Filename: pool/contrib/libb/libbzdev-pop-icons/libbzdev-pop-icons_2.1.51_all.deb
-Size: 9854
-SHA256: 0c3184daa837a426a324fb52fa7a591a4691280e98103750d6de1c70a74ebd8c
-SHA1: 42134e8f2aaed708127c7f554e490b5fabad9843
-MD5sum: 9cd61bd5e1987a81292a45494c3e8e9a
+Filename: pool/contrib/libb/libbzdev-pop-icons/libbzdev-pop-icons_2.1.52_all.deb
+Size: 9874
+SHA256: bc5922490772b808831eade72cafe7e2febbb83540e86349a50f34e8259bf683
+SHA1: 7e3c66587ab69b43f07dcc17aa164f73c0395b07
+MD5sum: 460f20c257aeb2b7a8028556ce578b5b
 Description: Pop-OS media types and icons for data formats.
  This package puts copies of the libbzdev media-type icons
  into subdirectories of /usr/share/icons/Pop. These are the
@@ -619,18 +619,18 @@ Description: Pop-OS media types and icons for data formats.
  directory.
 
 Package: libbzdev-servlets-java
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
-Depends: libbzdev-base-java (= 2.1.51)
+Depends: libbzdev-base-java (= 2.1.52)
 Suggests: libbzdev-doc
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/java
-Filename: pool/contrib/libb/libbzdev-servlets-java/libbzdev-servlets-java_2.1.51_all.deb
-Size: 79918
-SHA256: c1215bdd78a3208142471eeb5a01ee10c8c79992f13b99dc62f97a4a5291d2b0
-SHA1: a04e2c6dc64864ef6e1468d5ccf8ff81a6eeaab6
-MD5sum: e3889be28907adf46245fd1939313d26
+Filename: pool/contrib/libb/libbzdev-servlets-java/libbzdev-servlets-java_2.1.52_all.deb
+Size: 80018
+SHA256: 69d64ba6ef3ddb6a81463f97a2d13c48c1d9e5a67a3edd3129ea47d9356a69a5
+SHA1: 11841d165b4d7398453448bdcc867f1ebcecc0be
+MD5sum: 0054288248324d476cba9cfed3a27057
 Description: Java class library for constructing a servlet.
  The package org.bzdev.net contains a class named ServletAdapter
  that works with an embedded web server. This package provides a
@@ -638,17 +638,17 @@ Description: Java class library for constructing a servlet.
  servlet.
 
 Package: libbzdev-util
-Version: 2.1.51
+Version: 2.1.52
 Architecture: all
 Depends: libbzdev-java (>= 1.2.151)
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/utils
-Filename: pool/contrib/libb/libbzdev-util/libbzdev-util_2.1.51_all.deb
-Size: 392380
-SHA256: 7cd9d491d6c7875451e32ce2288e75c7c9460d4036d1298430705c78371da2b3
-SHA1: 5fbd005ee9beae47c0823da0133cc42590144867
-MD5sum: 4c840f1d554d6b6da58fa1d5dc7bfe43
+Filename: pool/contrib/libb/libbzdev-util/libbzdev-util_2.1.52_all.deb
+Size: 392400
+SHA256: cc440c5d132da52169c81c749a63ebdabcceb4999f0caa2757c36efdacb5cb61
+SHA1: 000cd1b247edd4f1420f9c0a0df01ef998afaee2
+MD5sum: 014d03da284cb92af5c0c7259087db78
 Description: Utility programs for the libbzdev-java package.
  This package contains the programs lsnof and scrunner,
  and man pages for both. These programs use a configuration
