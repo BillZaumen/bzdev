@@ -3,29 +3,29 @@
   - [bzdev-wallpapers](./archive/pool/contrib/b/bzdev-wallpapers/bzdev-wallpapers_1.0.0_all.deb)
     sha256: d00d825289946345ae40b506ad963cb10b827193556a64ee9ba388216294c575
  
-  - [cvrdecode](./archive/pool/contrib/c/cvrdecode/cvrdecode_1.2_all.deb)
-    sha256: aa021f44a95c2ddf9a7726d146070315d5f2085a3e2ea07abe21c31c1fa98881
+  - [cvrdecode](./archive/pool/contrib/c/cvrdecode/cvrdecode_1.3_all.deb)
+    sha256: a21f12394b0050ddfd74c826122da7a6221451096148896976e6b580419c604f
  
-  - [ecdb-derby](./archive/pool/contrib/e/ecdb-derby/ecdb-derby_0.1.7_all.deb)
-    sha256: 15dc3b7adffca3f263505083925e796e3b14872ef3bac7f585e59a8fb4b301a7
+  - [ecdb-derby](./archive/pool/contrib/e/ecdb-derby/ecdb-derby_0.1.8_all.deb)
+    sha256: 82c323d6315c36674383a264645b831433f5db2b2bb3af6d57e02723268eed5f
  
-  - [ecdb-desktop](./archive/pool/contrib/e/ecdb-desktop/ecdb-desktop_0.1.7_all.deb)
-    sha256: 444a777d8234def908175b12fc54349d92c24d90c9bd8e93335ad1fa8dd347c1
+  - [ecdb-desktop](./archive/pool/contrib/e/ecdb-desktop/ecdb-desktop_0.1.8_all.deb)
+    sha256: 733863397b9bec4f1f6c95ddcb5461079e42ba8ad55f889e90f78e9f0f882bef
  
   - [ecdb-javamail](./archive/pool/contrib/e/ecdb-javamail/ecdb-javamail_0.1.7_all.deb)
     sha256: 05f7fc85e18c7a213d7fdcd4af0c8241cc43ec910609c252185c7ed5f5e22227
  
-  - [ecdb-pop-icons](./archive/pool/contrib/e/ecdb-pop-icons/ecdb-pop-icons_0.1.7_all.deb)
-    sha256: 6a7c089fa9c01cce21f23fa7abbf1a1c76696241d8548da705a65e24beaa67f1
+  - [ecdb-pop-icons](./archive/pool/contrib/e/ecdb-pop-icons/ecdb-pop-icons_0.1.8_all.deb)
+    sha256: f71cc72924b6b2b7d00476661c38b038751c7da463e77e8c7ca01a9cfa4eaa56
  
   - [emacs-espmode-el](./archive/pool/contrib/e/emacs-espmode-el/emacs-espmode-el_1.1_all.deb)
     sha256: a5a60685d4b454069adb3611aad297bb0f634b909a25926ab3804e8467f47853
  
-  - [epts](./archive/pool/contrib/e/epts/epts_1.1.31_all.deb)
-    sha256: d4a16325f643c80a7f16b195bb4b6387eb91ed0f8ff224e9e9d9eb57ea575f70
+  - [epts](./archive/pool/contrib/e/epts/epts_1.1.32_all.deb)
+    sha256: 94bf0c4fe39ed1458ff802da6b1e4239a2f623ea16cff96494c68bce00df6fc0
  
-  - [epts-pop-icons](./archive/pool/contrib/e/epts-pop-icons/epts-pop-icons_1.1.31_all.deb)
-    sha256: 8227b49570da4ba17829962d6e23f7bccb03711999eea8e9abd4994c799e33ee
+  - [epts-pop-icons](./archive/pool/contrib/e/epts-pop-icons/epts-pop-icons_1.1.32_all.deb)
+    sha256: 2f7474625ef222dcfed375b1216085a27c701b9bbbbab2b45fe4a113c1fd8dbf
  
   - [evdisk](./archive/pool/contrib/e/evdisk/evdisk_1.13.1_all.deb)
     sha256: 12042ecd84ca6e64ce5bd92e4a607117353841a996cf874e8ec59e0616ba6ba7
@@ -42,65 +42,65 @@
   - [libbikeshr-java](./archive/pool/contrib/libb/libbikeshr-java/libbikeshr-java_1.4.9_all.deb)
     sha256: 5f1c40a46642fd6c7a62813acec93a5484ece833cd1cef6068b00ec37a57ae72
  
-  - [libbzdev-anim2d-java](./archive/pool/contrib/libb/libbzdev-anim2d-java/libbzdev-anim2d-java_2.1.64_all.deb)
-    sha256: f9dceed939cb4a5b298190a49eea26d6d080a37e36e7405584545a84e53ad043
+  - [libbzdev-anim2d-java](./archive/pool/contrib/libb/libbzdev-anim2d-java/libbzdev-anim2d-java_2.1.65_all.deb)
+    sha256: ef2bd91f003320e845c925f8b4ee484d897aacdf19c77d5f46e0010d2f96bf0e
  
-  - [libbzdev-base-java](./archive/pool/contrib/libb/libbzdev-base-java/libbzdev-base-java_2.1.64_all.deb)
-    sha256: 7c1d5cb586ec78fe4be6b5848963a68c1b5c2ff63e87df07b41bb3490f1a24a0
+  - [libbzdev-base-java](./archive/pool/contrib/libb/libbzdev-base-java/libbzdev-base-java_2.1.65_all.deb)
+    sha256: 865762c2f001a17689d7a5c2962cccb7e01300efe80abcd3b2bcf5b41ca1ee68
  
-  - [libbzdev-darkmode-doc](./archive/pool/contrib/libb/libbzdev-darkmode-doc/libbzdev-darkmode-doc_2.1.64_all.deb)
-    sha256: e84aff31717203cca4833c9cd4c3be19406d492af66066bfb7c21c8b04454a73
+  - [libbzdev-darkmode-doc](./archive/pool/contrib/libb/libbzdev-darkmode-doc/libbzdev-darkmode-doc_2.1.65_all.deb)
+    sha256: 56dff3e95fc81dfdf3fef2ac1f1934d55842ff8bf2c4626231d205809c8648cf
  
-  - [libbzdev-desktop-java](./archive/pool/contrib/libb/libbzdev-desktop-java/libbzdev-desktop-java_2.1.64_all.deb)
-    sha256: ecbaad755c37f1a9b5f8f35cfd18ea1e543eaeb874df42f70bad04dd2fbbac00
+  - [libbzdev-desktop-java](./archive/pool/contrib/libb/libbzdev-desktop-java/libbzdev-desktop-java_2.1.65_all.deb)
+    sha256: bf5e4895fe08dbcbfa848cf4aca39bab4338a2689d9cf1a6d9ebe2cfa022250b
  
-  - [libbzdev-devqsim-java](./archive/pool/contrib/libb/libbzdev-devqsim-java/libbzdev-devqsim-java_2.1.64_all.deb)
-    sha256: 6932e6ba0740706a065a30ab65490cc2a6d492db9c89968238316546c787e732
+  - [libbzdev-devqsim-java](./archive/pool/contrib/libb/libbzdev-devqsim-java/libbzdev-devqsim-java_2.1.65_all.deb)
+    sha256: 4efbce225c472ec48a9b34002a92ee249bc5e367be47feb30f1acc162bd5cf08
  
-  - [libbzdev-dmethods-java](./archive/pool/contrib/libb/libbzdev-dmethods-java/libbzdev-dmethods-java_2.1.64_all.deb)
-    sha256: b681235e0af0bc0edf5a5cdadd752494f9aaa6e756a4ccc2bef08ad152de9c2c
+  - [libbzdev-dmethods-java](./archive/pool/contrib/libb/libbzdev-dmethods-java/libbzdev-dmethods-java_2.1.65_all.deb)
+    sha256: adf806f34c0d6edf05ddba7ef038fc5875f3a76be482ea59ec3a4e9e1de7a725
  
-  - [libbzdev-doc](./archive/pool/contrib/libb/libbzdev-doc/libbzdev-doc_2.1.64_all.deb)
-    sha256: 0053cd341b9fe2827654ac385c890786504dda6f3cc41b168985ddb912587a75
+  - [libbzdev-doc](./archive/pool/contrib/libb/libbzdev-doc/libbzdev-doc_2.1.65_all.deb)
+    sha256: a34b4bd217a378ae02cafb8eb74787bbb39f6616b00a370e77b0bae0ce284074
  
-  - [libbzdev-drama-java](./archive/pool/contrib/libb/libbzdev-drama-java/libbzdev-drama-java_2.1.64_all.deb)
-    sha256: a72e3d54fb1bbe640b0f31f11c3cf1836e476279b2ae452f1d05f81bf670b64f
+  - [libbzdev-drama-java](./archive/pool/contrib/libb/libbzdev-drama-java/libbzdev-drama-java_2.1.65_all.deb)
+    sha256: ad0f41b23c4fba12e5f5c2b4bd16cb6275c09c56299af81be7bc9233e6cd9fd4
  
-  - [libbzdev-ejws-java](./archive/pool/contrib/libb/libbzdev-ejws-java/libbzdev-ejws-java_2.1.64_all.deb)
-    sha256: 4d734ee1d751f577b8f89bdac2d1fb6494829bffd53ae959d70a4fcff6848f6d
+  - [libbzdev-ejws-java](./archive/pool/contrib/libb/libbzdev-ejws-java/libbzdev-ejws-java_2.1.65_all.deb)
+    sha256: b84cb6a556d1ad5e3c406c3edfcc138800eb7b0ef37818794b68cdd455193793
  
-  - [libbzdev-esp-java](./archive/pool/contrib/libb/libbzdev-esp-java/libbzdev-esp-java_2.1.64_all.deb)
-    sha256: fb7664954d4b519c53420bd671c89e5a3534105a8910065760c78b2014095a06
+  - [libbzdev-esp-java](./archive/pool/contrib/libb/libbzdev-esp-java/libbzdev-esp-java_2.1.65_all.deb)
+    sha256: 3fe32f9890046b60d3d0d5fb59f7124594609ce0e1204c5ba17ca0e3af1e5896
  
-  - [libbzdev-graphics-java](./archive/pool/contrib/libb/libbzdev-graphics-java/libbzdev-graphics-java_2.1.64_all.deb)
-    sha256: 504b26ecf53a21aeefdf3a2f007983d7cc75847a4fa7696e5a1f2c98ae714f7b
+  - [libbzdev-graphics-java](./archive/pool/contrib/libb/libbzdev-graphics-java/libbzdev-graphics-java_2.1.65_all.deb)
+    sha256: d3bbbaf8b0c619f54b245340e0249cecbaf072cd86eac7c7e71b46df9e3f7f6b
  
-  - [libbzdev-java](./archive/pool/contrib/libb/libbzdev-java/libbzdev-java_2.1.64_all.deb)
-    sha256: ffa105c40c53d1f6fb93b0bab36661930aece5fa567db6486f893c19243e4c43
+  - [libbzdev-java](./archive/pool/contrib/libb/libbzdev-java/libbzdev-java_2.1.65_all.deb)
+    sha256: f4dcda011dfbf11b95afd06b3a3a6cfe4b181446cc296d186f7e3f220d8db563
  
-  - [libbzdev-math-java](./archive/pool/contrib/libb/libbzdev-math-java/libbzdev-math-java_2.1.64_all.deb)
-    sha256: a41891b5b34e842da27caa5861ff1f553f80ee7b8a27f7e1b087647e6622445e
+  - [libbzdev-math-java](./archive/pool/contrib/libb/libbzdev-math-java/libbzdev-math-java_2.1.65_all.deb)
+    sha256: 36db097bc260c4cca6c4ab554e8a7ebe09ee0209f1f94f1b0dd383a77f86b055
  
-  - [libbzdev-misc](./archive/pool/contrib/libb/libbzdev-misc/libbzdev-misc_2.1.64_all.deb)
-    sha256: cc89eb84f74a9514e9129c4aeb20bc878a0bd701ff502d2c2009968225e3623a
+  - [libbzdev-misc](./archive/pool/contrib/libb/libbzdev-misc/libbzdev-misc_2.1.65_all.deb)
+    sha256: a5e21c83b3d1af9348618d9b750d105346eabe5b7c38a51ed62fdeb2c3799773
  
-  - [libbzdev-obnaming-java](./archive/pool/contrib/libb/libbzdev-obnaming-java/libbzdev-obnaming-java_2.1.64_all.deb)
-    sha256: 43f7dadd6bcad4d6fbe95dfb28dc00e8bed4e4096fb31b43081d25c482296223
+  - [libbzdev-obnaming-java](./archive/pool/contrib/libb/libbzdev-obnaming-java/libbzdev-obnaming-java_2.1.65_all.deb)
+    sha256: de59327fc2e6180f3c3536eb2d9629e9273e64d5d5b42de30b3914b983e538c1
  
-  - [libbzdev-p3d-java](./archive/pool/contrib/libb/libbzdev-p3d-java/libbzdev-p3d-java_2.1.64_all.deb)
-    sha256: 7297deaa87242ea3f45ba07ae08cd383fb17d7da1022492f49b795e6cf6f5008
+  - [libbzdev-p3d-java](./archive/pool/contrib/libb/libbzdev-p3d-java/libbzdev-p3d-java_2.1.65_all.deb)
+    sha256: 49d09821701cb507b4b800d02343aae0e96baea2bf6a4fb9919a8d2694f21237
  
-  - [libbzdev-parmproc-java](./archive/pool/contrib/libb/libbzdev-parmproc-java/libbzdev-parmproc-java_2.1.64_all.deb)
-    sha256: c79c38b77f6323b1350efdbef75a4eda030eae9dfdeec5672703f89a5e1557f7
+  - [libbzdev-parmproc-java](./archive/pool/contrib/libb/libbzdev-parmproc-java/libbzdev-parmproc-java_2.1.65_all.deb)
+    sha256: 30839161fc55f07e86ceca8af5f2435ce3ce73a4df7f861f7bc310535539f076
  
-  - [libbzdev-pop-icons](./archive/pool/contrib/libb/libbzdev-pop-icons/libbzdev-pop-icons_2.1.64_all.deb)
-    sha256: 5801234d086840a311a99611f9da9513a36df2b79f2df174d7a27b62c66b1138
+  - [libbzdev-pop-icons](./archive/pool/contrib/libb/libbzdev-pop-icons/libbzdev-pop-icons_2.1.65_all.deb)
+    sha256: d8e9bfbbe8e0e260747be99b0dea581547b6f7e1d9d3edec0434779cdf29c852
  
-  - [libbzdev-servlets-java](./archive/pool/contrib/libb/libbzdev-servlets-java/libbzdev-servlets-java_2.1.64_all.deb)
-    sha256: 98c1447251f8f41c74461032b3c8e77f82187fabe204591af8e0e6f27a092fa3
+  - [libbzdev-servlets-java](./archive/pool/contrib/libb/libbzdev-servlets-java/libbzdev-servlets-java_2.1.65_all.deb)
+    sha256: ee9812c8b3cd185ad61352cfc9dc1518fad57c682991d5aa26ad2adbf11399b8
  
-  - [libbzdev-util](./archive/pool/contrib/libb/libbzdev-util/libbzdev-util_2.1.64_all.deb)
-    sha256: 1bf3fa8a817ee78a0945b0f4a2d84645e20c22b6956d26d96c1f70c8d639b063
+  - [libbzdev-util](./archive/pool/contrib/libb/libbzdev-util/libbzdev-util_2.1.65_all.deb)
+    sha256: 49fad85ef6661fb572317e1814fff355f34e04d2662142b119b7c7aa334cc593
  
   - [libecdb-darkmode-doc](./archive/pool/contrib/libe/libecdb-darkmode-doc/libecdb-darkmode-doc_0.1.7_all.deb)
     sha256: 1ba997b859c8f80cabeaa06dd299a71d1e2ac9f5d2303585dd7eb82fee5c9f99
@@ -129,11 +129,11 @@
   - [qrlauncher](./archive/pool/contrib/q/qrlauncher/qrlauncher_1.14_all.deb)
     sha256: a927c7d495c4b67fd41519b973bde5940dd97da0e83c3017c4b7e75eadc1bc1f
  
-  - [webnail-pop-icons](./archive/pool/contrib/w/webnail-pop-icons/webnail-pop-icons_1.6.27_all.deb)
-    sha256: 2629fe83a34daa2ebd49a3dc93f0550ffcd878d91d9cf95d9167546f089eca61
+  - [webnail-pop-icons](./archive/pool/contrib/w/webnail-pop-icons/webnail-pop-icons_1.6.28_all.deb)
+    sha256: f3dfe43e4e9b0bb1b313e2c61ec6ea633b21792c1c3b694c05ca3bb7cb73edf1
  
-  - [webnail-server](./archive/pool/contrib/w/webnail-server/webnail-server_1.6.27_all.deb)
-    sha256: e86a0678d2099bc287e425cd26b59dad22f5908dd4fcd9b19d273717adea4c3c
+  - [webnail-server](./archive/pool/contrib/w/webnail-server/webnail-server_1.6.28_all.deb)
+    sha256: bf140037f557b955cc267ddf6d075c266a103d85e2a6dfe715ca00d7761d8276
  
-  - [webnail](./archive/pool/contrib/w/webnail/webnail_1.6.27_all.deb)
-    sha256: d2b20a43601bdf42066ff8d804198964d6443c3b6e7419b3a54c1575a57d42be
+  - [webnail](./archive/pool/contrib/w/webnail/webnail_1.6.28_all.deb)
+    sha256: 2e881820f9eb3d39b2a2530f71b1bce186f2d484f94bc9e3e682fda6b5d7c834
