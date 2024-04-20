@@ -21,11 +21,11 @@
   - [emacs-espmode-el](./archive/pool/contrib/e/emacs-espmode-el/emacs-espmode-el_1.1_all.deb)
     sha256: a5a60685d4b454069adb3611aad297bb0f634b909a25926ab3804e8467f47853
  
-  - [epts](./archive/pool/contrib/e/epts/epts_1.1.33_all.deb)
-    sha256: 9860c530e0d0e0e7c4c6e45eed661c5175ef681f38fdcf1d6e5e425199dadc33
+  - [epts](./archive/pool/contrib/e/epts/epts_1.1.34_all.deb)
+    sha256: 816bc9d1ddac90b6ce717e4b5051d2a9bc4f024532cd4391bfd7102f97cd6fbb
  
-  - [epts-pop-icons](./archive/pool/contrib/e/epts-pop-icons/epts-pop-icons_1.1.33_all.deb)
-    sha256: 5278b0b944e67de6ce64d918839e92f09e1a0cc011aa774284e431fab3ca1015
+  - [epts-pop-icons](./archive/pool/contrib/e/epts-pop-icons/epts-pop-icons_1.1.34_all.deb)
+    sha256: c8e72836910caaffba5a4ed35059ec3b3f09bf43af3eca77cbbafde209fe2647
  
   - [evdisk](./archive/pool/contrib/e/evdisk/evdisk_1.13.1_all.deb)
     sha256: 12042ecd84ca6e64ce5bd92e4a607117353841a996cf874e8ec59e0616ba6ba7
