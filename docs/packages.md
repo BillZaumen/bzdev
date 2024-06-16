@@ -3,8 +3,8 @@
   - [bzdev-wallpapers](./archive/pool/contrib/b/bzdev-wallpapers/bzdev-wallpapers_1.0.0_all.deb)
     sha256: d00d825289946345ae40b506ad963cb10b827193556a64ee9ba388216294c575
  
-  - [cvrdecode](./archive/pool/contrib/c/cvrdecode/cvrdecode_1.3_all.deb)
-    sha256: a21f12394b0050ddfd74c826122da7a6221451096148896976e6b580419c604f
+  - [cvrdecode](./archive/pool/contrib/c/cvrdecode/cvrdecode_1.4_all.deb)
+    sha256: 1b646aba47e3ca436852047ed8a55e4aab3cd89cf1d3da9482317e66d70caa9e
  
   - [ecdb-derby](./archive/pool/contrib/e/ecdb-derby/ecdb-derby_0.1.8_all.deb)
     sha256: 82c323d6315c36674383a264645b831433f5db2b2bb3af6d57e02723268eed5f

@@ -15,17 +15,17 @@ Description: Wallpaper images.
  curve.
 
 Package: cvrdecode
-Version: 1.3
+Version: 1.4
 Architecture: all
 Depends: default-jdk, libbzdev-java (>= 2.1.65), libzxing-core-java (>= 3.4.1), libzxing-java (>= 3.4.1), libzxing-javase-java (>=3.4.1)
 Maintainer: Bill Zaumen <bill.zaumen+software@gmail.com>
 Priority: optional
 Section: contrib/utils
-Filename: pool/contrib/c/cvrdecode/cvrdecode_1.3_all.deb
-Size: 104596
-SHA256: a21f12394b0050ddfd74c826122da7a6221451096148896976e6b580419c604f
-SHA1: ca5674de4d06967b92e9d363a179eb091e8ee80f
-MD5sum: 1d5528c1367b3778391de74f9b97707b
+Filename: pool/contrib/c/cvrdecode/cvrdecode_1.4_all.deb
+Size: 104938
+SHA256: 1b646aba47e3ca436852047ed8a55e4aab3cd89cf1d3da9482317e66d70caa9e
+SHA1: 20432bec83e8de780a1609ae10b9c8a45b6ef5b1
+MD5sum: 9e6d4de6f8be0f62358e113a3ba92042
 Description: Utility that processes QR codes and  shc URIs
  provided by the California Department of Public Health as
  proof of COVID-19 vaccination. These digital vaccination

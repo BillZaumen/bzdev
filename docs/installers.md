@@ -10,8 +10,8 @@ download the jar file for an installer:
   - [bzdev (libbzdev-*)](https://billzaumen.github.io/bzdev/installers/bzdev-install-2.1.101.jar)
     sha256: c45d5a5d2a75fcdee6024b86011823e2bdbb1cf73347d70cfcf877514a7c2476
 
-  - [cvrdecode](https://billzaumen.github.io/bzdev/installers/cvrdecode-install-1.3.jar)
-    sha256: fc5b0c08b17ac0043d047d0ddd94e84a3138b589f788108d58e80dd81f210381
+  - [cvrdecode](https://billzaumen.github.io/bzdev/installers/cvrdecode-install-1.4.jar)
+    sha256: b445fb1e2d05c87761e0cfc37966b2ccc4504d89288d350e6c0bef9f58fa3a55
 
   - [epts](https://billzaumen.github.io/bzdev/installers/epts-install-1.1.34.jar)
     sha256: 5d5640abd4f332970094590e0f05646159445a05285f5fd4ab57c579b4041b2a
