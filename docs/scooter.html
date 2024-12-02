@@ -87,6 +87,11 @@
       so conservation of energy implies that $Fd = \frac{1}{2}mv^2$,
       and consequently $$ F = \frac{mv^2}{2d}$$ The result is that the
       range is given by $$L = \frac{2E_bdf}{mv^2}$$
+      This estimate ignores one factor that might result in an
+      underestimate: an electric motor and generator are basically the
+      same device. When coasting to a stop, if a current can flow
+      through the motor when the throttle is 'off', that will result
+      in an additional energy loss.
     <P>
       A second, independent, estimate is to ride a distance $D$ at a
       speed $v$, starting with a fully charged battery, and measure
@@ -124,7 +129,14 @@
       system efficiency $f$ is 0.8. This is consistent with an
       estimate of 10.3 to 12.9 km based on charging time (the
       specifications indicate a charging time of 4 to 5 hours for a
-      fully discharged battery).
+      fully discharged battery). The measured range (tested after the
+      estimate was made) was about 11.3 km.  The test was stopped when the
+      battery-level indicator showed a single bar and started to flash.
+      At this point, the scooter could not go faster than 13 km/hr - i.e.,
+      the speed achievable on level ground was dropping. The apparent
+      accuracy of the estimate is probably accidental: both the efficiency
+      of the motor and (to some extent) the mass of the rider were
+      estimates.
     <P>
       For a 59 kg rider, the measured stopping distance starting at 15
       km/hr was 21.6 meters, and the corresponding range is 18.7 km,
@@ -207,13 +219,17 @@ v = v * 25 / 90;
 2*eb*d*f / (m * v*v);
       </CODE></PRE></BLOCKQUOTE>
     <P>
-      The script is written in a scripting language named ESP
-      (Expression Sequence Parser) that is essentially stripped-down
-      ECMAScript (JavaScript), with some additional syntax.  If this
-      script is installed in a file named <CODE>range</CODE> on
-      systems (Linux, Unix, etc.) that recognize lines (in executable
-      files) starting with "#!" as specifying an interpreter together
-      with a script to run, then one can run commands such as
+      As an alternative, one can easily convert the script to
+      ECMAScript and use it on a web page.
+    <P>
+      The script shown above is written in a scripting language named
+      ESP (Expression Sequence Parser) that is essentially
+      stripped-down ECMAScript (JavaScript), with some additional
+      syntax.  If this script is installed in a file
+      named <CODE>range</CODE> on systems (Linux, Unix, etc.) that
+      recognize lines (in executable files) starting with "#!" as
+      specifying an interpreter together with a script to run, then
+      one can run commands such as
       <BLOCKQUOTE><PRE><CODE>
 ./range 80 15 17
       </CODE></PRE></BLOCKQUOTE>

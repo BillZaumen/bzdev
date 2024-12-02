@@ -7,14 +7,14 @@ download the jar file for an installer:
   - [bikeshr (libbikeshr-*)](https://billzaumen.github.io/bzdev/installers/bikeshr-install-1.4.9.jar)
     sha256: b1e9ff4d91d02ce363c28afe34840fa06de17e50b76d8d28154e07af1e474d6f
 
-  - [bzdev (libbzdev-*)](https://billzaumen.github.io/bzdev/installers/bzdev-install-2.1.103.jar)
-    sha256: 1638be5b79bfae862df99c597112ffa30cf6f1319e46819971ffc12c2a64f5fa
+  - [bzdev (libbzdev-*)](https://billzaumen.github.io/bzdev/installers/bzdev-install-2.1.104.jar)
+    sha256: 1f0591ec52ec9187e73c49f09721ddc95fce44d02e7b2b1ae2ee736a63ad161f
 
   - [cvrdecode](https://billzaumen.github.io/bzdev/installers/cvrdecode-install-1.4.jar)
     sha256: b445fb1e2d05c87761e0cfc37966b2ccc4504d89288d350e6c0bef9f58fa3a55
 
-  - [epts](https://billzaumen.github.io/bzdev/installers/epts-install-1.1.34.jar)
-    sha256: 5d5640abd4f332970094590e0f05646159445a05285f5fd4ab57c579b4041b2a
+  - [epts](https://billzaumen.github.io/bzdev/installers/epts-install-1.1.35.jar)
+    sha256: 44d5d4e52bbd350ce00bdc01eab37b5ac51785875137aa02fe05734c9ad82725
 
   - [gethdrs](https://billzaumen.github.io/bzdev/installers/gethdrs-install-1.1.1.jar)
     sha256: f2d898c4e00fef50657b4eaf562241d9e7530b5fced246df6c969f6b4e4bf768
