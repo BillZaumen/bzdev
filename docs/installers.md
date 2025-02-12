@@ -7,8 +7,8 @@ download the jar file for an installer:
   - [bikeshr (libbikeshr-*)](https://billzaumen.github.io/bzdev/installers/bikeshr-install-1.4.9.jar)
     sha256: b1e9ff4d91d02ce363c28afe34840fa06de17e50b76d8d28154e07af1e474d6f
 
-  - [bzdev (libbzdev-*)](https://billzaumen.github.io/bzdev/installers/bzdev-install-2.1.114.jar)
-    sha256: b718433951d795b992a8ab7e2d09d6e562176fe14640e9f089f5061e4c19adbe
+  - [bzdev (libbzdev-*)](https://billzaumen.github.io/bzdev/installers/bzdev-install-2.1.115.jar)
+    sha256: 15bd96e2743f985d2c56be59e827778c11bd745be2ef457d8739000a487db538
 
   - [cvrdecode](https://billzaumen.github.io/bzdev/installers/cvrdecode-install-1.4.jar)
     sha256: b445fb1e2d05c87761e0cfc37966b2ccc4504d89288d350e6c0bef9f58fa3a55
