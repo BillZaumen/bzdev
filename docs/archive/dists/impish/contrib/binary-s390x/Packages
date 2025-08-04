@@ -784,17 +784,17 @@ Description: Java class library for animations of vehicles, bicycles,
  and pedestrians. See the documentation for further details
 
 Package: ltgcheck
-Version: 0.9
+Version: 1.0
 Architecture: all
 Depends: bash (>= 3.2), default-jdk, libbzdev-base-java (>= 2.1.126)
 Maintainer: Bill Zaumen <bill.zaumen+software@gmail.com>
 Priority: optional
 Section: contrib/web
-Filename: pool/contrib/l/ltgcheck/ltgcheck_0.9_all.deb
-Size: 37556
-SHA256: b42cd79aba5aacf89648dac1444ff377ad1df61298c3188e61849a280aa36120
-SHA1: 875b608ea089235f727915c7a94f58fc27ed3e3d
-MD5sum: b3d8ed76a4308917efb15a4147ba879e
+Filename: pool/contrib/l/ltgcheck/ltgcheck_1.0_all.deb
+Size: 37736
+SHA256: 15490ee696a1aa00e1212deca37fcd5ad37813938b95b3b24a6b9e6e23d77fa9
+SHA1: 918881dc7c2ab766c47b72422a03c49e1ab5fb11
+MD5sum: f66d082c92113e1c3fb1f5bb1792f5b9
 Description: Utility that uses an LLM-based grammar checker,
  LanguageTool, to check text, LaTeX, and open document format
  text files.

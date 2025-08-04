@@ -123,8 +123,8 @@
   - [librdanim-java](./archive/pool/contrib/libr/librdanim-java/librdanim-java_1.4.13_all.deb)
     sha256: 6a412c377b19752a54f533e19442245bbcefb981bfb67c5b7f643bdc423b6a8d
  
-  - [ltgcheck](./archive/pool/contrib/l/ltgcheck/ltgcheck_0.9_all.deb)
-    sha256: b42cd79aba5aacf89648dac1444ff377ad1df61298c3188e61849a280aa36120
+  - [ltgcheck](./archive/pool/contrib/l/ltgcheck/ltgcheck_1.0_all.deb)
+    sha256: 15490ee696a1aa00e1212deca37fcd5ad37813938b95b3b24a6b9e6e23d77fa9
  
   - [qrlauncher-pop-icons](./archive/pool/contrib/q/qrlauncher-pop-icons/qrlauncher-pop-icons_1.14_all.deb)
     sha256: da628062a1ade51e277ea83b42b8e8d1762974e68096b247c29836f3abafa706

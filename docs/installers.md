@@ -19,8 +19,8 @@ download the jar file for an installer:
   - [gethdrs](https://billzaumen.github.io/bzdev/installers/gethdrs-install-1.1.1.jar)
     sha256: f2d898c4e00fef50657b4eaf562241d9e7530b5fced246df6c969f6b4e4bf768
 
-  - [ltgcheck](https://billzaumen.github.io/bzdev/installers/ltgcheck-install-0.9.jar)
-    sha256: 911c80f78b185a2424b21ee3a2f941c1d4fb43e01d8ab708014b19ad0105bd3e
+  - [ltgcheck](https://billzaumen.github.io/bzdev/installers/ltgcheck-install-1.0.jar)
+    sha256: 9b79e86a1765fc88e448d44e4a002a5bf40b0892b10b177d67397c7e27a682a3
 
   - [QRLauncher (qrlauncher)](https://billzaumen.github.io/bzdev/installers/qrlauncher-install-1.14.jar)
     sha256: f9000fb48d918b3ec6354c80d913509ed13571d8909b1360ff885783763eb44e
