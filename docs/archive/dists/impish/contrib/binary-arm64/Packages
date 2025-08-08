@@ -143,17 +143,17 @@ Description: Implementation of a major mode for editing ESP files.
  delimiter.
 
 Package: epts
-Version: 1.1.41
+Version: 1.1.42
 Architecture: all
 Depends: default-jre, bash (>= 3.2), libbzdev-java (>= 2.1.122)
 Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
 Priority: optional
 Section: contrib/graphics
-Filename: pool/contrib/e/epts/epts_1.1.41_all.deb
-Size: 1736866
-SHA256: 7a8a2e5db0f35b487b5adf62e10c99f934045e1f9a2a7b2baf3e0d97b0c393ab
-SHA1: 1b564520f651df48ad799a9ae0ee9b63d8a5dc0d
-MD5sum: 87c7d9f0d6707b9f5af29d0ad39327ea
+Filename: pool/contrib/e/epts/epts_1.1.42_all.deb
+Size: 1737582
+SHA256: cf688a6f8718e6e4337657105f685e28ab2b6d35470f8713e6b938b9e872ffd7
+SHA1: 37b6415047328444994dbb8a38266afc2dd4dab7
+MD5sum: 71f08f01ea7dcdb105b4a165292f45d8
 Description: Graphics editor for creating  points, and paths.
  The paths consist of segments that can be straight-line
  segments, quadratic or cubic Bezier curves, or splines that
