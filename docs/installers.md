@@ -7,8 +7,8 @@ download the jar file for an installer:
   - [bikeshr (libbikeshr-*)](https://billzaumen.github.io/bzdev/installers/bikeshr-install-1.4.9.jar)
     sha256: b1e9ff4d91d02ce363c28afe34840fa06de17e50b76d8d28154e07af1e474d6f
 
-  - [bzdev (libbzdev-*)](https://billzaumen.github.io/bzdev/installers/bzdev-install-2.1.127.jar)
-    sha256: f0851efffc4823def21912116ca7773b4c2e8430e7556dd9ce1f50830f172532
+  - [bzdev (libbzdev-*)](https://billzaumen.github.io/bzdev/installers/bzdev-install-2.1.130.jar)
+    sha256: cc3529f4dc4ddcc4d62f9f0cb8d91334bc8117d0686113ba671320fdf8877c9a
 
   - [cvrdecode](https://billzaumen.github.io/bzdev/installers/cvrdecode-install-1.4.jar)
     sha256: b445fb1e2d05c87761e0cfc37966b2ccc4504d89288d350e6c0bef9f58fa3a55
@@ -25,8 +25,8 @@ download the jar file for an installer:
   - [QRLauncher (qrlauncher)](https://billzaumen.github.io/bzdev/installers/qrlauncher-install-1.14.jar)
     sha256: f9000fb48d918b3ec6354c80d913509ed13571d8909b1360ff885783763eb44e
 
-  - [roadanim (librdanim-*)](https://billzaumen.github.io/bzdev/installers/roadanim-install-1.4.13.jar)
-    sha256: 95409a82f997a0a82d1d04ec73032debdfed76fcdcf945e9aa55b6c777a92e50
+  - [roadanim (librdanim-*)](https://billzaumen.github.io/bzdev/installers/roadanim-install-1.4.15.jar)
+    sha256: 07066d816d6adaeb667e104d03e854387f57a6eb0e7994d948c2e5301d06606f
 
   - [webnail](https://billzaumen.github.io/bzdev/installers/webnail-install-1.6.28.jar)
     sha256: 058d214cf7fbdae9d843c739305aae4cbab1e016848e48e3b0f12f2e868d5fb8
