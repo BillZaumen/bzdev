@@ -78,7 +78,9 @@
       <LI> a digital signature of
 	<UL>
 	  <LI> the first 8 octets of the passphrase,
-	  <LI> the DER encoding of the server's certificate's public key,
+	  <LI> the DER encoding of each public key in the server's
+            certificate chain, starting with the server's public key and
+	    in order up to the root certificate's public key
 	  <LI> the UTF-8 encoded password used in the CRC,
 	</UL>
 	created using the user's private key and signature algorithm.
@@ -102,8 +104,9 @@
 	octet 9) is valid for a document consisting of
 	<UL>
 	  <LI> octets 1 to 8,
-	  <LI> the server's SSL certificate's public key represented
-	    by its DER encoding,
+	  <LI> the server's SSL certificate chain's public keys represented
+	    by its DER encoding, starting with the server's key and ending
+            with the root certificate authority's key.
 	  <LI> the UTF-8 encoded password.
 	</UL>
     </UL>
