@@ -72,9 +72,9 @@
       <LI> a 4-octet field containing a 32-bit CRC of the first four
 	octets and a UTF-8 encoded password in that order, stored in
 	little-endian byte order. For a denial of service attack with
-	random passwords, the CRC will reduce the number of digital
-	signatures that have to verified by a server by a factor of
-	approximately 4 billion.
+	random passwords and a valid time stamp, the CRC will reduce
+	the number of digital signatures that have to verified by a
+	server by a factor of approximately 4 billion.
       <LI> a digital signature of
 	<UL>
 	  <LI> the first 8 octets of the passphrase,
@@ -111,13 +111,15 @@
 	</UL>
     </UL>
     If these tests do not fail, authorization succeeds and the
-    passphrase can be stored in a table of verified passphrases with a key
-    given by the user's name and Internet address. This table also
-    includes an expiration time for the user and address specified by
-    the key, which is updated each time the key provided the
-    expiration time has not been reached.  If the expiration time has
-    been passed, the authentication fails and the user must generate a
-    new passphrase.
+    passphrase can be stored in a table of verified passphrases with a
+    key given by the user's name, and the value of a cookie
+    identifying a browser (this cookie expires whenever a browser
+    exits). This table also includes an expiration time for the user
+    and cookie specified by the key. This expiration time is updated
+    each time the user is authenticated provided that the expiration
+    time has not been reached.  If the expiration time has been
+    passed, the authentication fails and the user must generate a new
+    passphrase.
   <P>
     In addition to providing some protection against denial of service
     attacks, The password is useful when certificates use
@@ -145,7 +147,14 @@
     user name and passphrase to the clipboard in such a way that paste
     operations alternate between the two. Some operations are also
     accessible via a menu, which provides keyboard shortcuts for
-    frequently used operations.
+    frequently used operations. The program <STRONG>sbl</STRONG>
+    recognizes a few special cases that are used while setting up an
+    account or logging into a server when the server provides the
+    SBL file.  In these cases, the user interface is simplified.
+    Sometime <STRONG>sbl</STRONG> will create a dialog asking about
+    self-signed certificates, custom keystores, etc. This should
+    normally not appear, except during testing where a certificate
+    signed by a recognized certificate authority is not available.
 
     <H2>Realms</H2>
   <P>
