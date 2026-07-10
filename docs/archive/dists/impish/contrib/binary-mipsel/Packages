@@ -1,0 +1,910 @@
+Package: bzdev-wallpapers
+Version: 1.0.0
+Architecture: all
+Provides: ubuntu-wallpapers
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: x11
+Filename: pool/contrib/b/bzdev-wallpapers/bzdev-wallpapers_1.0.0_all.deb
+Size: 33684
+SHA256: d00d825289946345ae40b506ad963cb10b827193556a64ee9ba388216294c575
+SHA1: d00ca364e4bf9a3546481ad98d8a02931700c169
+MD5sum: 507206f5b108322c5640813f9ab964c8
+Description: Wallpaper images.
+ A small collection of wallpapers based on the space-filling Hilbert
+ curve.
+
+Package: cvrdecode
+Version: 1.4
+Architecture: all
+Depends: default-jdk, libbzdev-java (>= 2.1.65), libzxing-core-java (>= 3.4.1), libzxing-java (>= 3.4.1), libzxing-javase-java (>=3.4.1)
+Maintainer: Bill Zaumen <bill.zaumen+software@gmail.com>
+Priority: optional
+Section: contrib/utils
+Filename: pool/contrib/c/cvrdecode/cvrdecode_1.4_all.deb
+Size: 104938
+SHA256: 1b646aba47e3ca436852047ed8a55e4aab3cd89cf1d3da9482317e66d70caa9e
+SHA1: 20432bec83e8de780a1609ae10b9c8a45b6ef5b1
+MD5sum: 9e6d4de6f8be0f62358e113a3ba92042
+Description: Utility that processes QR codes and  shc URIs
+ provided by the California Department of Public Health as
+ proof of COVID-19 vaccination. These digital vaccination
+ records are signed using elliptic-curve public-key
+ encryption and the signatures are verified. The output is
+ a CSV (Comma-Separated Values) file containing a sorted
+ list, each row of which contains a family name, given
+ names, a birthdate, the last vaccination date, and boolean
+ values indicating that the owner of the record has been
+ fully vaccinated and that the signature was valid. The
+ fully-vaccinated boolean value is followed by the number
+ of vaccinations in parentheses.  A final value provides
+ a name (typically a file name or ZIP-file entry) that
+ used as a reference.  This reference may be prefaced with
+ a number in square brackets to indicate where the public
+ key used to validate a record came from.  A short table
+ at the very end of the file shows the host names
+ corresponding to these numbers.
+
+Package: ecdb-derby
+Version: 0.1.8
+Architecture: all
+Depends: libecdb-java (>= 0.1.8), libderby-java (>= 10.14.2.0)
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/misc
+Filename: pool/contrib/e/ecdb-derby/ecdb-derby_0.1.8_all.deb
+Size: 2002
+SHA256: 82c323d6315c36674383a264645b831433f5db2b2bb3af6d57e02723268eed5f
+SHA1: 7fbc4484f78c1136d28f1ba7bdb5b3abcf742351
+MD5sum: 012e1be3c691cc8a2a35b2de8efdba60
+Description: ECDB configuration for the Apache Derby Database.
+ This package arranges for Apache Derby to be used locally with the ECDB
+ (Event Calendar DataBase) package libecdb-java.
+ 
+
+Package: ecdb-desktop
+Version: 0.1.8
+Architecture: all
+Depends: libecdb-java (>= 0.0.18)
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/e/ecdb-desktop/ecdb-desktop_0.1.8_all.deb
+Size: 229786
+SHA256: 733863397b9bec4f1f6c95ddcb5461079e42ba8ad55f889e90f78e9f0f882bef
+SHA1: 3c2e4874af76f8c4aae8324a1837c04d59d70aed
+MD5sum: facbc95d4bc0e6bf32dc92c67dab15a3
+Description: Gnome support for ECDB.
+ This package provides the desktop, media types, and icons for ECDB,
+ ECDB itself consists of a program and library for managing and
+ using a database that tracks events and allows messages regarding
+ those events to be sent to users with calendar appointments. The
+ calendar appointments can include up to two alarms, with the alarm
+ times configured on a per-user basis.  The first can be preconfigured
+ based on the event location, the time of day, and whether the event
+ occurs on a weekday or weekend. The second alarm is configured by
+ providing an offset from the start of the event.
+
+Package: ecdb-javamail
+Version: 0.1.7
+Architecture: all
+Depends: default-jre, libecdb-java, libmail-java (>= 1.6.2), libactivation-java (>= 1.2.0)
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/misc
+Filename: pool/contrib/e/ecdb-javamail/ecdb-javamail_0.1.7_all.deb
+Size: 7008
+SHA256: 05f7fc85e18c7a213d7fdcd4af0c8241cc43ec910609c252185c7ed5f5e22227
+SHA1: 3a4308d78c1a8b2092f04408fccfb49705a07db1
+MD5sum: 9106861038c2eefa7ae4ff3e2d0d6f48
+Description: SMTP plugin for ECDB using javamail.
+ This package sets up the ECDB system directory so that
+ ECDB can use java mail.  It implements an ECDB service provider
+ interface and sets up symbolic links to some java mail and java
+ activation JAR files.
+
+Package: ecdb-pop-icons
+Version: 0.1.8
+Architecture: all
+Depends: pop-icon-theme
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/e/ecdb-pop-icons/ecdb-pop-icons_0.1.8_all.deb
+Size: 4646
+SHA256: f71cc72924b6b2b7d00476661c38b038751c7da463e77e8c7ca01a9cfa4eaa56
+SHA1: 5be33772c2a2f0614658395d8a736ac6dbef87b8
+MD5sum: 57a3d579570f5c88382c3fbaee3bf8dc
+Description: Gnome support for ECDB icons for Pop OS.
+ This package provides the icons for various mime types
+ specific to ECDB. The GUI for Pop OS does not find
+ icons in /usr/share/icons/hicolor, so for that case the
+ icons have to be in /usr/share/icons/Pop. This installion
+ will fail if the icons are already installed and owned by
+ a different package.  The dependency on pop-icon-theme is
+ intended to prevent this package from being installed on
+ systems that do not use the Pop OS icons.
+
+Package: emacs-espmode-el
+Version: 1.1
+Architecture: all
+Depends: emacs-common (>= 1.27)
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/editors
+Filename: pool/contrib/e/emacs-espmode-el/emacs-espmode-el_1.1_all.deb
+Size: 76466
+SHA256: a5a60685d4b454069adb3611aad297bb0f634b909a25926ab3804e8467f47853
+SHA1: 2c3e8bbe2daa16ea309093ec0619932b9605e4a1
+MD5sum: b06cebeefa57bedfdddb3c4a6e54903a
+Description: Implementation of a major mode for editing ESP files.
+ ESP mode differs from Javascript mode in that there are fewer
+ keywords and the backquote character is not treated as a quote
+ delimiter.
+
+Package: epts
+Version: 1.1.43
+Architecture: all
+Depends: default-jre, bash (>= 3.2), libbzdev-java (>= 2.1.122)
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/graphics
+Filename: pool/contrib/e/epts/epts_1.1.43_all.deb
+Size: 1745754
+SHA256: 3b47ff1c26050f855dd0ff355c16482fc54d41ff0bffc81bfb7f26fe1bee0bef
+SHA1: dd6394577421a692e605cc08070b8e6072a6b74b
+MD5sum: dd1d691196a1df2da04d7398ae9df5ed
+Description: Graphics editor for creating  points, and paths.
+ The paths consist of segments that can be straight-line
+ segments, quadratic or cubic Bezier curves, or splines that
+ are implemented as sequences of cubic Bezier curves such that
+ the first and second derivatives are continuous functions. The
+ paths can be open or closed. Curves can be drawn over an image
+ used for reference, with the output values scaled. This editor
+ can also measure distances between two points. Several output
+ formats are available, one as a set of ECMAScript statements
+ that can be used with the org.bzdev.anim2d package and other
+ packages based on that package.
+
+Package: epts-pop-icons
+Version: 1.1.43
+Architecture: all
+Depends: pop-icon-theme
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/e/epts-pop-icons/epts-pop-icons_1.1.43_all.deb
+Size: 6070
+SHA256: 00f68b8834919eecdee73a4147ba34870e0f2e4b9694186f49f5bb4393565f99
+SHA1: 1a9c00fc5f68731b27d254bd016cb9b70e5caf8d
+MD5sum: 1e24d19067150e6640b42974941fa6e4
+Description: Gnome support for EPTS icons for Pop OS.
+ This package provides the icons for various mime types
+ specific to EPTS. The GUI for Pop OS does not find
+ icons in /usr/share/icons/hicolor, so for that case the
+ icons have to be in /usr/share/icons/Pop. This installion
+ will fail if the icons are already installed and owned by
+ a different package.  The dependency on pop-icon-theme is
+ intended to prevent this package from being installed on
+ systems that do not use the Pop OS icons.
+
+Package: evdisk
+Version: 1.13.2
+Architecture: all
+Depends: cryptsetup-bin (>= 2:2.1.0), mount (>= 2.33.1), gpg (>= 2.2.12), gpgconf (>= 2.2.12), sudo (>=1.8.27), util-linux (>= 2.33.1), coreutils (>= 8.30), default-jdk, mlocate (>= 0.26), psmisc (>= 23.2)
+Recommends: exfat-fuse, exfat-utils
+Maintainer: Bill Zaumen <bill.zaumen+software@gmail.com>
+Priority: optional
+Section: contrib/admin
+Filename: pool/contrib/e/evdisk/evdisk_1.13.2_all.deb
+Size: 84600
+SHA256: 2ace213d2d24ccfa80d060b4523c94d2265c36bbd88b9468f42b416d0af9112f
+SHA1: cfd3750b6396f27bb88ab37e20c99133025a979e
+MD5sum: b69ca3b60d4eab4ef9fda3566178b557
+Description:Utility that provides an encrypted virtual disk
+ containing an ext4 file system. This virtual disk is
+ represented by a target directory containing three files:
+ the file key.gpg, which contains a GPG encrypted LUKS key,
+ the file encrypted, which contains the encrypted file
+ system, and a directory named root, which serves as a
+ mount point. Typically the target directory will be on
+ a flash drive. For virtual file systems whose encrypted
+ file would exceed the limits set by a FAT32 or VFAT file
+ system, a flash drive should contain an ext4 or an exfat
+ files ystem, neither of which hava a 4 Gbyte limit on file
+ sizes. The evdisk program is intended for cases in
+ which a virtual file system is mounted temporarily
+ (e.g., to provide an encrypted backup that can be
+ safely carried around because reading the key requires
+ the right GPG keyring, which is stored separately).
+
+Package: gethdrs
+Version: 1.1.2
+Architecture: all
+Depends: bash (>= 3.2), default-jdk, libbzdev-base-java (>= 1.3.37), libbzdev-desktop-java (>= 1.3.37)
+Maintainer: Bill Zaumen <bill.zaumen+software@gmail.com>
+Priority: optional
+Section: contrib/web
+Filename: pool/contrib/g/gethdrs/gethdrs_1.1.2_all.deb
+Size: 110628
+SHA256: df9ef05fafaac993f3c41b9228334aee9f1c213bb76d0ff96fc5a44c48353363
+SHA1: f8c54ce68c3ba3b7bb9b94a6465b0c8309d1da0c
+MD5sum: 539cbddcd74308b3079f35ed669e91f6
+Description: Utility that sends an HTTP request and
+ records the response, including all headers and all
+ HTTP redirects. For various text-based formats, the
+ resource provided by the web server can be printed as
+ well. This utility is intended for debugging HTTP/HTTPS
+ servers.
+
+Package: libbikeshr-darkmode-doc
+Version: 1.4.9
+Conflicts: libbikeshr-doc
+Architecture: all
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/libb/libbikeshr-darkmode-doc/libbikeshr-darkmode-doc_1.4.9_all.deb
+Size: 391368
+SHA256: 55a6e7577bb1463c53e456e013d9c59ce5d9ba68d1cffbe2054bf7ac7b536784
+SHA1: ffe0dbebeb0ee160ceece1e63eff192bbcae19d5
+MD5sum: 3747bd8fa89668ca23cfc4b9e2e6fdea
+Description: API Documentation for the libbikeshr-java package.
+ The documentation is in javadoc format using a 'dark' style.
+
+Package: libbikeshr-doc
+Version: 1.4.9
+Conflicts: libbikeshr-darkmode-doc
+Architecture: all
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/libb/libbikeshr-doc/libbikeshr-doc_1.4.9_all.deb
+Size: 391542
+SHA256: 6d5786c2a17bd6425504201ee598221c9a6b919acc590cb942715bce1ac5fad2
+SHA1: cff80245b6a73e69d0877f7f434bb1b1b09a41fb
+MD5sum: 9473cbed72511cc52e2d186afae95cda
+Description: API Documentation for the libbikeshr-java package.
+ The documentation is in javadoc format.
+
+Package: libbikeshr-java
+Version: 1.4.9
+Architecture: all
+Depends: libbzdev-java (>= 1.3.5)
+Recommends: libbzdev-util
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libb/libbikeshr-java/libbikeshr-java_1.4.9_all.deb
+Size: 222986
+SHA256: 5f1c40a46642fd6c7a62813acec93a5484ece833cd1cef6068b00ec37a57ae72
+SHA1: 548a779b9ed70fd72e8bce4042f5644943c6cd89
+MD5sum: 2b2e8a227f677379257dc1b1dd19aec2
+Description: Java class library for a simulation of a
+ bike-sharing system. See the documentation for further details.
+
+Package: libbzdev-anim2d-java
+Version: 2.1.166
+Architecture: all
+Recommends: libbzdev-util, libbzdev-misc
+Suggests: libbzdev-doc
+Depends: libbzdev-base-java (= 2.1.166), libbzdev-obnaming-java (= 2.1.166), libbzdev-devqsim-java (= 2.1.166), libbzdev-graphics-java (= 2.1.166), libbzdev-math-java (= 2.1.166)
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libb/libbzdev-anim2d-java/libbzdev-anim2d-java_2.1.166_all.deb
+Size: 419972
+SHA256: 191ac45905a86f85848cbdd0908dcb6ded1187f463763cf4afeb414ddac8adbd
+SHA1: 5a94d3a04c7994af80eb190be7a2182e8dcdfdb8
+MD5sum: 21507c59c973308c565eb5abe68ff5c5
+Description: Java class library for 2D animations.
+ See the documentation in the package libbzdev-doc for further details.
+
+Package: libbzdev-base-java
+Version: 2.1.166
+Architecture: all
+Recommends: libbzdev-util, libbzdev-misc
+Suggests: libbzdev-doc
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libb/libbzdev-base-java/libbzdev-base-java_2.1.166_all.deb
+Size: 729884
+SHA256: 9e6f44a7d910967c8e2aeb1fa3ce71684d554d925c903f5c793ba7007ad95e80
+SHA1: 331a340ec16e1e1eccb18046545776fdf340d733
+MD5sum: dc69983c8c1a035be68c01461c4763f6
+Description: Java class library supporting the libbzdev packages.
+ This package contains the jar file for the Java module
+ org.bzdev.base.  It contains IO classes, extensions to the
+ java.lang package, annotations for dynamic methods and for
+ named-object factories, networking-related classes, additional
+ protocols (the schema portion of a URL), scripting, and some
+ utility classes.
+ See the documentation in the package libbzdev-doc for further details.
+
+Package: libbzdev-darkmode-doc
+Version: 2.1.166
+Architecture: all
+Conflicts: libbzdev-doc
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/libb/libbzdev-darkmode-doc/libbzdev-darkmode-doc_2.1.166_all.deb
+Size: 4429746
+SHA256: 74e571e4657b85e2ec88333d41d5520611026609030293f39f51c5661c027885
+SHA1: 7762727c7d7fc2cb095f918f862efb9c35c4d2ef
+MD5sum: 29c450a1e80789484092d58f0c8d4dd2
+Description: API Documentation for the libbzdev-java package.
+ The documentation is in javadoc format. This package uses
+ a 'dark' style in which there is light text on a dark
+ background, which some consider to be easier to read on
+ a computer's monitor.
+
+Package: libbzdev-desktop-java
+Version: 2.1.166
+Architecture: all
+Depends: libbzdev-base-java (= 2.1.166), libbzdev-graphics-java (= 2.1.166), libbzdev-math-java (= 2.1.166), libbzdev-obnaming-java (= 2.1.166)
+Recommends: libbzdev-util, libbzdev-misc
+Suggests: libbzdev-doc
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libb/libbzdev-desktop-java/libbzdev-desktop-java_2.1.166_all.deb
+Size: 580012
+SHA256: 31e2f0d477fdf0701e6ade9790fdc9a3b6e17f27cb48499baf2c4424a15aefb7
+SHA1: 36a1fcfd586e9f7884523c9411dfd06e5fe42643
+MD5sum: dd59f152bbeef89c3453dbe26a889dfd
+Description: Java class library for Swing extensions.
+ See the documentation in the package libbzdev-doc for further details.
+
+Package: libbzdev-devqsim-java
+Version: 2.1.166
+Architecture: all
+Depends: libbzdev-base-java (= 2.1.166), libbzdev-math-java (= 2.1.166), libbzdev-obnaming-java (= 2.1.166)
+Recommends: libbzdev-util, libbzdev-misc
+Suggests: libbzdev-doc
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libb/libbzdev-devqsim-java/libbzdev-devqsim-java_2.1.166_all.deb
+Size: 495744
+SHA256: 3d7b4b09efa3ce197ca97ba94e6fc2ab60af0316e917573192a09bf9c500514c
+SHA1: 44cf8435f4aeead9458257a8118960c5e3ad0671
+MD5sum: 28084bfe40818b99001de360cee82f9f
+Description: Java class library for discrete-event simulations.
+ This library supports scheduling events, threads, queues, and
+ instrumentation. See the documentation in the package libbzdev-doc
+ for further details.
+
+Package: libbzdev-dmethods-java
+Version: 2.1.166
+Architecture: all
+Depends: libbzdev-base-java (= 2.1.166)
+Recommends: libbzdev-util, libbzdev-misc
+Suggests: libbzdev-doc
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libb/libbzdev-dmethods-java/libbzdev-dmethods-java_2.1.166_all.deb
+Size: 102840
+SHA256: 3fed5213ea67fbf32b953d6a297cdc26d7f95ebd107714e974db5e3ff77c93cc
+SHA1: c572d0b80b7ec21c3f201becbe69f7b4a3874ed6
+MD5sum: 9363e3b5067690d4bafeb2254963ef18
+Description: Java class library for a dynamic-method annotation processor.
+ See the documentation in the package libbzdev-doc for further details.
+
+Package: libbzdev-doc
+Version: 2.1.166
+Architecture: all
+Conflicts: libbzdev-darkmode-doc
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/libb/libbzdev-doc/libbzdev-doc_2.1.166_all.deb
+Size: 4428158
+SHA256: 4f83606d308626baa25e9cb8d2dd817c57d8f2bd4576e9a9c345d9bdaa1c7188
+SHA1: e040f51bde16d4a8c2fb02ec7cd450b3f4e96d91
+MD5sum: b43b300ca012d9f11e3bb0ee2fc48551
+Description: API Documentation for the libbzdev-java package.
+ The documentation is in javadoc format. This package uses
+ the same style as the openjdk API documentation.
+
+Package: libbzdev-drama-java
+Version: 2.1.166
+Architecture: all
+Depends: libbzdev-base-java (= 2.1.166), libbzdev-obnaming-java (= 2.1.166), libbzdev-devqsim-java (= 2.1.166), libbzdev-math-java (= 2.1.166)
+Recommends: libbzdev-util, libbzdev-misc
+Suggests: libbzdev-doc
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libb/libbzdev-drama-java/libbzdev-drama-java_2.1.166_all.deb
+Size: 203070
+SHA256: 8fb4c726292576578905cb8c5e4b6414616f74c7e441c9c0fa7b90177a797ab9
+SHA1: e00cfbdfb45e82f836bf6db243a8d53ee98b165e
+MD5sum: d12a018fc08e656800778b337e687d69
+Description: Java class library for an actor-based simulation.
+ The actors can send messages to other actors with a time delay.
+ The simulation supports groups for distributing messages to multiple
+ recipients, collections of actors called domains, and conditions that
+ can affect multiple actors. The package includes a generic version
+ of actors that can be used to create a number of similar packages
+ geared to specific applications. See the documentation in the package
+ libbzdev-doc for further details.
+
+Package: libbzdev-ejws-java
+Version: 2.1.166
+Architecture: all
+Depends: libbzdev-base-java (= 2.1.166)
+Recommends: libbzdev-util, libbzdev-misc
+Suggests: libbzdev-doc
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libb/libbzdev-ejws-java/libbzdev-ejws-java_2.1.166_all.deb
+Size: 295860
+SHA256: 87ca72ad901f20420e26d6ac6d2f8b477e2ebb8712dd77955e155b72d61508ce
+SHA1: 7296872d42790be2e365dd5dd18a3ae262f2de18
+MD5sum: 43900ae1e640b428b67dbabf76d027ea
+Description: Java class library for an embedded web server.
+ See the documentation in the package libbzdev-doc for further details.
+
+Package: libbzdev-esp-java
+Version: 2.1.166
+Architecture: all
+Depends: libbzdev-base-java (= 2.1.166)
+Recommends: libbzdev-util, libbzdev-misc
+Suggests: libbzdev-doc
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libb/libbzdev-esp-java/libbzdev-esp-java_2.1.166_all.deb
+Size: 89402
+SHA256: 145587f8523386f454ab0f6c4848d0efd065cdff395deb196b619d53294b425c
+SHA1: eb325348b0047b2b54d850d2eaf1e1675dd84eb5
+MD5sum: 5f0490960dde2ee6b1188643f414de65
+Description: Java class library for the ESP service provider.
+ ESP (Expression Sequence Processor) is a Java-based scripting
+ language that borrows most of its syntax from ECMAScript and
+ Java. See the documentation in the package libbzdev-doc for
+ further details.
+
+Package: libbzdev-graphics-java
+Version: 2.1.166
+Architecture: all
+Depends: libbzdev-base-java (= 2.1.166), libbzdev-math-java (= 2.1.166), libbzdev-obnaming-java (= 2.1.166)
+Recommends: libbzdev-util, libbzdev-misc, libosgbatik-java
+Suggests: libbzdev-doc
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libb/libbzdev-graphics-java/libbzdev-graphics-java_2.1.166_all.deb
+Size: 743522
+SHA256: e9fa4adf35a25a13ebd8573903e9f675843dd19a8d8edf34bf221d9a6b4bb7ae
+SHA1: 6bf2a84003ea3d13afbf5c487fb55ef9880a80fd
+MD5sum: 494e70255e257927fdb33cf87e1e5ffd
+Description: Java class library for graphics operations.
+ This library includes a graphs package, spline-based paths,
+ 3D paths, surfaces, image operations, and image IO, where
+ postscript output is treated the same as image formats.
+ It also provides some classes to simplify the construction
+ of named-object factories in which colors or strokes
+ are used.  See the documentation in the package libbzdev-doc
+ for further details.
+
+Package: libbzdev-java
+Version: 2.1.166
+Architecture: all
+Depends: libbzdev-base-java (= 2.1.166), libbzdev-ejws-java (= 2.1.166), libbzdev-math-java (= 2.1.166), libbzdev-obnaming-java (= 2.1.166), libbzdev-graphics-java (= 2.1.166), libbzdev-devqsim-java (= 2.1.166), libbzdev-desktop-java (= 2.1.166), libbzdev-drama-java (= 2.1.166), libbzdev-anim2d-java (= 2.1.166), libbzdev-p3d-java (= 2.1.166), libbzdev-esp-java (= 2.1.166), libbzdev-dmethods-java (= 2.1.166), libbzdev-parmproc-java (= 2.1.166)
+Recommends: libbzdev-util, libbzdev-misc, libosgbatik-java
+Suggests: libbzdev-doc, libbzdev-pop-icons
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libb/libbzdev-java/libbzdev-java_2.1.166_all.deb
+Size: 80730
+SHA256: 971b95eda40677293770fbd525359c76028af3bc16e9032ee9cf48743affd37b
+SHA1: 7cec60b514dd4d79b6bdbbc022523d64825dba63
+MD5sum: a633f2544903fba84fb18c1b9451590f
+Description: Meta package for the BZDev class library.
+ This package contains a JAR file but that JAR file does not contain
+ any classes. Instead, the JAR file contains meta data for setting up
+ class paths. See the documentation in the libbzdev-doc package for
+ further details.
+
+Package: libbzdev-math-java
+Version: 2.1.166
+Architecture: all
+Depends: libbzdev-base-java (= 2.1.166)
+Recommends: libbzdev-util, libbzdev-misc
+Suggests: libbzdev-doc
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libb/libbzdev-math-java/libbzdev-math-java_2.1.166_all.deb
+Size: 561224
+SHA256: 5f44fbd451e5413bbfb6fcfe4433e871fca83b5709ba5528791e40f6ab7f3cbe
+SHA1: 64dcb6bdc9b20a11348df1df71566e22bb8ea70f
+MD5sum: bac16f452e180fb6f40fd48a7b55b627
+Description: Java class library for mathematical functions and algorithms.
+ It also includes a basic statistics package, random variables,
+ and an SPI (Service Provider Interface) for FFT implementations that
+ can supplement the one the library provides. See the documentation
+ in the package libbzdev-doc for further details.
+
+Package: libbzdev-misc
+Version: 2.1.166
+Architecture: all
+Depends: shared-mime-info, libgtk2.0-bin
+Suggests: libbzdev-java, libbzdev-util, libbzdev-pop-icons
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/misc
+Filename: pool/contrib/libb/libbzdev-misc/libbzdev-misc_2.1.166_all.deb
+Size: 514476
+SHA256: 927564ac564fe73290b8ebbd9880bd72b05a7d8a25d99846b77c2ab0538e976e
+SHA1: a26ac6a0715b92445a3ab7556f0e7c156bf67525
+MD5sum: 8b1697b1216bc71b2bb71391abc06135
+Description: Media types and icons for data formats.
+ The types and icons are designed for the libbzdev package.
+
+Package: libbzdev-obnaming-java
+Version: 2.1.166
+Architecture: all
+Depends: libbzdev-base-java (= 2.1.166), libbzdev-math-java (= 2.1.166)
+Recommends: libbzdev-util, libbzdev-misc
+Suggests: libbzdev-doc
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libb/libbzdev-obnaming-java/libbzdev-obnaming-java_2.1.166_all.deb
+Size: 192234
+SHA256: 6bb8b65f16b4546ee038174e1a2d930bfd8dd6d0bf090927d5dfe2940a1c82cc
+SHA1: 65b30fb447bd9f597e6a58da1935f81a70402e98
+MD5sum: 1ef1d4ebac654fe53fd3702b5962225b
+Description: Java class library for in-memory named objects.
+ See the documentation in the package libbzdev-doc for further details.
+
+Package: libbzdev-p3d-java
+Version: 2.1.166
+Architecture: all
+Depends: libbzdev-base-java (= 2.1.166), libbzdev-anim2d-java (= 2.1.166), libbzdev-obnaming-java (= 2.1.166), libbzdev-graphics-java (= 2.1.166), libbzdev-devqsim-java (= 2.1.166), libbzdev-math-java (= 2.1.166)
+Recommends: libbzdev-util, libbzdev-misc
+Suggests: libbzdev-doc
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libb/libbzdev-p3d-java/libbzdev-p3d-java_2.1.166_all.deb
+Size: 302584
+SHA256: 8ec6fb2fcf3f01b1996ccb24d31cc1cbbd61976b71ddc5161b7d941127357650
+SHA1: 6a0bfa61ea613730b74dcfd1f3f62b7c621204e8
+MD5sum: 040267ef4197f0cb4f571bea176337df
+Description: Java class library for 3D printing.
+ See the documentation in the package libbzdev-doc for further details.
+
+Package: libbzdev-parmproc-java
+Version: 2.1.166
+Architecture: all
+Depends: libbzdev-base-java (= 2.1.166), libbzdev-math-java (= 2.1.166), libbzdev-obnaming-java (= 2.1.166)
+Recommends: libbzdev-util, libbzdev-misc
+Suggests: libbzdev-doc
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libb/libbzdev-parmproc-java/libbzdev-parmproc-java_2.1.166_all.deb
+Size: 120494
+SHA256: c4420451ef5923ab27cde214fef83b47df9f33494f5a65af29eafca06d12fac4
+SHA1: 4ceae5b576842c7b5c21b5cc5aecc99155f8e928
+MD5sum: af90bcca59654ea0249211002b46f513
+Description: Java class library for annotation processing to support factories.
+ See the documentation in the package libbzdev-doc for further details.
+
+Package: libbzdev-pop-icons
+Version: 2.1.166
+Architecture: all
+Depends: pop-icon-theme
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/misc
+Filename: pool/contrib/libb/libbzdev-pop-icons/libbzdev-pop-icons_2.1.166_all.deb
+Size: 11396
+SHA256: 30ab6b24e877e7fe31bbc26e164b560ca54b40a5cf1220a7a9f454544976ff6f
+SHA1: c085620382e2f59a6a1e243520de2c0373e9f09f
+MD5sum: 0e7d50e48e04386d9cd140112fd22131
+Description: Pop-OS media types and icons for data formats.
+ This package puts copies of the libbzdev media-type icons
+ into subdirectories of /usr/share/icons/Pop. These are the
+ same images as in /usr/share/icons/hicolor - Pop OS (at least
+ some releases) will not look for icons in the hicolor
+ directory.
+
+Package: libbzdev-servlets-java
+Version: 2.1.166
+Architecture: all
+Depends: libbzdev-base-java (= 2.1.166)
+Suggests: libbzdev-doc
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libb/libbzdev-servlets-java/libbzdev-servlets-java_2.1.166_all.deb
+Size: 86750
+SHA256: 8a9f275441edc76a0f90177632639da3c71c959d984a487ed8ddd96ea50489dc
+SHA1: fece8f01e575145cb73974e3322de9fce747d2dc
+MD5sum: 25382ef8cd9301668d9fafab02c2fed1
+Description: Java class library for constructing a servlet.
+ The package org.bzdev.net contains a class named ServletAdapter
+ that works with an embedded web server. This package provides a
+ class whose subclasses can use a ServletAdapter to implement a
+ servlet.
+
+Package: libbzdev-util
+Version: 2.1.166
+Architecture: all
+Depends: libbzdev-java (>= 1.2.151)
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/utils
+Filename: pool/contrib/libb/libbzdev-util/libbzdev-util_2.1.166_all.deb
+Size: 423640
+SHA256: 0924f74ac01e03b3b48757f9180b9e32d7c72cae52c616ccd744778b3ddb4dd0
+SHA1: a5f43a1c665592b03ad05421d6d2ef59d073e372
+MD5sum: 3902677d0a16b188f800887d635f996c
+Description: Utility programs for the libbzdev-java package.
+ This package contains the programs lsnof and scrunner,
+ and man pages for both. These programs use a configuration
+ file scrunner.conf, typically located in /etc/bzdev. lsnof
+ generates documentation for instances of the class
+ org.bzdev.obnaming.NamedObjectFactory, and scrunner allows
+ a scripting language to be used with subclasses of
+ org.bzdev.scripting.ScriptingContext.  These subclasses
+ include several simulation classes.
+
+Package: libecdb-darkmode-doc
+Version: 0.1.7
+Recommends: default-jdk-doc, libbzdev-doc (>= 1.2.34)
+Conflicts: libecdb-doc
+Architecture: all
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/libe/libecdb-darkmode-doc/libecdb-darkmode-doc_0.1.7_all.deb
+Size: 258224
+SHA256: 1ba997b859c8f80cabeaa06dd299a71d1e2ac9f5d2303585dd7eb82fee5c9f99
+SHA1: 021c9f41d803f244d45ae30394de7cfe0a3747d1
+MD5sum: 322fae1b12ab487ea3a80e3a00d138bc
+Description: API Documentation for the libecdb-java package.
+ The documentation is in javadoc format using a 'dark mode' style.
+
+Package: libecdb-doc
+Version: 0.1.7
+Recommends: default-jdk-doc, libbzdev-doc (>= 1.2.34)
+Conflicts: libecdb-darkmode-doc
+Architecture: all
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/libe/libecdb-doc/libecdb-doc_0.1.7_all.deb
+Size: 258128
+SHA256: 4aac7e5c5e214e701a647a88743aba600147e0d0d49cd8b42533c7390520d6f0
+SHA1: dcbd57c5592888476ab1a5ddfa290848083239e5
+MD5sum: 202fc1ccfb78bf6617ff19ac360e0df8
+Description: API Documentation for the libecdb-java package.
+ The documentation is in javadoc format using the default style.
+
+Package: libecdb-java
+Version: 0.1.7
+Architecture: all
+Depends: bash (>= 3.2), libbzdev-java (>= 1.2.171), gpg (>= 2.2.19)
+Recommends: libderby-java (>= 10.14.2.0), ecdb-javamail (>= 0.0.1), ecdb-desktop (>= 0.0.1)
+Suggests: libbzdev-doc (>= 1.2.34), libecdb-doc (= 0.1.7)
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/misc
+Filename: pool/contrib/libe/libecdb-java/libecdb-java_0.1.7_all.deb
+Size: 263494
+SHA256: 5fd15ab07af2111806c9269f9321b4a626f32864e2f83006b3395295ea8e67f3
+SHA1: 285236d1e6bb8789eff79f552c61e669b40879e0
+MD5sum: a8d405fea74b08ad65b07db271c28818
+Description: Event-calendar database manager.
+ This software consists of a program and library for managing and
+ using a database that tracks events and allows messages regarding
+ those events to be sent to users with calendar appointments. The
+ calendar appointments can include up to two alarms, with the alarm
+ times configured on a per-user basis.  The first can be preconfigured
+ based on the event location, the time of day, and whether the event
+ occurs on a weekday or weekend. The second alarm is configured by
+ providing an offset from the start of the event.
+
+Package: libosgbatik-java
+Version: 0.4.2
+Architecture: all
+Depends: libbzdev-base-java (>= 1.3.37), libbzdev-graphics-java (>= 1.3.37)
+Recommends: libbzdev-util
+Maintainer: Bill Zaumen <bzdev.org@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libo/libosgbatik-java/libosgbatik-java_0.4.2_all.deb
+Size: 1983396
+SHA256: 652450ba9552eb71a3d2534f7378ecb77aee727725e9c422d782a89d4eac4cfe
+SHA1: b62fdf7ac62c0b7be098734cdec622c9e0306daa
+MD5sum: 0dbe74871468690638a34add7864ca06
+Description: Service-provider package for SVG output stream graphics using
+ the Apache Batik code. Because of some technical issues with how the
+ Batik jar files are structured, this package contains copies of enough
+ of the Batik classes to operate as a stand-alone package, restricted to
+ graphics output. The Batik class files will be eliminated once Batik
+ is updated so that the Batik jar files are consistent with Java modules
+ (the issues were classes that duplicated JDK functionality and packages
+ that were split across multiple JAR files).
+
+Package: librdanim-darkmode-doc
+Version: 1.4.17
+Architecture: all
+Conflicts: librdanim-doc
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/libr/librdanim-darkmode-doc/librdanim-darkmode-doc_1.4.17_all.deb
+Size: 434350
+SHA256: d86899d7bd3ccb088a5897ed696157c644cdf63cc59ca64c999496139ea4ba7f
+SHA1: e6026d685040c1cbd59a956947e408a2a2d8e450
+MD5sum: 74daa3c4f706498ff7aaeaebd7ebb432
+Description: API Documentation for the librdanim-java package.
+ The documentation is in javadoc format, using a 'dark mode' style.
+
+Package: librdanim-doc
+Version: 1.4.17
+Architecture: all
+Conflicts: librdanim-darkmode-doc
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/libr/librdanim-doc/librdanim-doc_1.4.17_all.deb
+Size: 434528
+SHA256: 9d4be616a3d4560caa171498aa4820e00e2ce4c2a29d667b2804e1c6632da01a
+SHA1: 99019818e9804819e1681279a79e6cd943ab1e82
+MD5sum: 7a10869da321dfd71cd3a21c70a31f84
+Description: API Documentation for the librdanim-java package.
+ The documentation is in javadoc format, using the standard javadoc style
+
+Package: librdanim-java
+Version: 1.4.17
+Architecture: all
+Depends: libbzdev-java (>= 2.1.133)
+Recommends: libbzdev-util
+Maintainer: Bill Zaumen <bzdev.org@gmail.com>
+Priority: optional
+Section: contrib/java
+Filename: pool/contrib/libr/librdanim-java/librdanim-java_1.4.17_all.deb
+Size: 147834
+SHA256: 0f0bd2d1c1205e1e34bc16663449aab3a8066e1e4ab0c8cb240f62533fc39b90
+SHA1: 102f59452803aae1dac0abe216caf93cbce00fa7
+MD5sum: 01f7f4a3067bf3e5508fa2bd9b9d6722
+Description: Java class library for animations of vehicles, bicycles,
+ and pedestrians. See the documentation for further details
+
+Package: ltgcheck
+Version: 1.0
+Architecture: all
+Depends: bash (>= 3.2), default-jdk, libbzdev-base-java (>= 2.1.126)
+Maintainer: Bill Zaumen <bill.zaumen+software@gmail.com>
+Priority: optional
+Section: contrib/web
+Filename: pool/contrib/l/ltgcheck/ltgcheck_1.0_all.deb
+Size: 37736
+SHA256: 15490ee696a1aa00e1212deca37fcd5ad37813938b95b3b24a6b9e6e23d77fa9
+SHA1: 918881dc7c2ab766c47b72422a03c49e1ab5fb11
+MD5sum: f66d082c92113e1c3fb1f5bb1792f5b9
+Description: Utility that uses an LLM-based grammar checker,
+ LanguageTool, to check text, LaTeX, and open document format
+ text files.
+
+Package: qrlauncher
+Version: 1.14
+Architecture: all
+Depends: default-jdk, libbzdev-desktop-java (>= 2.0.41), libzxing-core-java (>= 3.4.1), libzxing-java (>= 3.4.1), libzxing-javase-java (>=3.4.1)
+Recommends: libosgbatik-java (>= 0.4.2), gethdrs (>= 1.1.1)
+Maintainer: Bill Zaumen <bill.zaumen+software@gmail.com>
+Priority: optional
+Section: contrib/utils
+Filename: pool/contrib/q/qrlauncher/qrlauncher_1.14_all.deb
+Size: 229854
+SHA256: a927c7d495c4b67fd41519b973bde5940dd97da0e83c3017c4b7e75eadc1bc1f
+SHA1: e6854267951701040639653a9e4d8632bb740ebb
+MD5sum: d859e4378d0217a4397270b24ad7078e
+Description: Utility that opens dzta/URLs in QR codes or creates QR codes.
+ The image formats supported are those that Java recognizes, and there
+ is expected to be one QR code per image. The default browser will be used
+ to handle a URL's contents, provided that the Java implementation and
+ the desktop support that capability. One can provide the image files on
+ the command line or drag and drop, or copy and paste, the images files
+ into this application. The package libosgbatik-java should be installed if
+ SVG should be supported for creating QR codes.
+
+Package: qrlauncher-pop-icons
+Version: 1.14
+Architecture: all
+Depends: pop-icon-theme
+Maintainer: Bill Zaumen <bill.zaumen+software@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/q/qrlauncher-pop-icons/qrlauncher-pop-icons_1.14_all.deb
+Size: 4744
+SHA256: da628062a1ade51e277ea83b42b8e8d1762974e68096b247c29836f3abafa706
+SHA1: 4fb2a9734c43a046ff4185fafc3552825d9f4617
+MD5sum: dbde8d9da39f4980b6f3894ca1d0c946
+Description: Gnome support for QRLauncher icons for Pop OS.
+ This package provides the icons for various mime types
+ specific to QRLauncher. The GUI for Pop OS does not find
+ icons in /usr/share/icons/hicolor, so for that case the
+ icons have to be in /usr/share/icons/Pop. This installion
+ will fail if the icons are already installed and owned by
+ a different package.  The dependency on pop-icon-theme is
+ intended to prevent this package from being installed on
+ systems that do not use the Pop OS icons.
+
+Package: webnail
+Version: 1.6.29
+Architecture: all
+Depends: default-jre, bash (>= 3.2), libbzdev-java (>= 2.1.149)
+Conflicts: webnail-server
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/graphics
+Filename: pool/contrib/w/webnail/webnail_1.6.29_all.deb
+Size: 1319996
+SHA256: 847f8b35d57d714e9622cc22dcd7c26e3d7f87a738c425ce8f0044614bb2b346
+SHA1: ef3af8dc45d69c192b2f6afc1ce9ffb876059ea0
+MD5sum: 468d85be477c52755a5c30cb15682167
+Description: Program that scales images to fit in a bounding box.
+ The program, named webnail, can create a web page to display these
+ images. A selection of layout styles is available. The default creates
+ a vertical list of images that can be scrolled or selected to display
+ an image at a larger size. A slideshow mode allows the images to be
+ viewed in (nearly) full-screen window. Users can add HTML elements
+ in the document head and before or after the images, with support
+ for javascript. For simple cases, the webnail program will simply
+ create a zip file or directory containing the scaled images.
+
+Package: webnail-pop-icons
+Version: 1.6.29
+Architecture: all
+Depends: pop-icon-theme
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/doc
+Filename: pool/contrib/w/webnail-pop-icons/webnail-pop-icons_1.6.29_all.deb
+Size: 5220
+SHA256: cdd47053e9621244c9c62ab08dd57b8c1f29a7197957e7f34a89122a751dfba7
+SHA1: e0045eeca126d161335386430934e9f6eef8be19
+MD5sum: eaf692a0f0f365056d924d4a7831e790
+Description: Gnome support for webnail icons for Pop OS.
+ This package provides the icons for various mime types
+ specific to webnail. The GUI for Pop OS does not find
+ icons in /usr/share/icons/hicolor, so for that case the
+ icons have to be in /usr/share/icons/Pop. This installion
+ will fail if the icons are already installed and owned by
+ a different package.  The dependency on pop-icon-theme is
+ intended to prevent this package from being installed on
+ systems that do not use the Pop OS icons.
+
+Package: webnail-server
+Version: 1.6.29
+Architecture: all
+Depends: libbzdev-base-java (>= 2.1.65),libbzdev-ejws-java (>= 2.1.65)
+Conflicts: webnail
+Maintainer: Bill Zaumen <bill.zaumen+bzdev@gmail.com>
+Priority: optional
+Section: contrib/graphics
+Filename: pool/contrib/w/webnail-server/webnail-server_1.6.29_all.deb
+Size: 8548
+SHA256: 57e843a7437f01331f9490bdace48510b0ab94a817748823753244b52070fe20
+SHA1: f4b8361d47ed1113190ff8a27c92a0a51acb71ba
+MD5sum: 60d11ece7051d0a6c1d079a25cc5bcf2
+Description: Server for files and directories created with webnail.
+ The software consists of a single JAR file containing a few of the
+ classes that the webnail package provides. It includes a 'main' class
+ that can be used to start a server with the command java -p MODULE_PATH
+ webnail/webnail.Server --port PORT --password PASSWORD FILE_OR_DIR.
+ Both options are optional.
+
